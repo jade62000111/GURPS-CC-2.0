@@ -24,11 +24,14 @@
 			/* Internal CSS */
 			/* Auto Numbering Chapter styling */
 			/* List item non-iterative styling */ /* Needs work to ensure the numbering doesn't increment */
+			ol#biblio {
+				counter-reset: bibliography;
+			}
 			ol li:not(.skip){
 				counter-increment:bibliography 1;
 			}
 			ol li.skip {
-				counter-increment: bibliography -1;
+				counter-increment:bibliography -1;
 			}
 		</style>
 	  </section>
@@ -323,7 +326,7 @@
 	  <section id="BackMatter">
 	    <section id="BibliographySection">
 	      <h1>Bibliography</h1>
-		    <ol id="biblio" style="counter-reset: bibliography;">
+		    <ol id="biblio">
 	          <div><li id="1491:NewRevelationsoftheAmericasBeforeColumbusBiblio">
 			    <p><cite>1491: New Revelations of the Americas Before Columbus</cite>&period; Charles C&period; Mann &lsqb;<a href="https://en.wikipedia.org/wiki/Charles_C._Mann">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/Charles_C._Mann">https://en.wikipedia.org/wiki/Charles_C._Mann</a>&rsqb;&rsqb;&period; Vintage&comma; 2006&period; Language&colon; <span lang="eng">English</span>&period; &lpar;LT&colon;156&rpar;&period; <a href="https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann">The Internet Archive</a> &lsqb;<a href="https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann">https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann</a>&rsqb;&semi; <a href="https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus">https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus</a>&period; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.epub">&period;epub</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.epub&rsqb;&semi; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.pdf">&period;pdf</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.pdf&rsqb;&semi; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.txt">&period;txt</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.txt&rsqb; &lpar;LT&colon;156&rpar;&period;</p><details><summary>The Internet Archive</summary><iframe src="https://archive.org/embed/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></details></li>
 			  </div>
