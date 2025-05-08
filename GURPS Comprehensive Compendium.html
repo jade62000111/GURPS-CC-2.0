@@ -23,12 +23,11 @@
 	    <style id="InternalCSSStyle">
 			/* Internal CSS */
 			/* Auto Numbering Chapter styling */
-			/* Needs work to ensure the numbering doesn't increment */
+			/* List item non-iterative styling */ /* Needs work to ensure the numbering doesn't increment */
 			ol li:not(.skip){
 				counter-increment 1;
-				list-style: none;
 			}
-			ol li.skip {/* List item non-iterative styling */
+			ol li.skip {
 				list-style-type: none;
 				counter-increment: none;
 			}
