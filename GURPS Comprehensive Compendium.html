@@ -2,99 +2,99 @@
 <html>
   <head>
     <section id="HeadCallsLinksMetasScriptsandStyles"> <!-- HCLMSS sounds so official  -->
-	  <section id="MetaSubsection">
-	    <meta charset="UTF-8">
-	    <meta name="editor" content="jade62000111">
-	    <meta name="description" content="A Complete GURPS 4th Edition Reference">
-	    <meta name="keywords" content="GURPS 4th Edition, GURPS, 4th Edition, GURPS Reference, Reference">
-	  </section>
-	  <section id="LinksSubsection">
-	    <link rel="stylesheet" href=".\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\install\ChemDoodleWeb.css" type="text/css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap" rel="stylesheet">
+      <section id="MetaSubsection">
+        <meta charset="UTF-8">
+	<meta name="editor" content="jade62000111">
+	<meta name="description" content="A Complete GURPS 4th Edition Reference">
+	<meta name="keywords" content="GURPS 4th Edition, GURPS, 4th Edition, GURPS Reference, Reference">
+      </section>
+      <section id="LinksSubsection">
+	<link rel="stylesheet" href=".\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\install\ChemDoodleWeb.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Sans+Ethiopic:wght@100..900&family=Noto+Sans+Hanunoo&family=Noto+Sans+Tagalog&display=swap" rel="stylesheet">
-	  </section>
-	  <section id="ScriptSubsection">
-	    <script type="text/javascript" src=".\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\install\ChemDoodleWeb.js"></script>
-	    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	  </section>
-	  <section id="StylesSubsection">
-	    <style>
-			body { 
-				counter-reset: bibliography;
-				counter-reset: chapter;
-			}
-			/* Auto Numbering Chapter styling */
-			h2.chapter::before {
-				counter-increment: chapter;
-				content: "Chapter "counter(chapter)": ";
-			}
-			/* Itterative skip on ols */
-			.skip { /* Needs work to ensure the numbering doesn't decrement or skip correctly */
-				counter-increment:bibliography none;
-				list-style-type: none;
+      </section>
+      <section id="ScriptSubsection">
+	<script type="text/javascript" src=".\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\install\ChemDoodleWeb.js"></script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      </section>
+      <section id="StylesSubsection">
+	<style>
+	  body { 
+	  	counter-reset: bibliography;
+	  	counter-reset: chapter;
+	  }
+	  /* Auto Numbering Chapter styling */
+  	  h2.chapter::before {
+	  	counter-increment: chapter;
+	  	content: "Chapter "counter(chapter)": ";
+	  }
+	  /* Itterative skip on ols */
+	  .skip { /* Needs work to ensure the numbering doesn't decrement or skip correctly */
+	  	counter-increment:bibliography none;
+		list-style-type: none;
 				
-			}
-			/* Hidden links with highlight */
-			a.hidden {
-				text-decoration: none;
-				color: black;
-			}
-			a.hidden:hover, a.hidden:active {
-				color: red;
-			}
-		</style>
-	  </section>
-	</section>
+	  }
+	  /* Hidden links with highlight */
+	  a.hidden {
+	  	text-decoration: none;
+		color: black;
+	  }
+	  a.hidden:hover, a.hidden:active {
+	  	color: red;
+	  }
+	</style>
+      </section>
+    </section>
     <title>GURPS Comprehensive Compendium</title>
-	<h1>GURPS Comprehensive Compendium</h1>
-	  <p>Compiled by jade62000111</p>
-	  <p>Welcome to <i><b>GURPS</b></i></p>
+      <h1>GURPS Comprehensive Compendium</h1>
+        <p>Compiled by jade62000111</p>
+	<p>Welcome to <i><b>GURPS</b></i></p>
   </head>
   <body>
     <section id="TableofContentsSection">
-	  <h2 id="TableofContents">Table of Contents</h2>
-	</section>
-	<section id="AttributesandCharacteristicsSection">
-	  <h2 id="AttributesandCharacteristicsChapter" class="chapter">Attributes and Characteristics</h2>
-	</section>
-	<section id="AdvantagesPerksDisadvantagesQuirksFeaturesandModifiersSection">
-	  <h2 id="APDQFaMChapter" class="chapter">Traits</h2>
-		<div id="ListofTraits">
-		<h3>List of Traits</h3>
-		  <div id="TraitTemplatediv"></div>
-		  <h4 id="Trait">Template</h4>
-			<p>	points</p>
-			<p></p>
-			<p><i>Levels</i>&colon;</p>
-			<p><i>Enhancements</i>&colon;</p>
-			<p><i>Special Enhancements</i>&colon;</p>
-			<p><i>Limitations</i>&colon;</p>
-			<p><i>Special Limitations</i>&colon;</p>
-			<p><i>See</i>&colon;</p>
-			<p><i>References</i>&colon;</p>
-		</div>
-	</section>
-	<section id="ChapterSkillsandTechniquesSection">
-	  <h2 id="ChapterSkillsandTechniques" class="chapter">Skills and Techniques</h2>
-		<div id="ListofSkillsdiv">
-		<h3>List of Skills</h3>
-		  <div id="SkillTemplatediv">
-		  <h4 id="Skill">Template</h4>
-			<p>	Skill</p>
-			<p><i>Defaults</i>&colon; </p>
-			<p><i>Prerequisites</i>&colon; </p>
-			<p><i>Techniques</i>&colon; </p>
-			<p></p>
-			<p><i>Specialties</i>&colon; </p>
-			<p><i>Optional Specialties</i>&colon; </p>
-			<p><i>Modifiers</i>&colon; </p>
-			<p><i>See</i>&colon; </p>
-			<p><i>See also</i>&colon; </p>
-			<p><i>Examples</i>&colon; </p>
-			<p><i>References</i>&colon; </p>
-		  </div>
+      <h2 id="TableofContents">Table of Contents</h2>
+    </section>
+    <section id="AttributesandCharacteristicsSection">
+      <h2 id="AttributesandCharacteristicsChapter" class="chapter">Attributes and Characteristics</h2>
+    </section>
+    <section id="AdvantagesPerksDisadvantagesQuirksFeaturesandModifiersSection">
+      <h2 id="APDQFaMChapter" class="chapter">Traits</h2>
+      <div id="ListofTraits">
+        <h3>List of Traits</h3>
+	<div id="TraitTemplatediv"></div>
+          <h4 id="Trait">Template</h4>
+	    <p>	points</p>
+	    <p></p>
+	    <p><i>Levels</i>&colon;</p>
+	    <p><i>Enhancements</i>&colon;</p>
+	    <p><i>Special Enhancements</i>&colon;</p>
+	    <p><i>Limitations</i>&colon;</p>
+	    <p><i>Special Limitations</i>&colon;</p>
+	    <p><i>See</i>&colon;</p>
+	    <p><i>References</i>&colon;</p>
+	  </div>
+    </section>
+    <section id="ChapterSkillsandTechniquesSection">
+      <h2 id="ChapterSkillsandTechniques" class="chapter">Skills and Techniques</h2>
+      <div id="ListofSkillsdiv">
+	<h3>List of Skills</h3>
+	<div id="SkillTemplatediv">
+	  <h4 id="Skill">Template</h4>
+	    <p>	Skill</p>
+	    <p><i>Defaults</i>&colon; </p>
+	    <p><i>Prerequisites</i>&colon; </p>
+            <p><i>Techniques</i>&colon; </p>
+            <p></p>
+	    <p><i>Specialties</i>&colon; </p>
+            <p><i>Optional Specialties</i>&colon; </p>
+	    <p><i>Modifiers</i>&colon; </p>
+            <p><i>See</i>&colon; </p>
+	    <p><i>See also</i>&colon; </p>
+            <p><i>Examples</i>&colon; </p>
+	    <p><i>References</i>&colon; </p>
+        </div>
 		  <div id="ArtistSkilldiv">
 		  <h4 id="ArtistSkill">Artist&dagger;</h4>
 			<p>IQ/Hard	Skill</p>
