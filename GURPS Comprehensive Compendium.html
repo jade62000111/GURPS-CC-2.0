@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE xhtml>
 <html>
   <head>
     <section id="HeadCallsLinksMetasScriptsandStyles"> <!-- HCLMSS sounds so official  -->
@@ -20,283 +20,290 @@
 	    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 	  </section>
 	  <section id="StylesSubsection">
-	    <style id="InternalCSSStyle">
-			/* Internal CSS */
+	    <style>
+			body { 
+				counter-reset: bibliography;
+				counter-reset: chapter;
+			}
 			/* Auto Numbering Chapter styling */
+			h2.chapter::before {
+				counter-increment: chapter;
+				content: "Chapter "counter(chapter)": ";
+			}
+			/* Itterative skip on ols */
+			.skip { /* Needs work to ensure the numbering doesn't decrement or skip correctly */
+				counter-increment:bibliography none;
+				list-style-type: none;
+				
+			}
+			/* Hidden links with highlight */
+			a.hidden {
+				text-decoration: none;
+				color: black;
+			}
+			a.hidden:hover, a.hidden:active {
+				color: red;
+			}
 		</style>
 	  </section>
 	</section>
     <title>GURPS Comprehensive Compendium</title>
 	<h1>GURPS Comprehensive Compendium</h1>
-	  <p>By jade62000111</p>
-	  <p>Welcome to GURPS</p>
+	  <p>Compiled by jade62000111</p>
+	  <p>Welcome to <i><b>GURPS</b></i></p>
   </head>
   <body>
-      <section id="TableofContentsSection">
-	    <h1 id="TableofContents">Table of Contents</h1>
-	  </section>
-	  <section id="GURPSCCIntroduction">
-		<h1>Introduction</h1>
-		  <h2>A comprehensive collection of GURPS 4<sup>th</sup> Edition rules.</h2>
-		    <p>Rules (items, spells, concepts) from other GURPS Editions have been updated to 4<sup>th</sup> Edition statistics here and will be cited as such and have the changes noted.</p>
-	  </section>
-	  <section id="AdvantagesPerksDisadvantagesQuirksandModifiersSection">
-		<h1 id="APDQaM">Chapter :</h1>
-		  <div id="ListofTraits">
-		  <h2>List of Traits</h2>
-		    <div id="TraitTemplatediv">
-			  <h3 id="Trait">Template</h3>
-			    <p>	points</p>
-			    <p></p>
-			    <p><i>Levels</i>&colon;</p>
-			    <p><i>Enhancements</i>&colon;</p>
-			    <p><i>Special Enhancements</i>&colon;</p>
-			    <p><i>Limitations</i>&colon;</p>
-			    <p><i>Special Limitations</i>&colon;</p>
-			    <p><i>See</i>&colon;</p>
-			    <p><i>References</i>&colon;</p>
-			</div>
-			<div>
-			  <h3 id="Trait">Template</h3>
-			    <p>	points</p>
-				<p></p>
-				<p><i>Levels</i>&colon;</p>
-				<p><i>Enhancements</i>&colon;</p>
-				<p><i>Special Enhancements</i>&colon;</p>
-				<p><i>Limitations</i>&colon;</p>
-				<p><i>Special Limitations</i>&colon;</p>
-				<p><i>See</i>&colon;</p>
-				<p><i>References</i>&colon;</p>
-			</div>
+    <section id="TableofContentsSection">
+	  <h2 id="TableofContents">Table of Contents</h2>
+	</section>
+	<section id="AttributesandCharacteristicsSection">
+	  <h2 id="AttributesandCharacteristicsChapter" class="chapter">Attributes and Characteristics</h2>
+	</section>
+	<section id="AdvantagesPerksDisadvantagesQuirksFeaturesandModifiersSection">
+	  <h2 id="APDQFaMChapter" class="chapter">Traits</h2>
+		<div id="ListofTraits">
+		<h3>List of Traits</h3>
+		  <div id="TraitTemplatediv"></div>
+		  <h4 id="Trait">Template</h4>
+			<p>	points</p>
+			<p></p>
+			<p><i>Levels</i>&colon;</p>
+			<p><i>Enhancements</i>&colon;</p>
+			<p><i>Special Enhancements</i>&colon;</p>
+			<p><i>Limitations</i>&colon;</p>
+			<p><i>Special Limitations</i>&colon;</p>
+			<p><i>See</i>&colon;</p>
+			<p><i>References</i>&colon;</p>
+		</div>
+	</section>
+	<section id="ChapterSkillsandTechniquesSection">
+	  <h2 id="ChapterSkillsandTechniques" class="chapter">Skills and Techniques</h2>
+		<div id="ListofSkillsdiv">
+		<h3>List of Skills</h3>
+		  <div id="SkillTemplatediv">
+		  <h4 id="Skill">Template</h4>
+			<p>	Skill</p>
+			<p><i>Defaults</i>&colon; </p>
+			<p><i>Prerequisites</i>&colon; </p>
+			<p><i>Techniques</i>&colon; </p>
+			<p></p>
+			<p><i>Specialties</i>&colon; </p>
+			<p><i>Optional Specialties</i>&colon; </p>
+			<p><i>Modifiers</i>&colon; </p>
+			<p><i>See</i>&colon; </p>
+			<p><i>See also</i>&colon; </p>
+			<p><i>Examples</i>&colon; </p>
+			<p><i>References</i>&colon; </p>
 		  </div>
-	  </section>
-	  <section id="ChapterSkillsandTechniquesSection">
-	    <h1 id="ChapterSkillsandTechniques">Chapter : </h1>
-		  <div id="ListofSkillsdiv">
-		  <h2>List of Skills</h2>
-		    <div id="SkillTemplatediv">
-			<h3 id="Skill">Template</h3>
-			  <p>	Skill</p>
-			  <p><i>Defaults</i>&colon; </p>
-			  <p><i>Prerequisites</i>&colon; </p>
-			  <p><i>Techniques</i>&colon; </p>
-			  <p></p>
-			  <p><i>Specialties</i>&colon; </p>
-			  <p><i>Optional Specialties</i>&colon; </p>
-			  <p><i>Modifiers</i>&colon; </p>
-			  <p><i>See</i>&colon; </p>
-			  <p><i>See also</i>&colon; </p>
-			  <p><i>Examples</i>&colon; </p>
-			  <p><i>References</i>&colon; </p>
-			</div>
-			<div id="ArtistSkilldiv">
-		    <h3 id="ArtistSkill">Artist&dagger;</h3>
-			  <p>IQ/Hard	Skill</p>
-		      <p><i>Defaults</i>&colon; Artist (other)&minus;var&period;&semi; IQ&minus;6&period;</p>
-	  		  <p><i>Prerequisites</i>&colon; None.</p>
-			  <p><i>Techniques</i>&colon; </p>
-			  <p></p>
-			  <p><i>Specialties</i>&colon; Body Art&semi; Calligraphy&semi; Drawing&semi; Featherworking&semi; Hollographic&sol;TL&semi; Illumination&semi; Illusion&semi; Interior Decorating&semi; Needlecraft&semi; Painting&semi; Pottery&semi; Sculpting&semi; Sensie Interface&sol;TL&semi; Woodworking&period;</p>
-			  <p><i>Optional Specialties</i>&colon; An artist of any kind can take a further optional specialty &lpar;p&period; B&colon;169&rpar; in a particular medium or technique.</p>
-			  <p><i>Modifiers</i>&colon; Equipment &lpar;B&colon;345&rpar;&comma; Time Spent &lpar;B&colon;346&rpar;&period;</p>
-			  <!-- <p><i>See</i>&colon; </p> -->
-			  <!-- <p><i>See also</i>&colon; </p> -->
-			  <!-- <p><i>Examples</i>&colon; </p> -->
-			  <p><i>References</i>&colon; B&colon;179&semi; <a href="http://forums.sjgames.com/showthread.php?p=569153&highlight=Artist#post569153">Dr. Kromm</a> &lsqb;<a href="http://forums.sjgames.com/showthread.php?p=569153&highlight=Artist#post569153" target="_blank">http://forums.sjgames.com/showthread.php?p=569153&highlight=Artist#post569153</a>&rsqb;&comma; &lsqb;SJG Forum Profile &lsqb;<a href="https://forums.sjgames.com/member.php?u=5">https://forums.sjgames.com/member.php?u=5</a>&rsqb;&rsqb;&semi; <a href="">GURPS Fandom</a> [<a href="https://gurps.fandom.com/wiki/Artist">https://gurps.fandom.com/wiki/Artist</a>&rsqb;&period;</p>
-			<h3 id="ArtistCaligraphySkill">Artist &lpar;Caligraphy&rpar;</h3>
-			  <p>IQ/Hard	Skill</p>
-		      <p><i>Defaults</i>&colon; Artist (Drawing)&minus;2; Artist (Illumination)&minus;2; Artist (Painting)&minus;2; Artist (Body Art)&minus;4; Artist (other)&minus;6; IQ&minus;6&period;</p>
-	  		  <p><i>Prerequisites</i>&colon; None&period;</p>
-			  <p><i>Techniques</i>&colon; &period;</p>
-			  <p>Beautiful and decorative handwriting&period; You need not be literate&excl; &lpar;B&colon;179&rpar;</p>
-			  <p><i>Optional Specialties</i>&colon; By tool or language/script:</p>
-				<details><summary>Tool examples&colon;</summary>
-				  <ul>
-			        <li><details><summary>Chiselled Marker &lpar;TL7&rpar;&semi;</summary><img src="img/other/ChiseledMarkerTL7.jpg" alt="Extra Large Chisel Tip Permanent Marker" loading="lazy" style="max-width:100%; max-height:100%"></details></li>
-			        <li><details><summary>Dip Pen &lpar;TL5&rpar;&semi;</summary><img src="img/other/DipPenTL5.webp" alt="" loading="lazy" style="max-width:100%; max-height:100%;"></details></li>
-					<li><details><summary>Fountain Pen &lpar;TL6&rpar;&colon; Similar to a dip pen in design but with an internal resevoir &lpar;jade62000111&rpar;&semi;</summary><img src="img/other/FountainPenTL6.webp" alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;"></details></li>
-					<li><details><summary>Ink Brush &lpar;TL2&rpar;&semi;</summary><img src="img/other/InkBrushTL2." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;"></details></li>
-					<li><details><summary>Qalam &lpar;TL1&rpar;&semi;</summary><img src="img/other/QalamTL1." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;"></details></li>
-					<li><details><summary>Quill &lpar;TL1&rpar;&semi;</summary><img src="img/other/QuillTL1." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;"></details></li>
-					<li><details><summary>Reed Pen &lpar;TL1&rpar;&period;</summary><img src="img/other/ReedPenTL1." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;"></details></li>
-				  </ul>
-				</details>
-				<details><summary>Language or Script examples&colon;</summary>
-				  <ul>
-					<li>Armenian&comma; Wikipedia &lsqb;&rsqb;&semi;</li>
-				    <li>Badlit&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Bisayan_languages]&semi; </li>
-				    <li>Baybayin &lpar;<span lang="tgl-Tglg" style="font-family:'Noto Sans Tagalog'">&#x170A;&#x170C;&#x1714;&#x170A;&#x170C;&#x1712;&#x1708;&#x1714;</span>&comma; Pronunciation&colon; Tagalog&colon; <span id="tgl-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/Tagalog" target="_top">baj&#x2C8;baj&#x26A;n</a></span>&rpar; or Sulat Tagalog &lpar;<span lang="tgl-Tglg" style="font-family:'Noto Sans Tagalog'">&#x1710;&#x1713;&#x170E;&#x1706;&#x1714; &#x1706;&#x1704;&#x170E;&#x1713;&#x1704;&#x1714;</span>&rpar; or Basahan &lpar;<span lang="tgl-Tglg" style="font-family:'Noto Sans Tagalog'">&#x170A;&#x1710;&#x1711;&#x170B;&#x1714;</span>&rpar;, Wikipedia &lsqb;https://en.wikipedia.org/wiki/Baybayin&rsqb;&semi;</li>
-				    <li><a>Buhid (<span lang="bku-Buhd" style="font-family:'Noto Sans Buhid'">&#x174A;&#x1753;&#x1751;&#x1752;</span>), Wikipedia [https://en.wikipedia.org/wiki/Kulitan]&semi;</a></li>
-				    <li>Chinese Calligraphy or Sh&umacr;f&#x1CE; (&#x66F8;&#x6CD5;/&#x4E66;&#x6CD5;) or F&#x1CE;sh&umacr; (&#x6CD5;&#x66F8;/&#x6CD5;&#x4E66;), Wikipedia [https://en.wikipedia.org/wiki/Chinese_calligraphy]&semi;</li>
-				    <li>Cyrillic Calligraphy See Vyaz&period;&semi;</li>
- 				    <li>Egyptian Heiroglyphs &lsqb;Pronunciation&colon; English&colon; &sol;&#x2C8;ha&#x26A;ro&#x28A;&#x2CC;ɡl&#x26A;fs&sol;&rsqb; (<span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'; writing-mode:vertical-rl;">&#x1308B;&#x133E4;</span><span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'; writing-mode:vertical-rl;">&#x13216;&#x1318E;</span><span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs';">&#x13153;</span><span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'; writing-mode:vertical-rl;">&#x133CF;&#x13296;</span><!--<span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'">&#x13432;&#x1308B;&#x13430;&#x133E4;&#x13435;&#x13432;&#x13216;&#x13430;&#x1318E;&#x13435;&#x13153;&#x13432;&#x133CF;&#x13430;&#x13296;&#x13435;</span>-->&comma; Wiktionary &lsqb;https://en.wiktionary.org/wiki/r_n_kmt&rsqb;&rpar;&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Egyptian_hieroglyphs&rsqb;&semi;</li>
-				    <li>Ge&apos;ez (<span lang="gez-Ethi" style="font-family:'Noto Sans Ethiopic'">ግዕዝ</span>&semi; romanization&colon;Gəʽəz&semi; Pronunciation&colon; English&colon; <span lang="eng-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/English">/ˈɡiːɛz/</a></span>&comma; Ge&apos;ez&colon; <span><a href="https://en.wikipedia.org/wiki/Help:IPA">[ˈɡɨʕɨz]</a></span>), Wikipedia [<a>https://en.wikipedia.org/wiki/Ge%CA%BDez_script</a>]&semi;</li>
-				    <li>Georgian Calligraphy &lpar;Georgian&colon; <span lang="kat-Geor">&#x10E5;&#x10D0;&#x10E0;&#x10D7;&#x10E3;&#x10DA;&#x10D8; &#x10D9;&#x10D0;&#x10DA;&#x10D8;&#x10D2;&#x10E0;&#x10D0;&#x10E4;&#x10D8;&#x10D0;</span>&comma; <a href="https://en.wikipedia.org/wiki/Romanization_of_Georgian" target="_top">romanized</a>&colon; kartuli k&apos;aligrapia&rpar;&semi;</li>
-				    <li>Gothic Caligraphy&semi;</li>
-				    <li>Greek Calligraphy&semi;</li>
-				    <li>Hanun&oacute;&apos;o (<span lang="hnn-Hano" style="font-family:'Noto Sans Hanunoo'">&#x1731;&#x1728;&#x1733;&#x1728;&#x1733;&#x1722;</span>&comma; Pronunciation&colon; Tagalog&colon; <span lang="tgl-fonipa">hanunu&#x294;&#x254;</span>) or Mangyan Baybayin or Surat Mangyan, Wikipedia [https://en.wikipedia.org/wiki/Hanunoo_script]&semi;</li>
-				    <li>Iniskaya&comma; Wikipedia &lsqb;<a>https://en.wikipedia.org/wiki/Eskayan_language</a>&rsqb;&semi;</li>
-				    <li>Kufic (الخط الكوفي, al-khaṭṭ al-kūfī), Wikipedia [https://en.wikipedia.org/wiki/Kufic]&semi;</li>
-				    <li>Kulitan ( ), Wikipedia [https://en.wikipedia.org/wiki/Kulitan]&semi;</li>
-				    <li>Latin Caligraphy&semi;</li>
-				    <li>Maya Glyphs <!--&lpar;<span lang="emy-Maya"></span>&rpar;-->&comma; Wikipedia [https://en.wikipedia.org/wiki/Maya_script]&semi;</li>
-				    <li>Mongolian, Wikipedia [https://en.wikipedia.org/wiki/Mongolian_calligraphy]&semi;</li>
-				    <li>Muhaqqaq, Wikipedia [https://en.wikipedia.org/wiki/Muhaqqaq]&semi;</li>
-				    <li>Naskh, Wikipedia [https://en.wikipedia.org/wiki/Naskh_(script)]&semi;</li>
-				    <li>Nastaliq or Nasta&#x2BF;l&imacr;q or Nastaleeq &lpar;<span lang="ara-Aran" style="direction:rtl">&#1606;&#1614;&#1587;&#1618;&#1578;&#1614;&#1593;&#1618;&#1604;&#1616;&#1740;&#1602;</span>&rpar; &lsqb;Pronunciation&colon; English&colon; <span lang="eng-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_top">&sol;&#x2CC;n&aelig;st&#x259;&#x2C8;li&#x2D0;k</a>&comma; <a href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_top">&#x2C8;n&aelig;st&#x259;li&#x2D0;k/</a></span>&comma; Persian&colon; <span lang="fas-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/Persian" target="_top">næstʰæʔliːq</a></span>&comma; Urdu&colon; <span lang="urd-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/Hindi_and_Urdu" target="_top">nəst̪ɑːliːq</a></span>&rsqb;&period; An example of Arabic calligraphy&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Nastaliq&rsqb;</li>
-				    <li>Ra&ntilde;jan&amacr;&comma; Wikipedia [https://en.wikipedia.org/wiki/Ranjana_script]&semi;</li>
-				    <li>Req&amacr;&#x2BF; (رِقَاع), Wikipedia [https://en.wikipedia.org/wiki/Reqa%27]&semi;</li>
-				    <li>Seoye (서예) or Korean Caligraphy, Wikipedia [https://en.wikipedia.org/wiki/Korean_calligraphy]&semi;</li>
-					<li>Shodō (書道) or Shūji (習字) or Japanese Calligraphy, Wikipedia [https://en.wikipedia.org/wiki/Japanese_calligraphy]&semi;</li>
-				    <li>Tagbanwa (ᝰᝳᝬ), Wikipedia [https://en.wikipedia.org/wiki/Tagbanwa_script]&semi;</li>
-				    <li>Th&#x1B0; ph&aacute;p (書法) or Vietnamese calligraphy, Wikipedia [https://en.wikipedia.org/wiki/Vietnamese_calligraphy&rsqb;&semi;</li>
-				    <li>Thuluth (Arabic: ثُلُث, Ṯuluṯ, <span lang="ara-" style="direction:rtl">خَطُّ الثُّلُثِ</span>, Ḵa&#x1E6D;&#x1E6D;&#x2D;u&#x1E6F;&#x2D;&#x1E6E;ulu&#x1E6F;; Persian: ثلث, Sols; Turkish: Sülüs)&semi;</li>
-				    <li>Uchen (དབུ་ཅན Wylie: dbu-can), Wikipedia [https://en.wikipedia.org/wiki/Uchen_script];</li>
-				    <li>Um&ecirc; (དབུ་མེད་ Wylie: dbu-med), Wikipedia [https://en.wikipedia.org/wiki/Um%C3%AA_script]&semi;</li>
-				    <li>Vyaz &lpar;Russian&colon; <span lang="rus">&vcy;&yacy;&zcy;&softcy;</span>&comma; Church Slavonic&colon; <span lang="chu">&vcy;&#x469;&zcy;&acy;&tcy;&icy; &#x2C32;&#x2C57;&#x2C38;&#x2C30;&#x2C45;&#x2C3B;</span>&rpar;&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Vyaz_(Cyrillic_calligraphy)&rsqb;&period;</li>
-				  </ul>
-				  </details>
-			  <p><i>Modifiers</i>&colon; Equipment &lpar;B&colon;345&rpar;&comma; Time Spent &lpar;B&colon;346&rpar;&comma; &minus;2 if the medium is unfamiliar &lpar;e&period;g&period; tempera when you are used to oils&rpar;&comma; &minus;5 if the medium is difficult &lpar;e&period;g&period; marble for a sculptor&rpar;&period;</p>
-			  <p><i>See</i>&colon; <a href="#ArtistSkill">Artist&dagger;</a>&period;</p>
-			  <!-- <p><i>See also</i>&colon; </p> -->
-			  <!-- <p><i>Examples</i>&colon; </p> -->
-			  <p><i>References</i>&colon; B&colon;179&period;</p>
-			</div>
-			<div id="TwoHandedSwordSkilldiv">
-			<h3 id="TwoHandedSwordArtSkill">Two-Handed Sword Art</h3>
-			  <p>DX/Average	Skill</p>
-			  <p><i>Defaults</i>&colon; Two-Handed Sword&minus;3&semi; Two-Handed Sword Sport&minus;3&semi; Broadsword&minus;4&semi; Force Sword&minus;4&period;</p>
-			  <p><i>Prerequisites</i>&colon; None.</p>
-			  <p><i>Techniques</i>&colon; </p>
-		      <p>Any balanced, two-handed blade over 4 feet in length: greatswords, zweihanders, etc. This skill also covers quarterstaffs wielded like swords, as well as bastard swords, katanas, and longswords used two-handed.</p>
-			  <p><i>Modifiers</i>&colon; Equipment and Time Spent.</p>
-			  <p><i>See</i>&colon; <a href="TwoHandedSwordSkill">Two-Handed Sword</a>&period;</p>
-			  <details><summary><i>Examples:</i></summary>
-			    <p>Video of Two-Handed Sword Art</p><video width="" height="" controls loop muted title="TwoHandedSwordArtExample"><source src=".\lib\vid\rand\TwoHandedSwordArt_Example_480.mp4"><!-- <source src=".\lib\vid\rand\TwoHandedSwordArt_Example_360.mp4"> --></video>
+		  <div id="ArtistSkilldiv">
+		  <h4 id="ArtistSkill">Artist&dagger;</h4>
+			<p>IQ/Hard	Skill</p>
+		    <p><i>Defaults</i>&colon; Artist (other)&minus;var&period;&semi; IQ&minus;6&period;</p>
+	  		<p><i>Prerequisites</i>&colon; None.</p>
+			<p><i>Techniques</i>&colon; </p>
+			<p></p>
+			<p><i>Specialties</i>&colon; Body Art&semi; Calligraphy&semi; Drawing&semi; Featherworking&semi; Hollographic&sol;TL&semi; Illumination&semi; Illusion&semi; Interior Decorating&semi; Needlecraft&semi; Painting&semi; Pottery&semi; Sculpting&semi; Sensie Interface&sol;TL&semi; Woodworking&period;</p>
+			<p><i>Optional Specialties</i>&colon; An artist of any kind can take a further optional specialty &lpar;p&period; B&colon;169&rpar; in a particular medium or technique.</p>
+			<p><i>Modifiers</i>&colon; Equipment &lpar;B&colon;345&rpar;&comma; Time Spent &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=350" target="_blank">346</a>&rpar;&period;</p>
+			<!-- <p><i>See</i>&colon; </p> -->
+			<!-- <p><i>See also</i>&colon; </p> -->
+			<!-- <p><i>Examples</i>&colon; </p> -->
+			<p><i>References</i>&colon; B&colon;179&semi; <a href="http://forums.sjgames.com/showthread.php?p=569153&highlight=Artist#post569153">Dr. Kromm</a> &lsqb;<a href="http://forums.sjgames.com/showthread.php?p=569153&highlight=Artist#post569153" target="_blank">http://forums.sjgames.com/showthread.php?p=569153&highlight=Artist#post569153</a>&rsqb;&comma; &lsqb;SJG Forum Profile &lsqb;<a href="https://forums.sjgames.com/member.php?u=5">https://forums.sjgames.com/member.php?u=5</a>&rsqb;&rsqb;&semi; <a href="">GURPS Fandom</a> [<a href="https://gurps.fandom.com/wiki/Artist">https://gurps.fandom.com/wiki/Artist</a>&rsqb;&period;</p>
+		  <h4 id="ArtistCaligraphySkill">Artist &lpar;Caligraphy&rpar;</h4>
+			<p>IQ/Hard	Skill</p>
+		    <p><i>Defaults</i>&colon; Artist (Drawing)&minus;2; Artist (Illumination)&minus;2; Artist (Painting)&minus;2; Artist (Body Art)&minus;4; Artist (other)&minus;6; IQ&minus;6&period;</p>
+	  		<p><i>Prerequisites</i>&colon; None&period;</p>
+			<p><i>Techniques</i>&colon; &period;</p>
+			<p>Beautiful and decorative handwriting&period; You need not be literate&excl; &lpar;B&colon;179&rpar;</p>
+			<p><i>Optional Specialties</i>&colon; By tool or language/script:</p>
+			  <details><summary>Tool examples&colon;</summary>
+				<ul>
+			      <li><details><summary>Chiselled Marker &lpar;TL7&rpar;&semi;</summary><img src="img/other/ChiseledMarkerTL7.jpg" alt="Extra Large Chisel Tip Permanent Marker" loading="lazy" style="max-width:100%; max-height:100%" /></details></li>
+			      <li><details><summary>Dip Pen &lpar;TL5&rpar;&semi;</summary><img src="img/other/DipPenTL5.webp" alt="" loading="lazy" style="max-width:100%; max-height:100%;" /></details></li>
+				  <li><details><summary>Fountain Pen &lpar;TL6&rpar;&colon; Similar to a dip pen in design but with an internal resevoir &lpar;jade62000111&rpar;&semi;</summary><img src="img/other/FountainPenTL6.webp" alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;" /></details></li>
+				  <li><details><summary>Ink Brush &lpar;TL2&rpar;&semi;</summary><img src="img/other/InkBrushTL2." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;" /></details></li>
+				  <li><details><summary>Qalam &lpar;TL1&rpar;&semi;</summary><img src="img/other/QalamTL1." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;" /></details></li>
+				  <li><details><summary>Quill &lpar;TL1&rpar;&semi;</summary><img src="img/other/QuillTL1." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;" /></details></li>
+				  <li><details><summary>Reed Pen &lpar;TL1&rpar;&period;</summary><img src="img/other/ReedPenTL1." alt="Fancy Fountain Pen" loading="lazy" style="max-width:100%; max-height:100%;" /></details></li>
+				</ul>
 			  </details>
-			  <p><i>References</i>&colon; B&colon;209</p>
-			</div>
+			  <details><summary>Language or Script examples&colon;</summary>
+				<ul>
+				  <li>Armenian&comma; Wikipedia &lsqb;&rsqb;&semi;</li>
+				  <li>Badlit&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Bisayan_languages]&semi; </li>
+				  <li>Baybayin &lpar;<span lang="tgl-Tglg" style="font-family:'Noto Sans Tagalog'">&#x170A;&#x170C;&#x1714;&#x170A;&#x170C;&#x1712;&#x1708;&#x1714;</span>&comma; Pronunciation&colon; Tagalog&colon; <span id="tgl-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/Tagalog" target="_top">baj&#x2C8;baj&#x26A;n</a></span>&rpar; or Sulat Tagalog &lpar;<span lang="tgl-Tglg" style="font-family:'Noto Sans Tagalog'">&#x1710;&#x1713;&#x170E;&#x1706;&#x1714; &#x1706;&#x1704;&#x170E;&#x1713;&#x1704;&#x1714;</span>&rpar; or Basahan &lpar;<span lang="tgl-Tglg" style="font-family:'Noto Sans Tagalog'">&#x170A;&#x1710;&#x1711;&#x170B;&#x1714;</span>&rpar;, Wikipedia &lsqb;https://en.wikipedia.org/wiki/Baybayin&rsqb;&semi;</li>
+				  <li><a>Buhid (<span lang="bku-Buhd" style="font-family:'Noto Sans Buhid'">&#x174A;&#x1753;&#x1751;&#x1752;</span>), Wikipedia [https://en.wikipedia.org/wiki/Kulitan]&semi;</a></li>
+				  <li>Chinese Calligraphy or Sh&umacr;f&#x1CE; (&#x66F8;&#x6CD5;/&#x4E66;&#x6CD5;) or F&#x1CE;sh&umacr; (&#x6CD5;&#x66F8;/&#x6CD5;&#x4E66;), Wikipedia [https://en.wikipedia.org/wiki/Chinese_calligraphy]&semi;</li>
+				  <li>Cyrillic Calligraphy See Vyaz&period;&semi;</li>
+ 				  <li>Egyptian Heiroglyphs &lsqb;Pronunciation&colon; English&colon; &sol;&#x2C8;ha&#x26A;ro&#x28A;&#x2CC;ɡl&#x26A;fs&sol;&rsqb; (<span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'; writing-mode:vertical-rl;">&#x1308B;&#x133E4;</span><span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'; writing-mode:vertical-rl;">&#x13216;&#x1318E;</span><span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs';">&#x13153;</span><span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'; writing-mode:vertical-rl;">&#x133CF;&#x13296;</span><!--<span lang="egy-Egyp" style="font-family:'Noto Sans Egyptian Heiroglyphs'">&#x13432;&#x1308B;&#x13430;&#x133E4;&#x13435;&#x13432;&#x13216;&#x13430;&#x1318E;&#x13435;&#x13153;&#x13432;&#x133CF;&#x13430;&#x13296;&#x13435;</span>-->&comma; Wiktionary &lsqb;https://en.wiktionary.org/wiki/r_n_kmt&rsqb;&rpar;&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Egyptian_hieroglyphs&rsqb;&semi;</li>
+				  <li>Ge&apos;ez (<span lang="gez-Ethi" style="font-family:'Noto Sans Ethiopic'">ግዕዝ</span>&semi; romanization&colon;Gəʽəz&semi; Pronunciation&colon; English&colon; <span lang="eng-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/English">/ˈɡiːɛz/</a></span>&comma; Ge&apos;ez&colon; <span><a href="https://en.wikipedia.org/wiki/Help:IPA">[ˈɡɨʕɨz]</a></span>), Wikipedia [<a>https://en.wikipedia.org/wiki/Ge%CA%BDez_script</a>]&semi;</li>
+				  <li>Georgian Calligraphy &lpar;Georgian&colon; <span lang="kat-Geor">&#x10E5;&#x10D0;&#x10E0;&#x10D7;&#x10E3;&#x10DA;&#x10D8; &#x10D9;&#x10D0;&#x10DA;&#x10D8;&#x10D2;&#x10E0;&#x10D0;&#x10E4;&#x10D8;&#x10D0;</span>&comma; <a href="https://en.wikipedia.org/wiki/Romanization_of_Georgian" target="_top">romanized</a>&colon; kartuli k&apos;aligrapia&rpar;&semi;</li>
+				  <li>Gothic Caligraphy&semi;</li>
+				  <li>Greek Calligraphy&semi;</li>
+				  <li>Hanun&oacute;&apos;o (<span lang="hnn-Hano" style="font-family:'Noto Sans Hanunoo'">&#x1731;&#x1728;&#x1733;&#x1728;&#x1733;&#x1722;</span>&comma; Pronunciation&colon; Tagalog&colon; <span lang="tgl-fonipa">hanunu&#x294;&#x254;</span>) or Mangyan Baybayin or Surat Mangyan, Wikipedia [https://en.wikipedia.org/wiki/Hanunoo_script]&semi;</li>
+				  <li>Iniskaya&comma; Wikipedia &lsqb;<a>https://en.wikipedia.org/wiki/Eskayan_language</a>&rsqb;&semi;</li>
+				  <li>Kufic (الخط الكوفي, al-khaṭṭ al-kūfī), Wikipedia [https://en.wikipedia.org/wiki/Kufic]&semi;</li>
+				  <li>Kulitan ( ), Wikipedia [https://en.wikipedia.org/wiki/Kulitan]&semi;</li>
+				  <li>Latin Caligraphy&semi;</li>
+				  <li>Maya Glyphs <!--&lpar;<span lang="emy-Maya"></span>&rpar;-->&comma; Wikipedia [https://en.wikipedia.org/wiki/Maya_script]&semi;</li>
+				  <li>Mongolian, Wikipedia [https://en.wikipedia.org/wiki/Mongolian_calligraphy]&semi;</li>
+				  <li>Muhaqqaq, Wikipedia [https://en.wikipedia.org/wiki/Muhaqqaq]&semi;</li>
+				  <li>Naskh, Wikipedia [https://en.wikipedia.org/wiki/Naskh_(script)]&semi;</li>
+				  <li>Nastaliq or Nasta&#x2BF;l&imacr;q or Nastaleeq &lpar;<span lang="ara-Aran" style="direction:rtl">&#1606;&#1614;&#1587;&#1618;&#1578;&#1614;&#1593;&#1618;&#1604;&#1616;&#1740;&#1602;</span>&rpar; &lsqb;Pronunciation&colon; English&colon; <span lang="eng-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_top">&sol;&#x2CC;n&aelig;st&#x259;&#x2C8;li&#x2D0;k</a>&comma; <a href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_top">&#x2C8;n&aelig;st&#x259;li&#x2D0;k/</a></span>&comma; Persian&colon; <span lang="fas-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/Persian" target="_top">næstʰæʔliːq</a></span>&comma; Urdu&colon; <span lang="urd-fonipa"><a href="https://en.wikipedia.org/wiki/Help:IPA/Hindi_and_Urdu" target="_top">nəst̪ɑːliːq</a></span>&rsqb;&period; An example of Arabic calligraphy&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Nastaliq&rsqb;</li>
+				  <li>Ra&ntilde;jan&amacr;&comma; Wikipedia [https://en.wikipedia.org/wiki/Ranjana_script]&semi;</li>
+				  <li>Req&amacr;&#x2BF; (رِقَاع), Wikipedia [https://en.wikipedia.org/wiki/Reqa%27]&semi;</li>
+				  <li>Seoye (서예) or Korean Caligraphy, Wikipedia [https://en.wikipedia.org/wiki/Korean_calligraphy]&semi;</li>
+				  <li>Shodō (書道) or Shūji (習字) or Japanese Calligraphy, Wikipedia [https://en.wikipedia.org/wiki/Japanese_calligraphy]&semi;</li>
+				  <li>Tagbanwa (ᝰᝳᝬ), Wikipedia [https://en.wikipedia.org/wiki/Tagbanwa_script]&semi;</li>
+				  <li>Th&#x1B0; ph&aacute;p (書法) or Vietnamese calligraphy, Wikipedia [https://en.wikipedia.org/wiki/Vietnamese_calligraphy&rsqb;&semi;</li>
+				  <li>Thuluth (Arabic: ثُلُث, Ṯuluṯ, <span lang="ara-" style="direction:rtl">خَطُّ الثُّلُثِ</span>, Ḵa&#x1E6D;&#x1E6D;&#x2D;u&#x1E6F;&#x2D;&#x1E6E;ulu&#x1E6F;; Persian: ثلث, Sols; Turkish: Sülüs)&semi;</li>
+				  <li>Uchen (དབུ་ཅན Wylie: dbu-can), Wikipedia [https://en.wikipedia.org/wiki/Uchen_script];</li>
+				  <li>Um&ecirc; (དབུ་མེད་ Wylie: dbu-med), Wikipedia [https://en.wikipedia.org/wiki/Um%C3%AA_script]&semi;</li>
+				 <li>Vyaz &lpar;Russian&colon; <span lang="rus">&vcy;&yacy;&zcy;&softcy;</span>&comma; Church Slavonic&colon; <span lang="chu">&vcy;&#x469;&zcy;&acy;&tcy;&icy; &#x2C32;&#x2C57;&#x2C38;&#x2C30;&#x2C45;&#x2C3B;</span>&rpar;&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Vyaz_(Cyrillic_calligraphy)&rsqb;&period;</li>
+				</ul>
+				</details>
+			<p><i>Modifiers</i>&colon; Equipment &lpar;B&colon;345&rpar;&comma; Time Spent &lpar;B&colon;346&rpar;&comma; &minus;2 if the medium is unfamiliar &lpar;e&period;g&period; tempera when you are used to oils&rpar;&comma; &minus;5 if the medium is difficult &lpar;e&period;g&period; marble for a sculptor&rpar;&period;</p>
+			<p><i>See</i>&colon; <a href="#ArtistSkill">Artist&dagger;</a>&period;</p>
+			<!-- <p><i>See also</i>&colon; </p> -->
+			<!-- <p><i>Examples</i>&colon; </p> -->
+			<p><i>References</i>&colon; B&colon;179&period;</p>
 		  </div>
-	  </section>
-	  <section id="SuccessRolls">
-	    <h1>Physical Activities</h1>
+		  <div id="TwoHandedSwordSkilldiv">
+		  <h4 id="TwoHandedSwordArtSkill">Two-Handed Sword Art</h4>
+			<p>DX/Average	Skill</p>
+			<p><i>Defaults</i>&colon; Two-Handed Sword&minus;3&semi; Two-Handed Sword Sport&minus;3&semi; Broadsword&minus;4&semi; Force Sword&minus;4&period;</p>
+			<p><i>Prerequisites</i>&colon; None.</p>
+			<p><i>Techniques</i>&colon; </p>
+		    <p>Any balanced, two-handed blade over 4 feet in length: greatswords, zweihanders, etc. This skill also covers quarterstaffs wielded like swords, as well as bastard swords, katanas, and longswords used two-handed.</p>
+			<p><i>Modifiers</i>&colon; Equipment and Time Spent.</p>
+			<p><i>See</i>&colon; <a href="TwoHandedSwordSkill">Two-Handed Sword</a>&period;</p>
+			<details><summary><i>Examples:</i></summary>
+			  <p>Video of Two-Handed Sword Art</p><video width="" height="" controls loop muted title="TwoHandedSwordArtExample"><source src=".\lib\vid\rand\TwoHandedSwordArt_Example_480.mp4"><!-- <source src=".\lib\vid\rand\TwoHandedSwordArt_Example_360.mp4"> --></video>
+			</details>
+			<p><i>References</i>&colon; B&colon;209</p>
+		  </div>
+		</div>
+	</section>
+	<section id="SuccessRollsSection">
+	    <h2 id="SuccessRolesChapters" class="chapter">Success Rolls</h2>
+	    <h3>Physical Activities</h2>
 		  <p></p>
-		  <h2>Climbing</h2>
-		    <p></p>
+		<h3>Climbing</h3>
+		  <p></p>
+		  <p></p>
+		  <p></p>
+		  <table>
+			<tr>
+			  <th colspan="2">Type of Climb</th>
+			  <th>Modifier</th>
+			  <th>Combat</th>
+			  <th>Regular</th>
+			</tr>
+			<tr>
+			  <td colspan="2">Ladder going up</td>
+			  <td>no roll</td>
+			  <td>3 rungs&sol;sec</td>
+			  <td>1 rung&sol;sec</td>
+			</tr>
+			<tr>
+			  <td colspan="2">Ladder going down</td>
+			  <td>no roll</td>
+			  <td>2 rungs&sol;sec</td>
+			  <td>1 rung&sol;sec</td>
+			</tr>
+			<tr>
+			  <td colspan="2">Ordinary tree</td>
+			  <td>&plus;5</td>
+			  <td>1 ft&sol;sec</td>
+			  <td>1 ft&sol;3 sec</td>
+			</tr>
+			<tr>
+			  <td colspan="2">Ordinary mountain</td>
+			  <td>0</td>
+			  <td>1 ft&sol;2 sec</td>
+			  <td>10 ft&sol;min</td>
+			</tr>
+			<tr>
+			  <td colspan="2">Vertical stone wall</td>
+			  <td>&minus;3</td>
+			  <td>1 ft&sol;5 sec</td>
+			  <td>4 ft&sol;min</td>
+			</tr>
+			<tr>
+			  <td colspan="2">Modern building</td>
+			  <td>&minus;3</td>
+			  <td>1 ft&sol;10 sec</td>
+			  <td>2 ft&sol;min</td>
+			</tr>
+			<tr>
+			  <td colspan="2">Rope-up</td>
+			  <td></td>
+			  <td></td>
+			  <td></td>
+			</tr>
+			<tr>
+			  <td rowspan="2">Row-down</td>
+			  <td><i>w&sol;o equipment</i></td>
+			  <td>&minus;1</td>
+			  <td>2 ft&sol;sec</td>
+			  <td>30 ft&sol;min</td>
+			</tr>
+			<tr>
+			  <td><i>w&sol; equipment</i></td>
+			  <td>&minus;1</td>
+			  <td>12 ft&sol;sec</td>
+			  <td>12 ft&sol;sec</td>
+			</tr>
+		  </table>
+		<h3>Digging</h3>
+		<h3>Different Gravity</h3>
+		<h3>Hiking</h3>
+		<h3>Holding Your Breath</h3>
+		<h3>Jumping</h3>
+		  <p></p>
+		  <h4>Jumping Distance</h4>
+			<p>Your Basic Move determines jumping distance, as follows:</p>
+			<p>High Jump: <math><mo>&lpar;</mo><mn>6</mn><mo>&times;</mo><mi>Basic Move</mi><mo>&rpar;</mo><mo>&minus;</mo><mn>10</mn></math> inches&period; For example, a Basic Move of 6 lets you jump 26” straight up. For a <em>running</em> jump, add the number of yards you run to Basic Move in this formula. Maximum running high-jump height is twice standing high-jump height.</p>
+			<form>
+			  &lpar;6 &times; <label>Basic Move:</label><input type="number" id="" name="">&rpar; &minus; 10 inches &equals; <output name="" for=""></output> inches
+			</form> 
 			<p></p>
 			<p></p>
-			<table>
-			  <tr>
-			    <th colspan="2">Type of Climb</th>
-				<th>Modifier</th>
-				<th>Combat</th>
-				<th>Regular</th>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Ladder going up</td>
-				<td>no roll</td>
-				<td>3 rungs&sol;sec</td>
-				<td>1 rung&sol;sec</td>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Ladder going down</td>
-				<td>no roll</td>
-				<td>2 rungs&sol;sec</td>
-				<td>1 rung&sol;sec</td>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Ordinary tree</td>
-				<td>&plus;5</td>
-				<td>1 ft&sol;sec</td>
-				<td>1 ft&sol;3 sec</td>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Ordinary mountain</td>
-				<td>0</td>
-				<td>1 ft&sol;2 sec</td>
-				<td>10 ft&sol;min</td>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Vertical stone wall</td>
-				<td>&minus;3</td>
-				<td>1 ft&sol;5 sec</td>
-				<td>4 ft&sol;min</td>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Modern building</td>
-				<td>&minus;3</td>
-				<td>1 ft&sol;10 sec</td>
-				<td>2 ft&sol;min</td>
-			  </tr>
-			  <tr>
-			    <td colspan="2">Rope-up</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			  </tr>
-			  <tr>
-			    <td rowspan="2">Row-down</td>
-				<td><i>w&sol;o equipment</i></td>
-				<td>&minus;1</td>
-				<td>2 ft&sol;sec</td>
-				<td>30 ft&sol;min</td>
-			  </tr>
-			  <tr>
-			    <td><i>w&sol; equipment</i></td>
-				<td>&minus;1</td>
-				<td>12 ft&sol;sec</td>
-				<td>12 ft&sol;sec</td>
-			  </tr>
-			</table>
-		  <h2>Digging</h2>
-		  <h2>Different Gravity</h2>
-		  <h2>Hiking</h2>
-		  <h2>Holding Your Breath</h2>
-		  <h2>Jumping</h2>
-		    <p></p>
-			<h3>Jumping Distance</h3>
-			  <p>Your Basic Move determines jumping distance, as follows:</p>
-			  <p>High Jump: (6 &times; Basic Move) - 10 inches. For example, a Basic Move of 6 lets you jump 26” straight up. For a <em>running</em> jump, add the number of yards you run to Basic Move in this formula. Maximum running high-jump height is twice standing high-jump height.</p>
-			  <form>
-			    &lpar;6 &times; <label>Basic Move:</label><input type="number" id="" name="">&rpar; &minus; 10 inches &equals; <output name="" for=""></output> inches
-			  </form> 
+			<p></p>
+		  <h4>Jumping During Combat</h4>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		  <h4>Jumping Skill</h4>
+			<p></p>
+		  <h4>Optional Jumping Rules</h4>
+			<p></p>
+			<h5>ST and Jumping</h5>
 			  <p></p>
-			  <p></p>
-			  <p></p>
-			<h3>Jumping During Combat</h3>
-			  <p></p>
-			  <p></p>
-			  <p></p>
-			  <p></p>
-			  <p></p>
-			<h3>Jumping Skill</h3>
-			  <p></p>
-			<h3>Optional Jumping Rules</h3>
-			  <p></p>
-			  <h4>ST and Jumping</h4>
-			    <p></p>
-			  <h4>Jumping with Encumbrance</h4>
-			    <p></p>
-		  <h2>Optional Jumping Rule</h2>
-		  <h2>Lifting and Moving Things</h2>
-		  <h2>Running</h2>
-		  <h2>Swimming</h2>
-		  <h2>Flying</h2>
-		  <h2>Throwing</h2>
-		  <h2>Catching</h2>
-		  <h2>Extra Effort</h2>
-	  </section>
-	  <section id="ChapterCombat">
-	    <h1 id="ChapterCombat">Chapter : Combat</h1>
-	      <h2>Multi-Hex Figures</h2>
-		    <details id="10hex314131"><summary>10 Hex&colon; 3&times;1&VerticalLine;4&times;1&VerticalLine;3&times;1</summary><!-- draw.io diagram -->
-              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;dark-mode&quot;:&quot;auto&quot;,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0\&quot; version=\&quot;26.0.4\&quot;&gt;\n  &lt;diagram name=\&quot;Page-1\&quot; id=\&quot;niKuIM4VQ9F8eZOgMsD6\&quot;&gt;\n    &lt;mxGraphModel dx=\&quot;819\&quot; dy=\&quot;437\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;850\&quot; pageHeight=\&quot;1100\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-8\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;515\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-9\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;584.28\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-10\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;653.56\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-11\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;445\&quot; y=\&quot;619.28\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-12\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;325\&quot; y=\&quot;618.92\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-13\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;445\&quot; y=\&quot;549.64\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-15\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;445\&quot; y=\&quot;480.36\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-17\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;325\&quot; y=\&quot;549.64\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-18\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;445.72\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-19\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;325\&quot; y=\&quot;480.36\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;\n&quot;}"></div>
+		    <h5>Jumping with Encumbrance</h5>
+		      <p></p>
+		<h3>Optional Jumping Rule</h3>
+		<h3>Lifting and Moving Things</h3>
+		<h3>Running</h3>
+		<h3>Swimming</h3>
+		<h3>Flying</h3>
+		<h3>Throwing</h3>
+		<h3>Catching</h3>
+		<h3>Extra Effort</h3>
+	</section>
+	<section id="CombatSection">
+	  <h2 id="CombatChapter" class="chapter">Combat</h2>
+	    <h3>Multi-Hex Figures</h3>
+		  <details id="10hex314131"><summary>10 Hex&colon; 3&times;1&VerticalLine;4&times;1&VerticalLine;3&times;1</summary><!-- draw.io diagram -->
+            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;dark-mode&quot;:&quot;auto&quot;,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0\&quot; version=\&quot;26.0.4\&quot;&gt;\n  &lt;diagram name=\&quot;Page-1\&quot; id=\&quot;niKuIM4VQ9F8eZOgMsD6\&quot;&gt;\n    &lt;mxGraphModel dx=\&quot;819\&quot; dy=\&quot;437\&quot; grid=\&quot;1\&quot; gridSize=\&quot;10\&quot; guides=\&quot;1\&quot; tooltips=\&quot;1\&quot; connect=\&quot;1\&quot; arrows=\&quot;1\&quot; fold=\&quot;1\&quot; page=\&quot;1\&quot; pageScale=\&quot;1\&quot; pageWidth=\&quot;850\&quot; pageHeight=\&quot;1100\&quot; math=\&quot;0\&quot; shadow=\&quot;0\&quot;&gt;\n      &lt;root&gt;\n        &lt;mxCell id=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;1\&quot; parent=\&quot;0\&quot; /&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-8\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;515\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-9\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;584.28\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-10\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;653.56\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-11\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;445\&quot; y=\&quot;619.28\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-12\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;325\&quot; y=\&quot;618.92\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-13\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;445\&quot; y=\&quot;549.64\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-15\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;445\&quot; y=\&quot;480.36\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-17\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;325\&quot; y=\&quot;549.64\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-18\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;385\&quot; y=\&quot;445.72\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n        &lt;mxCell id=\&quot;w2LAUWvPEgqBVzUfAJP5-19\&quot; value=\&quot;\&quot; style=\&quot;shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;\&quot; vertex=\&quot;1\&quot; parent=\&quot;1\&quot;&gt;\n          &lt;mxGeometry x=\&quot;325\&quot; y=\&quot;480.36\&quot; width=\&quot;80\&quot; height=\&quot;69.28\&quot; as=\&quot;geometry\&quot; /&gt;\n        &lt;/mxCell&gt;\n      &lt;/root&gt;\n    &lt;/mxGraphModel&gt;\n  &lt;/diagram&gt;\n&lt;/mxfile&gt;\n&quot;}"></div>
               <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 			</details>
-	      <h2>Combat Breakdown Videos</h2>
-		    <details>
-			  <hgroup><summary><h3>Breakdown of Seki Sensei Japanese Martial Artist Using a Halberd</h3><p>By Epipodism</p></summary></hgroup>
-		      <video width="" height="" controls loop muted><source src=".\lib\vid\Epipodism\Breakdown_of_Seki_Sensei_Japanese_Martial_Artist_Using_a_Halberd_640p.mp4"><!-- <source src=".\lib\vid\Epipodism\Breakdown_of_Seki_Sensei_Japanese_Martial_Artist_Using_a_Halberd_360p.mp4"> --></video>
+	    <h3>Combat Breakdown Videos</h3>
+		  <details>
+			<hgroup><summary><h4>Breakdown of Seki Sensei Japanese Martial Artist Using a Halberd</h4><p>By Epipodism</p></summary></hgroup>
+		    <video width="" height="" controls loop muted><source src=".\lib\vid\Epipodism\Breakdown_of_Seki_Sensei_Japanese_Martial_Artist_Using_a_Halberd_640p.mp4"><!-- <source src=".\lib\vid\Epipodism\Breakdown_of_Seki_Sensei_Japanese_Martial_Artist_Using_a_Halberd_360p.mp4"> --></video>
 			</details>
 		    <details><summary>Combat Breakdown 1 By Epipodism</summary>
 		      <video width="" height="" controls loop muted><source src=".\lib\vid\Epipodism\Combat_Breakdown_1_640p.mp4"><!-- <source src=".\lib\vid\Epipodism\Combat_Breakdown_1_360p.mp4"> --></video>
@@ -310,44 +317,51 @@
 			<details><summary>Combat Breakdown of the Xenk Fight In the DD Movie By Epipodism</summary>
 		      <video width="" height="" controls loop muted><source src=".\lib\vid\Epipodism\Combat_Breakdown_of_the_Xenk_Fight_In_the_DD_Movie_640p.mp4"><!-- <source src=".\lib\vid\Epipodism\Combat_Breakdown_of_the_Xenk_Fight_In_the_DD_Movie_360p.mp4"> --></video>
 			</details>
-	  </section>
-	  <section id="ChapterGameMasteringSection">
-	    <h1 id="ChapterGameMastering">Chapter : Game Mastering</h1>
-	      <h2>Starting a Game Session</h2>
-		    <h3>Maps</h3>
+	</section>
+	<section id="ChapterGameMasteringSection">
+	    <h2 id="ChapterGameMasteringChapter" class="chapter">Game Mastering</h2>
+	      <h3>Starting a Game Session</h3>
+		    <h4>Maps</h4>
 		      <p>The GM may wish to prepare maps in advance, to help him plan and to keep track of events. He may also give maps to the players as clues. And the players themselves might want to map their progress – whether it be through jungles, dungeons, or downtown New York City – to make sure they can find their way back…</p>
 			  <p>Maps in <b><i>GURPS</i></b> use hexagons, or "hexes," to regulate movement and combat. Each hex is adjacent to six (6) other hexes. See Hexes (p. B:384)</p>
-			  <h4>Omni-calculator Hexagon Calculator</h4>
-			    <div class="omni-calculator"><a href="https://www.omnicalculator.com/math/hexagon" class="omni-calculator-link"><img alt="Omni Calculator" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator.svg"/></a></div>
+			  <h5>Omni-calculator Hexagon Calculator</h5>
+			    <div class="omni-calculator"><a href="https://www.omnicalculator.com/math/hexagon" class="omni-calculator-link"><img alt="Omni Calculator" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator.svg" /></a></div>
                 <!-- <script async src="https://www.omnicalculator.com/embed.js"></script> --> <!-- not working? -->
-		      <h4>Examples</h4>
-			    <h5>The Cavern of Corruption By Cropox Battlemaps</h5>
-				  <details><summary>No Grid</summary><img id="TheCavernofCorruptionUndergroundRiver" alt="The Cavern of Corruption (Underground River) 30&#21580;" src=".\lib\map\CropoxBattlemaps\The Cavern of Corruption (Underground River) 30x80_no grid.jpg"></details>
-				  <details><summary>Grid</summary><img id="TheCavernofCorruptionUndergroundRiver" alt="The Cavern of Corruption (Underground River) 30&#21580;" src=".\lib\map\CropoxBattlemaps\The Cavern of Corruption (Underground River) 30x80_grid.jpg"></details>
-	  </section>
-	  <section id="BackMatter">
+		      <h5>Examples</h5>
+			    <h6>The Cavern of Corruption By Cropox Battlemaps</h6>
+				  <details><summary>No Grid</summary><img id="TheCavernofCorruptionUndergroundRiver" alt="The Cavern of Corruption (Underground River) 30&#21580;" src=".\lib\map\CropoxBattlemaps\The Cavern of Corruption (Underground River) 30x80_no grid.jpg" /></details>
+				  <details><summary>Grid</summary><img id="TheCavernofCorruptionUndergroundRiver" alt="The Cavern of Corruption (Underground River) 30&#21580;" src=".\lib\map\CropoxBattlemaps\The Cavern of Corruption (Underground River) 30x80_grid.jpg" /></details>
+	</section>
+	<section id="BackMatter">
 	    <section id="BibliographySection">
-	      <h1>Bibliography</h1>
-		    <ol id="biblio" style="counter-reset: bibliography;">
-	          <li id="1491:NewRevelationsoftheAmericasBeforeColumbusBiblio">
-			    <p><cite>1491: New Revelations of the Americas Before Columbus</cite>&period; Charles C&period; Mann &lsqb;<a href="https://en.wikipedia.org/wiki/Charles_C._Mann">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/Charles_C._Mann">https://en.wikipedia.org/wiki/Charles_C._Mann</a>&rsqb;&rsqb;&period; Vintage&comma; 2006&period; Language&colon; <span lang="eng">English</span>&period; &lpar;LT&colon;156&rpar;&period; <a href="https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann">The Internet Archive</a> &lsqb;<a href="https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann">https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann</a>&rsqb;&semi; <a href="https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus">https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus</a>&period; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.epub">&period;epub</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.epub&rsqb;&semi; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.pdf">&period;pdf</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.pdf&rsqb;&semi; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.txt">&period;txt</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.txt&rsqb; &lpar;LT&colon;156&rpar;&period;</p><details><summary>The Internet Archive</summary><iframe src="https://archive.org/embed/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></details></li>
-			  <li id="The2011FukushimaNuclearPowerPlantAccidentBiblio">
+	      <h2>Bibliography</h2>
+		    <ol id="biblio">
+	          <div><li id="1491:NewRevelationsoftheAmericasBeforeColumbusBiblio">
+			    <p><cite>1491: New Revelations of the Americas Before Columbus</cite>&period; <div>Charles C&period; Mann &lsqb;<a href="https://en.wikipedia.org/wiki/Charles_C._Mann">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/Charles_C._Mann">https://en.wikipedia.org/wiki/Charles_C._Mann</a>&rsqb;&rsqb;&period; Vintage&comma; 2006&period; Language&colon; <span lang="eng">English</span>&period; &lpar;LT&colon;156&rpar;&period; <a href="https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann">The Internet Archive</a> &lsqb;<a href="https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann">https://archive.org/details/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann</a>&rsqb;&semi; <a href="https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus">https://en.wikipedia.org/wiki/1491:_New_Revelations_of_the_Americas_Before_Columbus</a>&period; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.epub">&period;epub</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.epub&rsqb;&semi; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.pdf">&period;pdf</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.pdf&rsqb;&semi; <a href="\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.txt">&period;txt</a> &lsqb;\lib\biblio\1491 - New Revelations Of The Americas Before Columbus.txt&rsqb; &lpar;LT&colon;156&rpar;&period;</p><details><summary>The Internet Archive</summary><iframe src="https://archive.org/embed/1491.newrevelationsoftheamericasbeforecolumbusbycharlesc.mann" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe></details></li>
+			  </div>
+			  <div><li id="The2011FukushimaNuclearPowerPlantAccidentBiblio">
 			    <p><span hidden>2011 Fukushima Nuclear Power Plant Accident</span><cite>The 2011 Fukushima Nuclear Power Plant Accident</cite>&period; Hatamura Yotaro&comma; Seiji Abe&comma; Masao Fuchigami&comma; Naoto Kasahara&period; Woodhead&comma; 2015&period; ISBN&colon;978&dash;0&dash;08&dash;100118&dash;9&period; DOI&colon;10&period;1016&sol;C2014&dash;0&dash;00845&dash;3 &lsqb;<a href="https://doi.org/10.1016/C2014-0-00845-3" target="new">https://doi.org/10.1016/C2014-0-00845-3</a>&rsqb;&period; Language&colon; <span lang="eng">English</span>&period; A detailed look at the power plants&comma; the damage done to them&comma; and ways in which the radiation release might have been avoided. &lpar;DMF&colon;&rpar;</p></li>
-			  <li style="counter-increment: bibliography -1; list-style: none;" id="2300ADBiblio">
+			  </div>
+			  <div><li class="skip" id="2300ADBiblio">
 			    <p><cite><b>2300 AD</b></cite>&period; See <a href="#Traveller:2300" target="new">Traveller&colon; 2300</a>&period;</p></li>
-			  <li id="28DaysLaterBiblio">
+			  </div>
+			  <div><li id="28DaysLaterBiblio">
 			    <p><cite>28 Days Later</cite>&period; Danny Boyle &lsqb;<a href="https://en.wikipedia.org/wiki/Danny_Boyle" rel="author, external" target="blank">Wikipedia</a> &lsqb;<a href="https://en.wikipedia.org/wiki/Danny_Boyle">https://en.wikipedia.org/wiki/Danny_Boyle</a>&rsqb;&rsqb;&period; Andrew MacDonald and Jon Burton&comma; 2002&period; Among the best of the &OpenCurlyDoubleQuote;infected zombies&CloseCurlyDoubleQuote; genre &ndash; ordinary folks survive in a biohazard apocalypse&period; <em>Sequel</em>&colon; 28 Weeks Later &lpar;Juan Carlos Fresnadillo&rpar; &lpar;Z&colon;153&rpar;</p></li>
-			  <li id="TheArtofWarBiblio">
+			  </div>
+			  <div><li id="TheArtofWarBiblio">
 			    <p><cite>The Art of War</cite> &lsqb;<span lang="zho-Hant">&#23403;&#23376;&#20853;&#27861;</span> &lpar;Traditional&rpar; <span lang="zho-Hans">&#23385;&#23376;&#20853;&#27861;</span> &lpar;Simplified&rpar;&rsqb;&period; Sun Tzu &lsqb;<span lang="zho-Hant">&#23403;&#23376;</span> &lpar;Traditional&rpar; <span lang="zho-Hans">&#23385;&#23376;</span> &lpar;Simplified&rpar;&rsqb;&period; &lpar;&rpar;&period;</p></li>
-		      <li id="TheMonkARomanceBiblio">
+		      </div>
+			  <div><li id="TheMonkARomanceBiblio">
 			    <p><cite>The Monk: A Romance</cite>&period; Matthew Gregory Lewis &lsqb;<a href="https://en.wikipedia.org/wiki/Matthew_Gregory_Lewis" rel="extrnal" target="top">Wikipedia</a> &lsqb;<span style="text-decoration:#f00 underline"><a href="https://en.wikipedia.org/wiki/Matthew_Gregory_Lewis" rel="external" target="top">https://en.wikipedia.org/wiki/Matthew_Gregory_Lewis</a></span>&rsqb;&rsqb;&period; Joseph Bell&semi; March 12&comma;1796&period; A racy romp though the inevitable corruption of a young monk in a Spanish monastery. Filled with sex, violence, and demon summoning, it was a best seller in its time. &lpar;SCR:31&rpar; Links: &period;m4b&colon; <a href=".\lib\biblio\Monk - A Romance 00-04a.m4b">Part 1 &lpar;Ch. 00 to 04a&rpar;</a>&comma; <a href=".\lib\biblio\Monk - A Romance 04b-08.m4b">Part 2 &lpar;Ch. 04b to 08&rpar;</a>&comma; <a href=".\lib\biblio\Monk - A Romance 9a-12.m4b">Part 3 &lpar;Ch. 9a to 12&rpar;</a>&comma; <a href=".\lib\biblio\Monk - A Romance.m4b.zip">&period;zip</a> &VerticalLine; <a href=".\lib\biblio\Monk - A Romance 64kb.m3u">&period;m3u</a> &VerticalLine; <a href=".\lib\biblio\Monk - A Romance, TPG10, 1796.txt">Text</a> &VerticalLine; <a href="https://archive.org/details/monk_1112_librivox">LibraVox via The Internet Archive</a> &lsqb;<a href="https://archive.org/details/monk_1112_librivox">https://archive.org/details/monk_1112_librivox</a>&rsqb; &VerticalLine; <a href="https://archive.org/details/themonkaromance00601gut">Project Gutenberg via The Internet Archive</a>&lsqb;<a href="https://archive.org/details/themonkaromance00601gut">https://archive.org/details/themonkaromance00601gut</a>&rsqb; &VerticalLine; <a href="https://en.wikipedia.org/wiki/The_Monk" rel="external" target="top">Wikipedia</a> &lsqb;<span style="text-decoration:#f00 underline"><a href="https://en.wikipedia.org/wiki/The_Monk" rel="external" target="top">https://en.wikipedia.org/wiki/The_Monk</a></span>&rsqb;&period;</p></li>
-		      <li id="Traveller:2300">
+		      </div>
+			  <div><li id="Traveller:2300">
 			    <p><cite><b>Traveller: 2300</b></cite>&period; Frank Chadwick &lsqb;&rsqb;&comma; Mar Miller &lsqb;&rsqb;&comma; Timothy Brown &lsqb;&rsqb;&comma; Lester Smith &lsqb;&rsqb;&period; &lpar;GDW &lsqb;&rsqb;&comma; 1992&rpar;&period; Language&colon; <span lang="eng">English</span>&period; The pentapod alien race is one of the best descriptions of a high-biotech using alien species&period; &lpar;BT&colon;237&rpar;</p></nav></li>
+			  </div>
 			</ol>
 	    </section>
 	    <section id="Glindex">
-		  <h1>Glindex</h1>
-		    <h2>D</h2>
+		  <h2>Glindex</h2>
+		    <h3>D</h3>
 			  <p>Dimethyl sulfoxide &lpar;<script>ChemDoodle.io.file.content('\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\data\molecules\Dimethyl Sulfoxide ChEBI_28262.mol', function(fileContent) {let mol= ChemDoodle.readMOL(filecontent); alertMolecule(mol);});</script>&rpar;&Tab;BT&colon;157</p>
 		</section>
 	  </section>
