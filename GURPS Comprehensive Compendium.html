@@ -64,6 +64,7 @@
       <div id="ListofTraits">
       <h3>List of Traits</h3>
 	  	<div id="TraitTemplatediv">
+		<template>
         <h4 id="Trait">Template</h4>
 	      <p>	points</p>
 	      <p></p>
@@ -75,6 +76,7 @@
 	      <p><i>See</i>&colon;</p>
 	      <p><i>References</i>&colon;</p>
 		</div>
+		</template>
 	  </div>
     </section>
     <section id="SkillsandTechniquesSection">
@@ -82,6 +84,7 @@
       <div id="ListofSkillsdiv">
 	  <h3>List of Skills</h3>
 		<div id="SkillTemplatediv">
+		<template>
 		<h4 id="SkillTemplate">Template</h4>
 		  <p>	Skill</p>
 	      <p><i>Defaults</i>&colon; </p>
@@ -96,6 +99,7 @@
           <p><i>Examples</i>&colon; </p>
 	      <p><i>References</i>&colon; </p>
 		</div>
+		</template>
 		<div id="ArtistSkilldiv">
 		<h4 id="ArtistSkill">Artist&dagger;</h4>
 		  <p>IQ/Hard	Skill</p>
@@ -163,37 +167,37 @@
 				<li>Vyaz &lpar;Russian&colon; <span lang="rus">&vcy;&yacy;&zcy;&softcy;</span>&comma; Church Slavonic&colon; <span lang="chu">&vcy;&#x469;&zcy;&acy;&tcy;&icy; &#x2C32;&#x2C57;&#x2C38;&#x2C30;&#x2C45;&#x2C3B;</span>&rpar;&comma; Wikipedia &lsqb;https://en.wikipedia.org/wiki/Vyaz_(Cyrillic_calligraphy)&rsqb;&period;</li>
 			  </ul>
 			</details>
-			<p><i>Modifiers</i>&colon; Equipment &lpar;B&colon;345&rpar;&comma; Time Spent &lpar;B&colon;346&rpar;&comma; &minus;2 if the medium is unfamiliar &lpar;e&period;g&period; tempera when you are used to oils&rpar;&comma; &minus;5 if the medium is difficult &lpar;e&period;g&period; marble for a sculptor&rpar;&period;</p>
-			<p><i>See</i>&colon; <a href="#ArtistSkill">Artist&dagger;</a>&period;</p>
-			<!-- <p><i>See also</i>&colon; </p> -->
-			<!-- <p><i>Examples</i>&colon; </p> -->
-			<p><i>References</i>&colon; B&colon;179&period;</p>
-		  </div>
-		  <div id="TwoHandedSwordSkilldiv">
-		  <h4 id="TwoHandedSwordArtSkill">Two-Handed Sword Art</h4>
-			<p>DX/Average	Skill</p>
-			<p><i>Defaults</i>&colon; Two-Handed Sword&minus;3&semi; Two-Handed Sword Sport&minus;3&semi; Broadsword&minus;4&semi; Force Sword&minus;4&period;</p>
-			<p><i>Prerequisites</i>&colon; None.</p>
-			<p><i>Techniques</i>&colon; </p>
-		    <p>Any balanced, two-handed blade over 4 feet in length: greatswords, zweihanders, etc. This skill also covers quarterstaffs wielded like swords, as well as bastard swords, katanas, and longswords used two-handed.</p>
-			<p><i>Modifiers</i>&colon; Equipment and Time Spent.</p>
-			<p><i>See</i>&colon; <a href="TwoHandedSwordSkill">Two-Handed Sword</a>&period;</p>
-			<details><summary><i>Examples:</i></summary>
-			  <p>Video of Two-Handed Sword Art</p><video width="" height="" controls loop muted title="TwoHandedSwordArtExample"><source src=".\lib\vid\rand\TwoHandedSwordArt_Example_480.mp4"><!-- <source src=".\lib\vid\rand\TwoHandedSwordArt_Example_360.mp4"> --></video>
-			</details>
-			<p><i>References</i>&colon; B&colon;209</p>
-		  </div>
+		  <p><i>Modifiers</i>&colon; Equipment &lpar;B&colon;345&rpar;&comma; Time Spent &lpar;B&colon;346&rpar;&comma; &minus;2 if the medium is unfamiliar &lpar;e&period;g&period; tempera when you are used to oils&rpar;&comma; &minus;5 if the medium is difficult &lpar;e&period;g&period; marble for a sculptor&rpar;&period;</p>
+		  <p><i>See</i>&colon; <a href="#ArtistSkill">Artist&dagger;</a>&period;</p>
+		  <!-- <p><i>See also</i>&colon; </p> -->
+		  <!-- <p><i>Examples</i>&colon; </p> -->
+		  <p><i>References</i>&colon; B&colon;179&period;</p>
 		</div>
+		<div id="TwoHandedSwordSkilldiv">
+		<h4 id="TwoHandedSwordArtSkill">Two-Handed Sword Art</h4>
+		  <p>DX/Average	Skill</p>
+		  <p><i>Defaults</i>&colon; Two-Handed Sword&minus;3&semi; Two-Handed Sword Sport&minus;3&semi; Broadsword&minus;4&semi; Force Sword&minus;4&period;</p>
+		  <p><i>Prerequisites</i>&colon; None.</p>
+		  <p><i>Techniques</i>&colon; </p>
+		  <p>Any balanced, two-handed blade over 4 feet in length: greatswords, zweihanders, etc. This skill also covers quarterstaffs wielded like swords, as well as bastard swords, katanas, and longswords used two-handed.</p>
+		  <p><i>Modifiers</i>&colon; Equipment and Time Spent.</p>
+		  <p><i>See</i>&colon; <a href="TwoHandedSwordSkill">Two-Handed Sword</a>&period;</p>
+		  <details><summary><i>Examples:</i></summary>
+			<p>Video of Two-Handed Sword Art</p><video width="" height="" controls loop muted title="TwoHandedSwordArtExample"><source src=".\lib\vid\rand\TwoHandedSwordArt_Example_480.mp4"><!-- <source src=".\lib\vid\rand\TwoHandedSwordArt_Example_360.mp4"> --></video>
+		  </details>
+		  <p><i>References</i>&colon; B&colon;209</p>
+		</div>
+	  </div>
 	</section>
 	<section id="SuccessRollsSection">
-	    <h2 id="SuccessRolesChapters" class="chapter">Success Rolls</h2>
-	    <h3>Physical Activities</h2>
+	  <h2 id="SuccessRolesChapters" class="chapter">Success Rolls</h2>
+		<h3>Physical Activities</h2>
 		  <p></p>
 		<h3>Climbing</h3>
 		  <p></p>
 		  <p></p>
 		  <p></p>
-		  <table>
+		  <table id="ClimbingTable">
 			<tr>
 			  <th colspan="2">Type of Climb</th>
 			  <th>Modifier</th>
@@ -261,31 +265,31 @@
 		<h3>Hiking</h3>
 		<h3>Holding Your Breath</h3>
 		<h3>Jumping</h3>
-		  <p></p>
+		  <p>When you want to jump over something with a Size Modifier 3 <em>less than yours or smaller</em> &lpar;which encompasses most “ordinary” obstacles&lpar;&comma; the GM should say&comma; &OpenCurlyDoubleQuote; Okay&comma; you jumped over it&comma;&CloseCurlyDoubleQuote; and get on with play&period; Such jumps succeed automatically&period; But when the obstacle seems really significant&comma; or if the GM put it there as a deliberate hazard&comma; use the following rules&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 		  <h4>Jumping Distance</h4>
-			<p>Your Basic Move determines jumping distance, as follows:</p>
-			<p>High Jump: <math><mo>&lpar;</mo><mn>6</mn><mo>&times;</mo><mi>Basic Move</mi><mo>&rpar;</mo><mo>&minus;</mo><mn>10</mn></math> inches&period; For example, a Basic Move of 6 lets you jump 26” straight up. For a <em>running</em> jump, add the number of yards you run to Basic Move in this formula. Maximum running high-jump height is twice standing high-jump height.</p>
+			<p>Your Basic Move determines jumping distance&comma; as follows&colon;</p>
+			<p><i>High Jump</i>&colon; <math><mo>&lpar;</mo><mn>6</mn><mo>&times;</mo><mi>Basic Move</mi><mo>&rpar;</mo><mo>&minus;</mo><mn>10</mn></math> inches&period; For example&comma; a Basic Move of 6 lets you jump 26&Prime; straight up&period; For a <em>running</em> jump, add the number of yards you run to Basic Move in this formula&period; Maximum running high&dash;jump height is twice standing high&dash;jump height&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 			<form>
 			  &lpar;6 &times; <label>Basic Move:</label><input type="number" id="" name="">&rpar; &minus; 10 inches &equals; <output name="" for=""></output> inches
 			</form> 
-			<p></p>
-			<p></p>
-			<p></p>
+			<p><i>Broad Jump</i>&colon; <math><mo>&lpar;</mo><mn>2</mn> <mo>&times;</mo> <mi>Basic Move</mi><mo>&rpar;</mo> <mo>&minus;</mo> <mn>3</mn></math> feet&period; For example&comma; a Basic Move of 6 lets you jump 9 feet from a standing start&period; For a <em>running</em> jump&comma; add the number of yards you run to Basic Move in this formula&period; Maximum running broad-jump distance is twice standing broad-jump distance. &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
+			<p>Those with the Enhanced Move &lpar;Ground&rpar; advantage &lpar;p&period; <a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=54">52</a>&rpar; may apply their movement multiplier to Basic Move before inserting it into these formulas when they have a running start&period; This is instead of adding the number of yards run&excl; For instance&comma; a horse with Basic Move 6 and Enhanced Move 1 makes running jumps as if its Basic Move were 12&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
+			<p>Those who have Super Jump &lpar;p&period; <a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=91">89</a>&rpar; double the <em>final</em> jumping distance for each level of that advantage&period; This is cumulative with the effects of Enhanced Move&excl; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=352">352</a>&rpar;</p>
+			<p>Remember that 12 inches equal one foot&comma; and that 3 feet equal one yard &lpar;or one <em>hex</em> on a battle map&rpar;&period;</p>			
 		  <h4>Jumping During Combat</h4>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
+			<p>The jumping distance formulas assume you take the time to crouch and prepare for the jump&period; In combat&comma; this takes two consecutive Concentrate maneuvers&period; Halve all distances if you jump without such preparation&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
+			<p>If you jump over a small obstacle during a fight &lpar;anything with a Size Modifier 3 less than yours or smaller&rpar;&comma; you must use a Move maneuver, and the jump costs one extra movement point&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
+			<p>To jump over a larger obstruction &lpar;e&period;g&period;&comma; a chair&rpar; or onto something &lpar;e&period;g&period;&comma; a table&rpar; during a fight takes your entire turn and requires a Move maneuver&period; Unless the jump is <em>extreme</em>&comma; the GM will assume you can make the jump&period; &lpar;Don&apos;t interrupt a battle to calculate jumping distance every time somebody jumps onto a chair&excl;&rpar; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
+			<p>However&comma; you must make a DX roll when you make a vertical jump or a long horizontal one&period; A difficult jump &lpar;into a pit&comma; for instance&rpar; might give &minus;1 to &minus;5 to this DX roll&period; The GM determines whether you must roll&comma; and at what penalty&period; On a failure&comma; you fall&period; It takes two Change Posture maneuvers to stand up again&period; On a critical failure&comma; you fall off the thing you jumped onto&comma; or land badly if you were jumping down, and take normal falling damage for that height &lpar;see Falling&comma; p&period; 431&rpar&comma; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
+			<p>To clamber onto a vertical obstacle without risking a DX roll&comma; take two consecutive Move maneuvers&period; Success is automatic&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 		  <h4>Jumping Skill</h4>
-			<p></p>
+			<p>If you have the Jumping skill &lpar;p&period; 203&rpar;&comma; you may substitute half your skill level&comma; rounded down&comma; for Basic Move in the distance formulas&period; In addition&comma; you may roll against Jumping instead of DX whenever you make a difficult jump&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 		  <h4>Optional Jumping Rules</h4>
-			<p></p>
+			<p>The following rules for jumping are optional&period; Only use them if you enjoy extra detail&excl; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 			<h5>ST and Jumping</h5>
-			  <p></p>
+			  <p>Basic Move is a ready-made measure of jumping ability &ndash after all&comma; it measures running speed&comma; and running is just a series of rapid hops&period; However&comma; unnaturally strong supers and monsters in fiction can often make mighty leaps without being speedsters&period; To emulate this&comma; the GM may allow those with Basic Lift in excess of body weight to use the <em>higher</em> of <template>ST/4</template><math><mfrac><mrow>ST</mrow><mrow>4</mrow></mfrac></math> (round down) or Basic Move in the jumping distance formulas&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 		    <h5>Jumping with Encumbrance</h5>
-		      <p></p>
-		<h3>Optional Jumping Rule</h3>
+		      <p>For added realism&comma; multiply jumping distances by the encumbrance factors given under Encumbrance and Move &lpar;p&period; <a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=19">17</a>&rpar;&colon; &times;1 for None&comma; &times;0&period;8 for Light&comma; &times;0&period;6 for Medium&comma; &times;0&period;4 for Heavy&comma; and &times;0&period;2 for Extra&dash;Heavy&period; &lpar;<a href=".\lib\books\4th Basic Set.pdf" target="_blank">B</a>&colon;<a href=".\lib\books\4th Basic Set.pdf#page=356">352</a>&rpar;</p>
 		<h3>Lifting and Moving Things</h3>
 		<h3>Running</h3>
 		<h3>Swimming</h3>
