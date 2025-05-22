@@ -1,0 +1,87 @@
+Encoding=UTF-8
+Version=3
+* The version information above MUST be the first line of the data file
+Description=This data file contains information taken from the GURPS Star Wars Starships It will contain STarships, starbases and equipment.
+
+Program=4.0.423
+Requires="GURPS 4e Star Wars Core Rules.gdf"
+LoadAfter="GURPS 4e Star Wars Vehicles.gdf"
+Incomplete=Yes
+
+[AUTHOR]
+******************************************************************************************************************
+* GURPS(R) Character Assistant
+* Filename: GURPS 4e Star Wars Starships.GDF
+* Created:  July 14 2009
+* Last Update: April 15 2014
+*
+* Requires GCA v b4.0.423 or later!
+*
+* This data file contains information taken from the GURPS 4th Edition Star Wars Starships.
+*
+* Information in this file includes:
+*      Equipment
+
+******************************************************************************************************************
+* If you find any errors, omissions or solutions in this file please contact the Data File creator at:
+*
+* Contact: Dark.Lord.Azagthoth@gmail.com
+*
+* Updates can be found at:
+*
+* http://members.upc.nl/l.deckers3/sw_gurps.html
+*
+* Known problems:
+*
+******************************************************************************************************************
+* GURPS is a registered trademark of Steve Jackson Games Incorporated,
+* used with GCA by permission of Steve Jackson Games. All rights reserved.
+*
+* The GURPS game is copyright (c) 1986-1989, 1991-2009 by Steve Jackson
+* Games Incorporated. This product includes copyrighted material from the
+* GURPS game, which is used by permission of Steve Jackson Games
+* Incorporated. All rights reserved by Steve Jackson Games Incorporated.
+******************************************************************************************************************
+* Star Wars is a registered trademark of Lucasfilm, Ltd (LFL).
+* All Rights Reserved.
+*
+* Star Wars: The Roleplaying game is copyright (c) 1993, by West End Games
+* under authorization of LFL. All rights Reserved by Lucasfilm, Ltd
+*
+* Star Wars Roleplaying Game is copyright (c) 2006-2009, by Wizards of the Coast.
+*
+* No infringement of copyright is intended.
+* This product is not for sale. 
+*********************************************************************************************************************
+[SKILLS]
+*********************************************************************************************************************
+<Noncombat Techniques>
+
+Aggressive Maneuvering (Piloting (Fighter/Bomber)), Tech/A, tl(0-12), needs(SK:Piloting (Fighter/Bomber)), page(ST?), default("SK:Piloting (Fighter/Bomber)"), upto(prereq + 2)
+
+Ambush Maneuver (%PilotingSkillList%), Tech/A, tl(0-12), needs(SK:%PilotingSkillList%), page(ST?), default("SK:%PilotingSkillList%"), upto(prereq + 3),
+	x(#ChoiceList(_
+			name(PilotingSkill),
+			title(Aggressive Maneuvering: Choose a Piloting specialty),
+			text(Choose a Piloting specialty from the list provided:),
+			picksallowed(exactly 1),
+			method(bynumber),
+			list(_
+					"Piloting (Aerospace)",
+					"Piloting (Airspeeder)",
+					"Piloting (Capital)",
+					"Piloting (Fighter/Bomber)",
+					"Piloting (Flight Pack)",
+					"Piloting (Freighter/Transport)",
+					"Piloting (Glider)",
+					"Piloting (Low-G Wings)",
+					"Piloting (Utility Craft)",
+					"Piloting (Light Airplane)"_
+				)_
+			)_
+		), noresync(yes)
+		
+Escape Maneuver (Piloting (Fighter/Bomber)), Tech/A, tl(0-12), needs(SK:Piloting (Fighter/Bomber)), page(ST?), default("SK:Piloting (Fighter/Bomber)"), upto(prereq + 4)
+Evasive Maneuvering (Piloting (Fighter/Bomber)), Tech/A, tl(0-12), needs(SK:Piloting (Fighter/Bomber)), page(ST?), default("SK:Piloting (Fighter/Bomber)"), upto(prereq + 4)
+Reversal Maneuver (Piloting (Fighter/Bomber)), Tech/A, tl(0-12), needs(SK:Piloting (Fighter/Bomber)), page(ST?), default("SK:Piloting (Fighter/Bomber)"), upto(prereq + 3)
+*********************************************************************************************************************

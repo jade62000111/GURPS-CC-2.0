@@ -1,0 +1,425 @@
+Encoding=UTF-8
+Version=3
+* The version information above MUST be the first line of the data file
+Description=This data file contains information taken from the GURPS Star Wars Droids and Robotics It will contain Droid Templates.
+
+Program=4.0.423
+Requires="GURPS 4e Star Wars Core Rules.gdf"
+LoadAfter="GURPS 4e Star Wars Equipment.gdf"
+Incomplete=Yes
+
+[AUTHOR]
+******************************************************************************************************************
+* GURPS(R) Character Assistant
+* Filename: GURPS 4e Star Wars Droids and Robotics.GDF
+* Created:  July 14 2009
+* Last Update: April 15 2014
+*
+* Requires GCA v b4.0.423 or later!
+*
+* This data file contains information taken from the GURPS 4th Edition Star Wars Droids and Robotics.
+*
+* Information in this file includes:
+*      Templates
+
+******************************************************************************************************************
+* If you find any errors, omissions or solutions in this file please contact the Data File creator at:
+*
+* Contact: Dark.Lord.Azagthoth@gmail.com
+*
+* Updates can be found at:
+*
+* http://members.upc.nl/l.deckers3/sw_gurps.html
+*
+* Known problems:
+*
+******************************************************************************************************************
+* GURPS is a registered trademark of Steve Jackson Games Incorporated,
+* used with GCA by permission of Steve Jackson Games. All rights reserved.
+*
+* The GURPS game is copyright (c) 1986-1989, 1991-2009 by Steve Jackson
+* Games Incorporated. This product includes copyrighted material from the
+* GURPS game, which is used by permission of Steve Jackson Games
+* Incorporated. All rights reserved by Steve Jackson Games Incorporated.
+******************************************************************************************************************
+* Star Wars is a registered trademark of Lucasfilm, Ltd (LFL).
+* All Rights Reserved.
+*
+* Star Wars: The Roleplaying game is copyright (c) 1993, by West End Games
+* under authorization of LFL. All rights Reserved by Lucasfilm, Ltd
+*
+* Star Wars Roleplaying Game is copyright (c) 2006-2009, by Wizards of the Coast.
+*
+* No infringement of copyright is intended.
+* This product is not for sale. 
+******************************************************************************************************************
+[ATTRIBUTES]
+
+
+******************************************************************************************************************
+[ADVANTAGES]
+
+<Language>
+Droid Speak (Spoken), 1/2, page(CR?), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Language, Language Spoken), taboo(Native Languages > 1)
+
+<Mental Exotic>
+Twisting Logic, 5, page(DR?), cat(Mental Exotic), Description(A droid must make three. A successful Computer Hacking  roll , a Computer Programming roll and a Will-based resistance roll modified by the margin of success or failure of the Computer Programming roll. If successful, the droid's behavioral inhibitor allows it to take prohibited actions until the forbidden action is completed. After completion, the inhibitor returns to normal functioning.)
+
+<Physical Exotic>
+Digital Mind, 5, page(DR?), cat(Exotic, Physical)
+
+******************************************************************************************************************
+[PERKS]
+<General>
+
+
+<Physical>
+Accessory (Data Jack), 1, page(DR?)
+
+******************************************************************************************************************
+[DISADVANTAGES]
+<General>
+
+<Mental Exotic>
+Inferior Processor, -5, page(DR?), cat(Mental, Exotic)
+
+Life Preservation Programming, -30, page(DR?), cat(Mental, Exotic), taboo(DI:Pacifism (Reluctant Killer), DI:Pacifism (Cannot Harm Innocents), DI:Pacifism (Cannot Kill), DI:Pacifism (Self-Defense Only), DI:Pacifism (Total Nonviolence))
+
+Remote Data Link, -5, page(DR?), cat(mental, Exotic)
+
+Reprogrammable, -10, page(DR?), cat(Mental, Exotic)
+
+<Physical Exotic>
+Electrical, -20, page(DR?), cat(Exotic, Physical)
+
+******************************************************************************************************************
+[QUIRKS]
+
+
+******************************************************************************************************************
+[MODIFIERS]
+
+
+
+******************************************************************************************************************
+[SKILLS]
+
+
+******************************************************************************************************************
+[GROUPS]
+
+
+******************************************************************************************************************
+[EQUIPMENT]
+<Droid Modules>
+
+
+<Droid Software>
+
+
+******************************************************************************************************************
+[MODIFIERS]
+*Equipment Modifiers
+
+<Software>
+
+
+******************************************************************************************************************
+[TEMPLATES]
+
+<Meta-Traits - Droid Manufacturer>
+Arakyd Droid, displaycost(4), cost(0),
+description(),
+page(DR?),
+race(),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Twisting Logic}#DoNotOwn,
+       {QU:Obsession}#DoNotOwn_
+    )
+
+Baktoid Droid (Before 32 BBY), displaycost(8), cost(0),
+description(Build before the Battle of Naboo, 32 BBY),
+page(DR?),
+race(),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Telecommunication (Laser Communication)}#DoNotOwn _
+                   with {"Increased Range", +10%/+20%,group(_General),page(CR?),levelnames(x2, x5, x10, x20, x50, x100, x200, x500, "x1,000", "x2,000", "x5,000", "x10,000", "x20,000", "x50,000", "x100,000", "x200,000", "x500,000", "x1,000,000", "x2,000,000", "x5,000,000", "x10,000,000", "x20,000,000", "x50,000,000", "x100,000,000", "x200,000,000", "x500,000,000", "x1,000,000,000", "x2,000,000,000", "x5,000,000,000", "x10,000,000,000", "x20,000,000,000", "x50,000,000,000", "x100,000,000,000", "x200,000,000,000", "x500,000,000,000", "x1,000,000,000,000"),upto(36),level(2),valuenum(20)},
+       {DI:Inferior Processor}#DoNotOwn,
+       {DI:Remote Data Link}#DoNotOwn_
+    )
+
+Baktoid Droid, displaycost(13), cost(0),
+description(Build after the Battle of Naboo, 32 BBY),
+page(DR?),
+race(),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Telecommunication (Laser Communication)}#DoNotOwn _
+                   with {"Increased Range", +10%/+20%,group(_General),page(CR?),levelnames(x2, x5, x10, x20, x50, x100, x200, x500, "x1,000", "x2,000", "x5,000", "x10,000", "x20,000", "x50,000", "x100,000", "x200,000", "x500,000", "x1,000,000", "x2,000,000", "x5,000,000", "x10,000,000", "x20,000,000", "x50,000,000", "x100,000,000", "x200,000,000", "x500,000,000", "x1,000,000,000", "x2,000,000,000", "x5,000,000,000", "x10,000,000,000", "x20,000,000,000", "x50,000,000,000", "x100,000,000,000", "x200,000,000,000", "x500,000,000,000", "x1,000,000,000,000"),upto(36),level(2),valuenum(20)},
+       {DI:Inferior Processor}#DoNotOwn_
+    )
+
+Colicoid Creation Nest Droid, displaycost(10), cost(0),
+description(),
+page(DR?),
+race(),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+select1(text(Droid traits: Select from the following advantages.), pointswanted(atleast 2, upto 10), itemswanted(atleast 1, upto 2), list(_
+		AD:fearlessness,
+		AD:Hard to Kill _
+			)_
+		)
+
+
+<Meta-Traits - Droid Model>
+First Degree Droid, displaycost(-10), cost(0),
+description(),
+page(DR?),
+cat(Meta-Traits),
+race(First Degree Droid),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Binary}=3#DoNotOwn _
+                   with {"Native Language", -6,gives(=+1 to ST:Native Languages),formula(-@if(AD:Language Talent > 0 then 4 else 6)),forceformula(yes),group(Language),page(CR?),level(1),valuenum(-6)},
+       {DI:Life Preservation Programming}#DoNotOwn_
+    ),
+creates(_
+          {AD:IQ Bonus from First Degree Droid, 40, gives(+2.0 to ST:IQ)},
+          {DI:ST Penalty from First Degree Droid, -20, gives(-2.0 to ST:ST)}_
+       )
+
+Second Degree Droid, displaycost(-8), cost(0),
+description(),
+page(DR?),
+cat(Meta-Traits),
+race(Second Degree Droid),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Binary}=3#DoNotOwn _
+                   with {"Native Language", -6,gives(=+1 to ST:Native Languages),formula(-@if(AD:Language Talent > 0 then 4 else 6)),forceformula(yes),group(Language),page(CR?),level(1),valuenum(-6)},
+       {DI:Appearance}=2#DoNotOwn,
+       {DI:Life Preservation Programming}#DoNotOwn_
+    ),
+creates(_
+          {AD:IQ Bonus from Second Degree Droid, 40, gives(+2.0 to ST:IQ)},
+          {DI:Will Penalty from Second Degree Droid, -10, gives(-2.0 to ST:Will)}_
+       )
+
+Third Degree Droid, displaycost(-35), cost(0),
+description(),
+page(DR?),
+cat(Meta-Traits),
+race(Third Degree Droid),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Binary}=3#DoNotOwn _
+                   with {"Native Language", -6,gives(=+1 to ST:Native Languages),formula(-@if(AD:Language Talent > 0 then 4 else 6)),forceformula(yes),group(Language),page(CR?),level(1),valuenum(-6)},
+       {AD:Charisma}=2#DoNotOwn,
+       {DI:Life Preservation Programming}#DoNotOwn_
+    ),
+creates(_
+          {DI:ST Penalty from Third degree Droid, -20, gives(-2.0 to ST:ST)},
+          {AD:Will Bonus from Third degree Droid, 5, gives(+1.0 to ST:Will)}_
+       )
+
+Fourth Degree Droid, displaycost(-38), cost(0),
+description(),
+page(DR?),
+cat(Meta-Traits),
+race(Fourth Degree Droid),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Binary}=3#DoNotOwn _
+                   with {"Native Language", -6,gives(=+1 to ST:Native Languages),formula(-@if(AD:Language Talent > 0 then 4 else 6)),forceformula(yes),group(Language),page(CR?),level(1),valuenum(-6)},
+       {DI:Appearance}=2#DoNotOwn,
+       {DI:Life Preservation Programming}#DoNotOwn_
+    ),
+creates(_
+          {AD:DX Bonus from Fourth Degree Droid, 40, gives(+2.0 to ST:DX)},
+          {DI:IQ Penalty from Fourth Degree Droid, -40, gives(-2.0 to ST:IQ)}_
+       )
+
+Fifth Degree Droid, displaycost(-58), cost(0),
+description(),
+page(DR?),
+cat(Meta-Traits),
+race(Fifth Degree Droid),
+noresync(yes),
+owns(yes),
+hides(yes),
+locks(yes),
+adds(_
+       {AD:Binary}=3#DoNotOwn _
+                   with {"Native Language", -6,gives(=+1 to ST:Native Languages),formula(-@if(AD:Language Talent > 0 then 4 else 6)),forceformula(yes),group(Language),page(CR?),level(1),valuenum(-6)},
+       {DI:Appearance}=2#DoNotOwn,
+       {DI:Life Preservation Programming}#DoNotOwn_
+    ),
+creates(_
+          {DI:IQ Penalty from Fifth Degree Droid, -40, gives(-2.0 to ST:IQ)},
+          {AD:ST Bonus from Fifth Degree Droid, 20, gives(+2.0 to ST:ST)}_
+       )
+
+<Meta-Traits - Machine>
+Machine, displaycost(Varies), cost(0),
+	replacetags(in "ST:Fatigue Points" with "basevalue(0), step(0), maxscore(0), up(0), down(0), noresync(yes)"),
+	description(Your body is mostly or completely mechanical, composed of non-living materials _
+			such as metal, plastoid, and composites--although you might have a few organic _
+			parts, such as an outer layer of skin or a brain. Examples include droids, _
+			robots, vehicles, and full cyborgs.),
+	page(DR?), 
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	sets(_
+		ST:Fatigue Points = 0 _
+		),
+	adds(_
+		AD:Injury Tolerance _
+			with "No Blood, +5, group(Injury Tolerance)" _
+			and  "Unliving, +20, group(Injury Tolerance)",
+		DI:Unhealing=2_
+		),
+	creates(_
+		"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical)"_
+		),
+	features(_
+		Eight-hour energy reserve,
+		No Fatigue Points,
+		Wears out instead of aging_
+		),
+	taboo(ST:Fatigue Points > 0),
+select1(text("Choose one or more of the following advantages."), pointswanted(upto 25), itemswanted(upto 2),
+		 list(_
+			AD:Doesn't Breathe,
+			AD:vacuum Support_
+			)_
+		 ),
+select2(text("Choose one of the following disadvantages."), pointswanted(atleast -60, upto 0), itemswanted(upto 5),
+		 list(_
+			DI:Electrical,
+			DI:Hidebound,
+			DI:No Sense of Humor,
+			DI: No Sense of Smell/Taste,
+			DI:Numb_
+			)_
+		 )
+
+
+<Meta-Traits - Mentality>
+AI, displaycost(32), cost(0),
+	description(A computer mind.),
+	page(DR?),
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	adds(_
+		AD:Absolute Timing,
+		AD:Digital Mind,
+		AD:Doesn't Sleep,
+		AD:Intuitive Mathematician,
+		AD:Photographic Memory,
+		DI:Reprogrammable_
+		)
+
+Automaton, displaycost(-85), cost(0),
+	description(A mind lacking self-awareness and creativity. This is typical of simple AIs. You can combine this with the AI meta-trait.),
+	page(DR?),
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	adds(_
+		DI:Hidebound,
+		DI:Incurious _
+			with "You resist quite rarely (roll of 6 or less), *2, shortname(6-), group(Self Control)",
+		DI:Low Empathy,
+		DI:No Sense of Humor,
+		DI:Slave Mentality_
+		)
+
+<Meta-Traits - Morphology>
+Ground Vehicle, displaycost(-100), cost(0),
+	description(Your body is like a car, tank, etc.),
+	page(DR?),
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	adds(_
+		DI:Horizontal,
+		DI:No Legs (Wheeled),
+		DI:No Manipulators,
+		DI:Numb_
+		)
+Ichthyoid, displaycost(-50), cost(0),
+	description(You have a fish-like body.),
+	page(B263),
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	adds(_
+		DI:No Legs (Aquatic),
+		DI:No Manipulators_
+		)
+Quadruped, displaycost(-35), cost(0),
+	description(You are a four-legged creature with no arms.),
+	page(DR?),
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	adds(_
+		AD:Extra Legs (4 Legs),
+		DI:Horizontal,
+		DI:No Fine Manipulators _
+		)
+Vermiform, displaycost(-35), cost(0),
+	description(Your body is similar to that of a snake or a worm.),
+	page(DR?),
+		cat(Meta-Traits),
+	noresync(yes),
+	owns(yes),
+	locks(yes),
+	hides(yes),
+	adds(_
+		AD:Double-Jointed,
+		DI:No Legs (Slithers),
+		DI:No Manipulators _
+		)
+
+******************************************************************************************************************

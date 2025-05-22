@@ -1,0 +1,1962 @@
+Encoding=UTF-8
+Version=3
+* The version information above MUST be the first line of the data file
+Description=This data file contains information taken from the GURPS Star Wars Equipment It will contain Equipment and Equipment Modifiers.
+
+Program=4.0.423
+Requires="GURPS 4e Star Wars Core Rules.gdf"
+LoadAfter="GURPS 4e Star Wars Creatures.gdf"
+Incomplete=Yes
+
+[AUTHOR]
+******************************************************************************************************************
+* GURPS(R) Character Assistant
+* Filename: GURPS 4e Star Wars Equipment.GDF
+* Created:  July 14 2009
+* Last Update: April 16 2014
+*
+* Requires GCA v b4.0.423 or later!
+*
+* This data file contains information taken from the GURPS 4th Edition Star Wars Equipment.
+*
+* Information in this file includes:
+*      Equipment
+*     Modifiers
+
+******************************************************************************************************************
+* If you find any errors, omissions or solutions in this file please contact the Data File creator at:
+*
+* Contact: Dark.Lord.Azagthoth@gmail.com
+*
+* Updates can be found at:
+*
+* http://members.upc.nl/l.deckers3/sw_gurps.html
+*
+* Known problems:
+* Acc modifiers contract into one number (i.e., 5 instead of 3+2). This is a Core Engine problem.
+* 
+******************************************************************************************************************
+* GURPS is a registered trademark of Steve Jackson Games Incorporated,
+* used with GCA by permission of Steve Jackson Games. All rights reserved.
+*
+* The GURPS game is copyright (c) 1986-1989, 1991-2009 by Steve Jackson
+* Games Incorporated. This product includes copyrighted material from the
+* GURPS game, which is used by permission of Steve Jackson Games
+* Incorporated. All rights reserved by Steve Jackson Games Incorporated.
+******************************************************************************************************************
+* Star Wars is a registered trademark of Lucasfilm, Ltd (LFL).
+* All Rights Reserved.
+*
+* Star Wars: The Roleplaying game is copyright (c) 1993, by West End Games
+* under authorization of LFL. All rights Reserved by Lucasfilm, Ltd
+*
+* Star Wars Roleplaying Game is copyright (c) 2006-2009, by Wizards of the Coast.
+*
+* No infringement of copyright is intended.
+* This product is not for sale. 
+******************************************************************************************************************
+[ADVANTAGES]
+******************************************************************************************************************
+<Cybernetics>
+Implant: Bio-Stabilizer, 15,mods(Resistant),levelnames(Common),page(EQ?),tl(),usernotes(),familiarities(), cat(Mundane, Physical, Mundane Physical),initmods({"Degree: Immunity", *1,shortname(Immunity),group(Resistant),level(1),valuenum(1)} | {"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+
+Implant: Cardio (Fit), 5, page(EQ?), cat(Cybernetics), taboo(AD:Implant: Cardio (Very Fit), AD:Very Fit, DI:Unfit, DI:Very Unfit), mods(Implant), conditional(+1 to ST:HT), gives(+1 to ST:Consciousness Check, +1 to ST:Death Check), initmods(Vulnerability: Ion, -20%, group(Implant), page(EQ?))
+Implant: Cardio(Very Fit), 15, page(EQ?), cat(Cybernetics), taboo(AD:Implant: Cardio (Fit), AD:Fit, DI:Unfit, DI:Very Unfit), mods(Implant), conditional(+2 to ST:HT), gives(+2 to ST:Consciousness Check, +2 to ST:Death Check), initmods(Vulnerability: Ion, -20%, group(Implant), page(EQ?))
+Implant: Cardio (HT), 10, page(EQ?), cat(Cybernetics), mods(Implant), initmods({"Affects displayed HT score", +0%, gives(+1::Level to ST:HT), group(Extra HT), description(This modifier causes the Extra HT advantage to affect the displayed attribute score. If you don't wish this advantage to affect the displayed score remove this modifier.), group(Implant), page(EQ?), level(1), valuenum(0)} | {"Vulnerability: Ion", -20%, group(Implant), page(EQ?), level(1), valuenum(-20)})
+
+Implant: Combat, 15,gives(+1 To GR:Martial Prowess),page(EQ?),conditional(+1 to ST:Reaction),tl(),usernotes(),familiarities(),description(Unarmed (all types), Melee (all types)), cat(Mundane, Physical, Talents),initmods({"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+
+Implant: Memory (Eidetic), 5,page(EQ?),taboo(AD:Photographic Memory),skillused(IQ),tl(),usernotes(),familiarities(), cat(Mundane, Mental, Mundane Mental),initmods({"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+Implant: Memory (Photographic), 10,page(EQ?),taboo(AD:Eidetic Memory),skillused(IQ),tl(),usernotes(),familiarities(), cat(Mundane, Mental, Mundane Mental),initmods({"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+
+Implant: Nerve Reinforcement, 6,page(EQ?),gives(+3 to ST:Consciousness Check),tl(),usernotes(),familiarities(), cat(Mundane, Physical, Mundane Physical),initmods({"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+
+Implant: Sensory, 8,gives(+2 To ST:Vision, +2 To SK:Observation),conditional(+2 To SK:Tracking when "vision is a factor"),page(EQ?),taboo(DI:Blindness, DI:Night Blindness, AD:Dark Vision),tl(),usernotes(),familiarities(), cat(Mundane, Physical, Mundane Physical),initmods({"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+
+Implant: Regenerative, 15,familiarities(),levelnames(Regular: 1HP/6Hr),mods(Regeneration),page(EQ?),taboo(),tl(),upto(),usernotes(), cat(Exotic, Physical, Exotic Physical),initmods({"Vulnerability: Ion", -20%,group(Implant),page(EQ?),level(1),valuenum(-20)})
+
+
+*********************************************************************************************************************
+[MODIFIERS]
+*********************************************************************************************************************
+<Implant>
+Vulnerability: Ion, -20%, group(Implant), page(EQ?)
+******************************************************************************************************************
+[EQUIPMENT]
+******************************************************************************************************************
+*Equipment, techlvl(), basecost(), baseweight(), bulk(), lc(), mods()
+
+*Armor, techlvl(), basecost(), baseweight(), lc(), location(), dr(), notes(), mods()
+
+*Standard armor locations include:
+*  all, arms, eyes, face, feet, full suit, groin, hands, head, legs, limbs, neck, skull, torso
+
+*Muscle-Powered Ranged Weapon, techlvl(), basecost(), baseweight(), lc(), mods(),
+*	newmode(MODE NAME, damage(), damtype(), acc(), calcrange(yes), rangehalfdam(), rangemax(), rof(), shots(), minst(), bulk(), skillused()),
+*	newmode(MODE NAME, damage(), damtype(), acc(), calcrange(yes), rangehalfdam(), rangemax(), rof(), shots(), minst(), bulk(), skillused())
+
+*Ranged Weapon, techlvl(), basecost(), baseweight(), lc(), mods(),
+*	newmode(MODE NAME, damage(), damtype(), acc(), rangehalfdam(), rangemax(), rof(), shots(), minst(), bulk(), rcl(), skillused()),
+*	newmode(MODE NAME, damage(), damtype(), acc(), rangehalfdam(), rangemax(), rof(), shots(), minst(), bulk(), rcl(), skillused())
+
+*Melee Weapon, techlvl(), basecost(), baseweight(), lc(), mods(), 
+*	newmode(MODE NAME, damage(), damtype(), reach(), parry(), minst(), bulk(), skillused()),
+*	newmode(MODE NAME, damage(), damtype(), reach(), parry(), minst(), bulk(), skillused())
+
+*Throwable Melee Weapon, techlvl(), basecost(), baseweight(), lc(), mods(), 
+*	newmode(MELEE MODE NAME, damage(), damtype(), reach(), parry(), minst(), skillused()),
+*	newmode(RANGED MODE NAME, damage(), damtype(), acc(), calcrange(yes), rangehalfdam(), rangemax(), rof(), shots(), minst(), bulk(), skillused())
+
+<New Equipment>
+_New Armor, noresync(yes),
+		techlvl([techlevel]),
+		basecost([cost]),
+		baseweight([weight]),
+		lc([legalityclass]),
+		location(%locationlist%),
+		dr([damageresistance]),
+		notes([notes]),
+		mods(Equipment),
+	  x(_
+		#InputToTagReplace("Please enter the name of this piece of armor:", name, , "New Armor"),
+		#InputReplace("Please enter the Tech Level of this piece of armor:", "[techlevel]", , "New Armor"),
+		#InputReplace("Please enter the Cost of this piece of armor. DO NOT include a credit sign or comma:", "[cost]", , "New Armor"),
+		#InputReplace("Please enter the Weight of this piece of armor:", "[weight]", , "New Armor"),
+		#InputReplace("Please enter the Legality Class of this piece of armor:", "[legalityclass]", , "New Armor"),
+		#InputReplace("Please enter the Damage Resistance of this piece of armor:", "[damageresistance]", , "New Armor"),
+		#ChoiceList(_
+				name(location),
+				title(_New Armor),
+				text(Choose the locations covered by this piece of armor:),
+				picksallowed(atleast 1),
+				method(bynumber),
+				list(_
+					"all",
+					"full suit",
+					"body",
+					"head",
+					"skull",
+					"face",
+					"eyes",
+					"left eye",
+					"right eye",
+					"neck",
+					"front neck",
+					"back neck",
+					"torso",
+					"front torso",
+					"back torso",
+					"chest",
+					"front chest",
+					"back chest",
+					"abdomen",
+					"front abdomen",
+					"back abdomen",
+					"groin",
+					"front groin",
+					"back groin",
+					"limbs",
+					"front limbs",
+					"back limbs",
+					"arms",
+					"front arms",
+					"back arms",
+					"upper arms",
+					"front upper arms",
+					"back upper arms",
+					"elbows",
+					"front elbows",
+					"back elbows",
+					"forearms",
+					"front forearms",
+					"back forearms",
+					"left arm",
+					"front left arm",
+					"back left arm",
+					"left upper arm",
+					"front left upper arm",
+					"back left upper arm",
+					"left elbow",
+					"front left elbow",
+					"back left elbow",
+					"left forearm",
+					"front left forearm",
+					"back left forearm",
+					"right arm",
+					"front right arm",
+					"back right arm",
+					"right upper arm",
+					"front right upper arm",
+					"back right upper arm",
+					"right elbow",
+					"front right elbow",
+					"back right elbow",
+					"right forearm",
+					"front right forearm",
+					"back right forearm",
+					"hands",
+					"front hands",
+					"back hands",
+					"left hand",
+					"front left hand",
+					"back left hand",
+					"right hand",
+					"front right hand",
+					"back right hand",
+					"legs",
+					"front legs",
+					"back legs",
+					"thighs",
+					"front tighs",
+					"back tighs",
+					"knees",
+					"front knees",
+					'back knees",
+					"shins",
+					"front shins",
+					"back shins",
+					"left leg",
+					"front left leg",
+					"back left leg",
+					"left thigh",
+					"front left thigh",
+					"back left thigh",
+					"left knee",
+					"front left knee",
+					"back left knee",
+					"left shin",
+					"front left shin",
+					"back left shin",
+					"right leg",
+					"front right leg",
+					"back right leg",
+					"right thigh",
+					"front right thigh",
+					"back tight thigh",
+					"right knee",
+					"front right knee",
+					"back right knee",
+					"right shin",
+					"front right shin",
+					"back right shin",
+					"feet",
+					"bottom feet",
+					"top feet",
+					"right foot",
+					"bottom right foot",
+					"top right foot",
+					"left foot",
+					"bottom left foot",
+					"top left foot"_
+					)_
+				),
+		#edit)
+
+_New Equipment, noresync(yes),
+		techlvl([techlevel]),
+		basecost([cost]),
+		baseweight([weight]),
+		lc([legalityclass]),
+		mods(Equipment),
+	  x(_
+		#InputToTagReplace("Please enter the name of this piece of equipment:", name, , "New Equipment"),
+		#InputReplace("Please enter the Tech Level of this piece of equipment:", "[techlevel]", , "New Equipment"),
+		#InputReplace("Please enter the Cost of this piece of equipment. DO NOT include a credit sign or comma:", "[cost]", , "New Equipment"),
+		#InputReplace("Please enter the Weight of this piece of equipment:", "[weight]", , "New Equipment"),
+		#InputReplace("Please enter the Legality Class of this piece of equipment:", "[legalityclass]", , "New Equipment"),
+		#edit)
+
+_New Melee Weapon, noresync(yes),
+		techlvl([techlevel]),
+		basecost([cost]),
+		baseweight([weight]),
+		lc([legalityclass]),
+		damage([damage]),
+		damtype([damagetype]),
+		armordivisor([armordivisor]),
+		reach([reach]),
+		parry([parry]),
+		minst([minimumst]%usealiaslist%),
+		skillused([skillused]),
+		mods(Equipment),
+	  x(_
+		#InputToTagReplace("Please enter the name of this hand weapon:", name, " ", "New Melee Weapon"),
+		#InputReplace("Please enter the Tech Level of this hand weapon:", "[techlevel]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the Cost of this hand weapon. DO NOT include a credit sign or comma:", "[cost]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the Weight of this hand weapon:", "[weight]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the Legality Class of this hand weapon:", "[legalityclass]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the damage of this hand weapon (e.g. 6dx5, sw+1, or thr-1). DO NOT include armor divisors or damage type:", "[damage]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the armor divisor. If there is no armor divisor enter space (or just click enter). DO NOT include parenthesis:", "[armordivisor]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the damage type of this hand weapon (e.g. pi+ or cut):", "[damagetype]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the reach for this hand weapon:", "[reach]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the parry for this hand weapon; Parry should be a numerical entry as seen on the Weapons Tables (e.g. +2, 0, or -1):", "[parry]", "0", "New Melee Weapon"),
+		#InputReplace("Please enter the skill used for this hand weapon:", "[skillused]", " ", "New Melee Weapon"),
+		#InputReplace("Please enter the minimum strength of this hand weapon:", "[minimumst]", " ", "New Melee Weapon"),
+		#ChoiceList(_
+				name(Use),
+				title(New Melee Weapon: Weapon Use),
+				text(How is this weapon used?),
+				picksallowed(1),
+				method(bynumber),
+				list(_
+					"One-Handed",
+					"Two-Handed",
+					"Two-Handed, becomes unready after attack" _
+					),
+				aliaslist(_
+						"",
+						"†",
+						"‡"_
+					)_
+				),
+		#edit)
+
+_New Muscle-Powered Ranged Weapon, noresync(yes),
+		techlvl([techlevel]),
+		basecost([cost]),
+		baseweight([weight]),
+		lc([legalityclass]),
+		damage([damage]),
+		armordivisor([armordivisor]),
+		damtype([damagetype]),
+		acc([accuracy]),
+		calcrange(yes),
+		rangehalfdam([halfdamagerange]),
+		rangemax([maxrange]),
+		rof([rateoffire]),
+		shots([shots]),
+		minst([minimumst]%usealiaslist%),
+		bulk([bulk]),
+		skillused([skillused]),
+		mods(Equipment),
+	  x(_
+		#InputToTagReplace("Please enter the name of this muscle-powered ranged weapon:", name, " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the Tech Level of this muscle-powered ranged weapon:", "[techlevel]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the Cost of this muscle-powered ranged weapon. DO NOT include a credit sign or comma:", "[cost]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the Weight of this muscle-powered ranged weapon:", "[weight]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the Legality Class of this muscle-powered ranged weapon:", "[legalityclass]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the damage of this muscle-powered ranged weapon (e.g. 6dx5 or thr+1). DO NOT include armor divisors or damage type in this field :", "[damage]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the armor divisor. If there is no armor divisor enter space (or just click enter). DO NOT include parenthesis:", "[armordivisor]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the damage type of this muscle-powered ranged weapon (e.g. pi+ or cut):", "[damagetype]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the accuracy of this muscle-powered ranged weapon:", "[accuracy]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the half damage range of this muscle-powered ranged weapon (e.g. ST*10 or 25):", "[halfdamagerange]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the maximum range of this muscle-powered ranged weapon (e.g. ST*10 or 25):", "[maxrange]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the rate of fire of this muscle-powered ranged weapon:", "[rateoffire]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the shots for this muscle-powered ranged weapon:", "[shots]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the minimum strength of this muscle-powered ranged weapon:", "[minimumst]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the bulk of this muscle-powered ranged weapon:", "[bulk]", " ", "New Muscle-Powered Ranged Weapon"),
+		#InputReplace("Please enter the skill used for this muscle-powered ranged weapon:", "[skillused]", " ", "New Muscle-Powered Ranged Weapon"),
+		#ChoiceList(_
+				name(Use),
+				title(New Muscle-Powered Ranged Weapon: Weapon Use),
+				text(How is this weapon used?),
+				picksallowed(1),
+				method(bynumber),
+				list(_
+					"One-Handed",
+					"Two-Handed",
+					"Two-Handed, becomes unready after attack" _
+					),
+				aliaslist(_
+						"",
+						"†",
+						"‡"_
+					)_
+				),
+		#edit)
+
+_New Ranged Weapon, noresync(yes),
+		techlvl([techlevel]),
+		basecost([cost]),
+		baseweight([weight]),
+		lc([legalityclass]),
+		damage([damage]),
+		damtype([damagetype]),
+		armordivisor([armordivisor]),
+		acc([accuracy]),
+		rangehalfdam([halfdamagerange]),
+		rangemax([maxrange]),
+		rof([rateoffire]),
+		shots([shots]),
+		minst([minimumst]%usealiaslist%),
+		bulk([bulk]),
+		rcl([recoil]),
+		skillused([skillused]),
+		mods(Equipment),
+	  x(_
+		#InputToTagReplace("Please enter the name of this Ranged Weapon:", name, " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the Tech Level of this Ranged Weapon:", "[techlevel]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the Cost of this Ranged Weapon. DO NOT include a credit sign or comma:", "[cost]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the Weight of this Ranged Weapon:", "[weight]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the Legality Class of this Ranged Weapon:", "[legalityclass]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the damage of this Ranged Weapon (e.g. 6dx5). DO NOT include armor divisors or damage type in this field:", "[damage]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the armor divisor. If there is no armor divisor enter space (or just click enter). DO NOT include parenthesis:", "[armordivisor]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the damage type of this Ranged Weapon (e.g. pi+ or cut):", "[damagetype]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the accuracy of this Ranged Weapon:", "[accuracy]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the half damage range of this Ranged Weapon:", "[halfdamagerange]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the maximum range of this Ranged Weapon:", "[maxrange]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the rate of fire of this Ranged Weapon:", "[rateoffire]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the shots for this Ranged Weapon:", "[shots]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the minimum strength of this Ranged Weapon:", "[minimumst]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the bulk of this Ranged Weapon:", "[bulk]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the recoil of this Ranged Weapon:", "[recoil]", " ", "New Ranged Weapon"),
+		#InputReplace("Please enter the skill used for this Ranged Weapon:", "[skillused]", " ", "New Ranged Weapon"),
+		#ChoiceList(_
+				name(Use),
+				title(New Ranged Weapon: Weapon Use),
+				text(How is this weapon used?),
+				picksallowed(1),
+				method(bynumber),
+				list(_
+					"One-Handed",
+					"Two-Handed",
+					"Two-Handed, becomes unready after attack" _
+					),
+				aliaslist(_
+						"",
+						"†",
+						"‡"_
+					)_
+				),
+		#edit)
+
+<Clothing>
+Complete Wardrobe, basecost([cost]), baseweight(10), mods(Equipment), x(#InputReplace("Please enter the cost of this item here. Average cost is 100% of the characters cost of living. DO NOT use a credit sign or comma:", [cost], " ", "Complete Wardrobe")), page(EQ?), description(Includes one to four sets of ordinary clothes, plus nightclothes, one set each of formal wear and winter clothes, and usually at least one outfit (lab coat, uniform, gym clothes, etc.) appropriate to your job or hobbies. 100% of cost of living; 10+kg.), techlvl(0)
+
+Formal Wear, basecost([cost]), baseweight(1), mods(Equipment), x(#InputReplace("Please enter the cost of this item here. Average cost is 40% of the characters cost of living. DO NOT use a credit sign or comma:", [cost], " ", "Formal Wear")), page(EQ?), description(Your "best outfit," which will usually include at least some accessories (hat, gloves, etc.) or jewelry. 40% of cost of living; 1kg.), techlvl(0)
+
+Ordinary Clothes, basecost([cost]), baseweight(1), mods(Equipment), x(#InputReplace("Please enter the cost of this item here. Average cost is 20% of the characters cost of living. DO NOT use a credit sign or comma:", [cost], " ", "Ordinary Clothes")), page(EQ?), description(One complete outfit, ranging in quality from castoff rags to designer fashions, depending on Status. At minimum: undergarments, plus a tunic, blouse, or shirt with hose, skirt, or trousers  or a long tunic, robe or dress - and suitable footwear. 20% of cost of living; 1kg.), techlvl(0)
+
+Winter Clothes, basecost([cost]), baseweight(2), mods(Equipment), x(#InputReplace("Please enter the cost of this item here. Average cost is 30% of the characters cost of living. DO NOT use a credit sign or comma:", [cost], " ", "Winter Clothes")), page(EQ?), description(As Ordinary Clothes, but heavier. Includes a hat or hood, boots, and (at artic planets) furs. 30% of cost of living; 2kg.), techlvl(0),
+	gives(_
+		=+2 to SK:Survival (Arctic)_
+		)
+
+
+Cosmetics, basecost([cost]), baseweight(1), mods(Equipment), page(EQ?), x(#InputReplace("Please enter the cost of this item here. Average cost is 10% of the characters cost of living. DO NOT use a credit sign or comma:", [cost], " ", "Cosmetics")), description(Natural or synthetic beauty aids. For one month's supply: 10% of cost of living; 1kg.), techlvl(0)
+
+*Cloaks
+All-Temperature Cloak, basecost(100), baseweight(1.5), mods(Equipment),page(EQ?), description(),
+	gives(_
+		=+2 to SK:Survival_
+		)
+
+Umbaran Shadowcloak, 5000, baseweight(5000), mods(equipment), page(EQ?), description(),
+	conditional(_
+			=+4 to SK:Camouflage when "using the Umbaran shadowcloak"_
+			)
+
+*Robes
+Desert Robes, basecost(5), baseweight(1), mods(Equipment), page(EQ?), description(),
+	gives(_
+		=+2 to SK:Survival (Desert)_
+		)
+
+<Armor - Complete Armor Sets>
+Clone Trooper Armor Phase I, basecost(10000), baseweight(13), dr(36/27), lc(2), location(arms, groin, legs, Torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9), needs(SK:Environment Suit (RBC Suit)),
+	description(TL:9 LC:2 DR:36 Location:torso DR:27 location:arms, groin, legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)})
+Clone Trooper Phase I (Thermal Bodysuit), basecost(800), baseweight(1), dr(2*), lc(2), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	gives(+1 to AD:Temperature Tolerance),
+   	description(TL:9 LC:2 DR:2* Location:full suit), cat(Armor - Body Armor),
+	initmods({"Ablative", -80%, group(Damage Resistance), page(CR?), level(1), valuenum(-80)} | {"Limited Defense: Very Common (Physical)", -20%,group(Limited Defense), page(CR?), x(),description(You will need to specify the Very Common attack type this defends against; e.g. ranged attacks, melee attacks, physical attacks, energy attacks, or Force attacks.), level(1), valuenum(-20)})
+Clone Trooper Armor Phase I (Helmet), basecost(2000), baseweight(3), dr(18/10), lc(2), location(head), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9), needs(SK:Environment Suit (RBC Suit)),
+	gives(AD:Protected Vision, AD Protected Hearing, AD:Protected Smell, +1 to AD:Nightvision, +1 to SK:Diagnosis),
+	usernotes(Incl: Radio (range 10km), Biomedical Sensors),
+ 	description(TL:9 LC:2 DR:18 Location: Skull, Face DR:10 location:Eyes Power:B/12 hr. Notes:[1] Gives Filter Lungs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Clone Trooper Armor Phase I (Boots), basecost(150), baseweight(2), dr(18), lc(2), location(feet), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:18 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1),valuenum(-20)})
+Clone Trooper Armor Phase I (Gauntlets), basecost(60), baseweight(1), dr(15), lc(2), location(hands), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:15 Location:hands), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1),valuenum(-20)})
+Clone Trooper Armor Phase I (Body), basecost(4825), baseweight(6.25), dr(36), lc(2), location(groin, torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:36 Location:torso, groin),  cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)}), needs(SK:Environment Suit (RBC Suit))
+Clone Trooper Armor Phase I (Leggings), basecost(3450), baseweight(4.5), dr(27), lc(2), location(legs), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:27 location:legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)})
+Clone Trooper Armor Phase I (Sleeves),basecost(1725), baseweight(2.25), dr(27), lc(2), location(arms), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:27 location:arms), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)})
+
+Clone Trooper Armor Phase II, basecost(11000), baseweight(12), dr(50/30), lc(2), location(arms, groin, legs, Torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9), usernotes(Incl: Wrist Comlink (50km)),
+	description(TL:9 LC:2 DR:50 Location:torso DR:30 location:arms, groin, legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)}), needs(SK:Environment Suit (RBC Suit))
+Clone Trooper Phase II (Thermal Bodysuit), basecost(1000), baseweight(2), dr(5*),lc(2), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9), 
+	gives(+1 to AD:Temperature Tolerance),
+ 	description(TL:9 LC:2 DR:5* Location:full suit), cat(Armor - Body Armor),
+	initmods({"Ablative", -80%, group(Damage Resistance), page(CR?), level(1), valuenum(-80)} | {"Limited Defense: Very Common (Physical)", -20%,group(Limited Defense), page(CR?), x(), description(You will need to specify the Very Common attack type this defends against; e.g. ranged attacks, melee attacks, physical attacks, energy attacks, or Force attacks.), level(1), valuenum(-20)})
+Clone Trooper Armor Phase II (Helmet), basecost(2100), baseweight(3), dr(18/10), lc(2), location(head), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),  usernotes(Incl: Radio (range 10 miles), Biomedical Sensors, Polarized Lenses),
+	gives(AD:Protected Vision, AD Protected Hearing, AD:Protected Smell, +1 to AD:Nightvision, +1 to ST:PER, +1 to SK:Diagnosis),
+	description(TL:9 LC:2 DR:18 Location: Skull, Face DR:10 location:Eyes Power:B/12 hr. Notes:[1] Gives Filter Lungs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Clone Trooper Armor Phase II (Boots), basecost(175), baseweight(3), dr(18), lc(2), location(feet), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9), usernotes(Incl: Magnetized, Grav-field Alternator), 
+	description(TL:9 LC:2 DR:18 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1),valuenum(-20)})
+Clone Trooper Armor Phase II (Gauntlets), basecost(60), baseweight(1), dr(18), lc(2), location(hands), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+ 	description(TL:9 LC:2 DR:18 Location:hands), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1),valuenum(-20)})
+Clone Trooper Armor Phase II (Body), basecost(5300), baseweight(5.8), dr(50), lc(2), location(groin, torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:36 Location:torso, groin), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)}), needs(SK:Environment Suit (RBC Suit))
+Clone Trooper Armor Phase II (Leggings), basecost(3800), baseweight(4.15), dr(30), lc(2), location(legs), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:30 location:legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)})
+Clone Trooper Armor Phase II (Sleeves), basecost(1900), baseweight(2.05), dr(30), lc(2), location(arms), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:30 location:arms), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(EQ?), level(1), valuenum(-20)})
+
+Darth Vader's Armor, basecost(11000), baseweight(10), dr(75), lc(1), location(body), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10^), needs(SK:Environment Suit (RBC Suit)), usernotes(needs B cell),
+	description(TL:10^ LC:1 DR:75 Location:body), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(6), valuenum(120)} | {"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Darth Vader's Body Glove, basecost(3000), baseweight(6), dr(15*), lc(2), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10^), 
+	gives(+1 to AD:Temperature Tolerance, AD:Sealed),
+ 	description(TL:10^ LC:2 DR:15*(1) Location:full suit), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(5), valuenum(100)} | {"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Darth Vader's Armorweave Tabbard, basecost(1000), baseweight(1), dr(10*), lc(1), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10),
+	description(TL:10 LC:1 DR:10* Location:body, legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(EQ?), level(1), valuenum(-40)}| {"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(2), valuenum(40)})
+Darth Vader's Mask, basecost(5833.34), baseweight(3), dr(15),lc(1), location(face), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10^), usernotes(Incl: Biomedical Sensors, Polarized Lenses), 
+	gives(AD:Protected Vision, AD Protected Hearing, AD:Protected Smell, +2 to AD:Nightvision, +2 to ST:PER, +2 to SK:Diagnosis, +2 to AD:Telescopic Vision),
+	description(TL:10^ LC:1 DR:15(2) Location: Face Power:2B/12 hr. Notes:[1] Gives Filter Lungs), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(6), valuenum(120)} | {"No Targeting", -60%,group(Telescopic Vision), page(CR?), level(1),valuenum(-60)} | {"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Darth Vader's Helmet, basecost(2500), baseweight(3), dr(45), lc(1), location(skull), mods(Equipment, Damage Resistance), page(CR?), precountcost(3000), precountweight(3), techlvl(10^), tl(), usernotes(Incl: Radio (range 50km, Secure/Encrypted)),
+	gives(AD:Protected Vision, AD Protected Hearing, AD:Protected Smell, +1 to AD:Nightvision, +1to ST:PER, +1 to SK:Diagnosis),
+	description(TL:10^ LC:1 DR:45(2) Location: Skull: Power:B/12 hr.), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(6), valuenum(120)} | {"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Darth Vader's Armorweave Cape, basecost(1000), baseweight(1), dr(10*), lc(1), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10),
+	description(TL:10 LC:1 DR:10* Location:back), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:15", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)} | {"Directional: Back only", -40%,shortname(Back only), gives(-Owner::Level to DR), group(Damage Resistance), page(CR?), level(1), valuenum(-40)} | {"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(2), valuenum(40)})
+Darth Vader's Gloves, basecost(100), baseweight(1), dr(15*), lc(1), location(hands), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10^),
+ 	description(TL:10^ LC:1 DR:15 Location:hands), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(5), valuenum(100)} | {"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Darth Vader's Boots, basecost(2500), baseweight(3), dr(75), lc(1), location(feet), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10^), usernotes(Incl:Magnetized, Grav-field Alternator),
+	description(TL:10^ LC:1 DR:75 Location:feet), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(6), valuenum(120)} | {"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+
+Mandalorian Shock Trooper Armor (Body), basecost(5000), baseweight(5), dr(36), lc(2), location(groin, torso), mods(Equipment, Damage Resistance), Page(EQ?), techlvl(9), needs(SK:Environment Suit (RBC Suit)),
+	description(TL:9 LC:2 DR:36 Location:torso, groin), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(4), valuenum(80)} | {"Semi-Ablative 1:15", -15%, group(Damage Resistance), page(CR?), level(1), valuenum(-15)})
+Mandalorian Shock Trooper Armor (Boots), basecost(150), baseweight(2), dr(18), lc(2), location(feet), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:18 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%, group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Mandalorian Shock Trooper Armor (Bracers), basecost(120), baseweight(1), dr(15),  lc(2), location(arms), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:15 Location:arms), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(4), valuenum(80)} | {"Semi-Ablative 1:15", -15%, group(Damage Resistance), page(CR?), level(1), valuenum(-15)})
+Mandalorian Shock Trooper Armor (Greaves), basecost(240), baseweight(2), dr(15), lc(2), location(legs, feet), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:15 Location:legs, feet), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(4), valuenum(80)} | {"Directional: Front only", -20%, shortname(Front only), gives(-Owner::Level to DR), group(Damage Resistance), page(CR?), level(1), valuenum(-20)} | {"Semi-Ablative 1:15", -15%,group(Damage Resistance), page(CR?), level(1), valuenum(-15)})
+Mandalorian Shock Trooper Armor (Helmet), basecost(1800), baseweight(2.5), dr(18/10), lc(2), location(head), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9), usernotes(Incl: Radio (range 10km)), 
+	gives(AD:Protected Vision, AD Protected Hearing, AD:Protected Smell, +1 to AD:Nightvision),
+	description(TL:9 LC:2 DR:18 Location: Skull, Face DR:10 location:Eyes Power:B/12 hr. Notes:[1] Gives Filter Lungs), cat(Armor - Body Armor),
+	initmods({"Hardened", +20%/+40%, upto(6), group(Damage Resistance), page(CR?), level(4), valuenum(80)} | {"No Targeting", -60%,group(Telescopic Vision), page(CR?), level(1),valuenum(-60)} | {"Semi-Ablative 1:15", -15%, group(Damage Resistance), page(CR?), level(1), valuenum(-15)})
+Mandalorian Shock Trooper Armor (Flightsuit), basecost(1200), baseweight(1), dr(8*), lc(2), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:2 DR:8* Location:full suit Waterproof), cat(Armor - Body Armor),
+	initmods({"Ablative", -80%, group(Damage Resistance), page(CR?), level(1), valuenum(-80)} | {"Limited Defense: Very Common (physical attacks)", -20%, shortname(Very Common), page(CR?), group(Limited Defense), level(1), valuenum(-20)})
+
+<Armor - Concealable Armor>
+Armorweave Cape, basecost(1000), baseweight(1), dr(10*), lc(4), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:back), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)} | {"Directional: Back only", -40%,shortname(Back only), gives(-Owner::Level to DR), group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Armorweave Bodysuit, basecost(1500), baseweight(3), dr(10*), lc(4), location(body, limbs), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:body, limbs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Armorweave Gloves, basecost(50), baseweight(neg.), dr(10*), lc(4), location(hands), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:hands), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Armorweave Jacket, basecost(750), baseweight(1.5), dr(10*), lc(4), location(arms, torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:arms, torso), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Armorweave Suit, basecost(2000), baseweight(4), dr(10*), lc(4), location(all), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:all), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Armorweave Trousers, basecost(470), baseweight(1.4), dr(10*), lc(4), location(groin, legs), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:groin, legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Armorweave Vest, basecost(500), baseweight(1), dr(10*), lc(4), location(torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10), 
+	description(TL:10 LC:4 DR:10* Location:torso), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+
+Nanoweave Cape, basecost(1500), baseweight(0.9), dr(18*), lc(4), location(full suit), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:back), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)} | {"Directional: Back only", -40%,shortname(Back only), gives(-Owner::Level to DR), group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+Nanoweave Bodysuit, basecost(2250), baseweight(2.7), dr(18*), lc(4), location(body, limbs), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:body, limbs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Nanoweave Gloves, basecost(75), baseweight(neg.), dr(18*), lc(4), location(hands), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:hands), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Nanoweave Jacket, basecost(1125), baseweight(1.35), dr(18*), lc(4), location(arms, torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:arms, torso), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Nanoweave Suit, basecost(3000), baseweight(3.6), dr(18*), lc(4), location(all), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:all), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Nanoweave Trousers, basecost(705), baseweight(1.26), dr(18*), lc(4), location(groin, legs), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:groin, legs), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+Nanoweave Vest, basecost(750), baseweight(0.9), dr(18*), lc(4), location(torso), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11), 
+	description(TL:11 LC:4 DR:18* Location:torso), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+
+*Traumaplates
+Trauma Plates:Plastoid, basecost(1000), baseweight(1), dr(27), lc(3), location(vitals), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:3 DR:27 Location:vitals), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:5", -40%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+
+Trauma Plates:Duraplast, basecost(1500), baseweight(1), dr(36), lc(3), location(vitals), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10),
+	description(TL:10 LC:3 DR:36 Location:vitals), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-40)})
+
+Trauma Plates:Ceramic, basecost(1500), baseweight(1), dr(36), lc(3), location(vitals), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10),
+	description(TL:10 LC:3 DR:36 Location:vitals), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:2", -60%,group(Damage Resistance), page(CR?), level(1), valuenum(-60)})
+
+Trauma Plates:Composite Steel, basecost(1000), baseweight(4.5), dr(36), lc(3), location(vitals), mods(Equipment, Damage Resistance), page(EQ?), techlvl(9),
+	description(TL:9 LC:3 DR:36 Location:vitals), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:10", -20%,group(Damage Resistance), page(CR?), level(1), valuenum(-20)})
+
+Trauma Plates:Durasteel, basecost(1500), baseweight(4), dr(36), lc(3), location(vitals), mods(Equipment, Damage Resistance), page(EQ?), techlvl(10),
+	description(TL:10 LC:3 DR:36 Location:vitals), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:15", -15%,group(Damage Resistance), page(CR?), level(1), valuenum(-15)})
+
+Trauma Plates:Duralloy, basecost(2000), baseweight(3), dr(36), lc(3), location(vitals), mods(Equipment, Damage Resistance), page(EQ?), techlvl(11),
+	description(TL:10 LC:3 DR:47 Location:vitals), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:20", -10%,group(Damage Resistance), page(CR?), level(1), valuenum(-10)})
+
+<Armor - Boots>
+Assault Boots (TL  9), page(EQ?), techlvl(9), basecost(300), baseweight(2), lc(4), location(feet), dr(12), mods(Equipment),
+	description(TL:9 LC:4 DR:12 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:4", -45%,group(Damage Resistance), page(CR?), level(1), valuenum(-45)})
+Assault Boots (TL 10), page(EQ?), techlvl(10), basecost(400), baseweight(2), lc(4), location(feet), dr(18), mods(Equipment),
+	description(TL:10 LC:4 DR:18 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:4", -45%,group(Damage Resistance), page(CR?), level(1), valuenum(-45)})
+Assault Boots (TL 11), page(EQ?), techlvl(11), basecost(500), baseweight(2), lc(4), location(feet), dr(30), mods(Equipment),
+	description(TL:11 LC:4 DR:30 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:4", -45%,group(Damage Resistance), page(CR?), level(1), valuenum(-45)})
+Assault Boots (TL 12), page(EQ?), techlvl(12), basecost(600), baseweight(2), lc(4), location(feet), dr(50), mods(Equipment),
+	description(TL:12 LC:4 DR:50 Location:feet), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:4", -45%,group(Damage Resistance), page(CR?), level(1), valuenum(-45)})
+
+Combat Boots (TL  9), page(EQ?), techlvl(9), basecost(300), baseweight(1.5), lc(4), location(feet), dr(12/6), mods(Equipment),
+	description(TL:9 LC:4 DR:12/6 Location:feet Notes:DR12 bottom, half DR from other angles.), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:2", -60%,group(Damage Resistance), page(CR?), level(1), valuenum(-60)})
+Combat Boots (TL 10), page(EQ?), techlvl(10), basecost(350), baseweight(1.5), lc(4), location(feet), dr(18/9), mods(Equipment),
+	description(TL:10 LC:4 DR:18/9 Location:feet Notes:DR18 bottom, half DR from other angles.), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:2", -60%,group(Damage Resistance), page(CR?), level(1), valuenum(-60)})
+Combat Boots (TL 11), page(EQ?), techlvl(11), basecost(400), baseweight(1.5), lc(4), location(feet), dr(30/15), mods(Equipment),
+	description(TL:11 LC:4 DR:30/15 Location:feet Notes:DR30 bottom, half DR from other angles.), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:2", -60%,group(Damage Resistance), page(CR?), level(1), valuenum(-60)})
+Combat Boots (TL 12), page(EQ?), techlvl(12), basecost(450), baseweight(1.5), lc(4), location(feet), dr(50/25), mods(Equipment),
+	description(TL:12 LC:4 DR:50 Location:feet Notes:DR50 bottom, half DR from other angles.), cat(Armor - Body Armor),
+	initmods({"Semi-Ablative 1:2", -60%,group(Damage Resistance), page(CR?), level(1), valuenum(-60)})
+
+<Armor - Environment Suits>
+EVA Suit:Space Suit, location(full suit), dr(2), basecost(20000), baseweight(100), lc(4), techlvl(10), notes([4,9,10]), description(TL:7 LC:4 DR:2 Notes: [4,9,10] Electronics and powered systems work for (TL-6)x6 hours before they require recharging or refueling. Biomedical sensors allow remote monitoring of vital signs, giving +1 to Diagnosis skill when examining the wearer: In addition, the suit is climate-controlled. Suit's DR applies only against burning or corrosion damage. Requires Vacc Suit skill. If work with its helmet, the suit gives Doesn't Breathe (for 12 hours), Protected Smell, Sealed, and Vacuum Support.), mods(Equipment), page(EQ?)
+
+EVA Suit:Space Helmet, location(head), dr(3), basecost(2500), baseweight(5), lc(4), techlvl(10), notes([7,11]), description(TL:7 LC:4 DR:3 Notes: [7,11] Electronics and powered systems (including the battlesuit) work for (TL-6)x6 hours before they require recharging or refueling. Provides Filter Lungs, Protected Smell, and Protected Vision - but it also gives the No Peripheral Vision disadvantage. Provides Protected hearing, Protected Vision, and Radio.), mods(Equipment), page(EQ?)
+
+<Armor - Shields>
+
+<Armor - Fields>
+
+<Weapons - Melee Weapons>
+Arg'garok, techlvl(1), break(0), lc(4), basecost(100), baseweight(8), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class), 
+	newmode(two-handed, damage(sw+4), damtype(cut), reach(1,2*), parry(0U), minst(12), skillused(Two-Handed Axe/Mace, DX-5, Axe/Mace-3, Polearm-4, Two-Handed Flail-4))
+
+Axe, techlvl(0), break(0), lc(4), basecost(50), baseweight(2), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+                  newmode(one-handed, damage(sw+2), damtype(cut), reach(1), parry(0U), minst(11), skillused(Axe/Mace, DX-5, Flail-4, Two-Handed Axe/Mace-3)),
+	newmode(two-handed, damage(sw+3), damtype(cut), reach(1), parry(0), minst(10), skillused(Two-Handed Axe/Mace, DX-5, Axe/Mace-3, Polearm-4, Two-Handed Flail-4))
+
+Bastard Sword, techlvl(3), break(0), lc(4), basecost(750), baseweight(2.5), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+	newmode(one-handed swing, damage(sw+1), damtype(cut), reach(1,2), parry(0U), minst(11), skillused(Sword!, Broadsword, DX-5, Rapier-4, Saber-4, Shortsword-2, Two-Handed Sword-4)),
+	newmode(one-handed thrust, damage(thr+2), damtype(imp), reach(2), parry(0U), minst(11), skillused(Sword!, Broadsword, DX-5, Rapier-4, Saber-4, Shortsword-2, Two-Handed Sword-4)),
+	newmode(two-handed swing, damage(sw+2), damtype(cut), reach(1,2), parry(0), minst(10†), skillused(Sword!, Two-Handed Sword, DX-5, Broadsword-4, Force Sword-4)),
+	newmode(two-handed thrust, damage(thr+3), damtype(imp), reach(2), parry(0), minst(10†), skillused(Sword!, Two-Handed Sword, DX-5, Broadsword-4, Force Sword-4))
+
+Baton, techlvl(0), break(0), lc(4), basecost(20), baseweight(0.5), page(CR?), mods(Equipment, Quality Melee Quality, Quality Crushing/Imp Class),
+	newmode(swing, damage(sw), damtype(cr), reach(1), parry(0), minst(6), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Saber-4, Smallsword-4, Tonfa-3)),
+	newmode(thrust, damage(thr), damtype(cr), reach(1), parry(0), minst(6), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Saber-4, Smallsword-4, Tonfa-3)),
+	description(TL:0 LC:4, [Mode:swing Dam:sw cr Reach:1 Parry:0 ST:6 Skill:Shortsword], [Mode:thrust Dam:thr cr Reach:1 Parry:0 ST:6 Skill:Shortsword])
+
+Brass Knuckles, techlvl(1), break(0), lc(4), basecost(10), baseweight(0.12), page(EQ?), mods(Equipment, Quality Melee, Quality Crushing/Imp Class),
+	damage(thr+_
+					@max(_
+						@if("SK:Brawling::level" > ST:DX+1 then @basethdice(ST:Punch) else 0),
+						@if("SK:Punching::level" = ST:DX+1 then @basethdice(ST:Punch) else @if("SK:Punching::level" > ST:DX+1 then 2 * @basethdice(ST:Punch) else 0)),
+						@if("SK:Striking::level" = ST:DX then @basethdice(ST:Punch) else @if("SK:Striking::level" > ST:DX then 2 * @basethdice(ST:Punch) else 0)) _
+						)_
+				), damtype(cr), reach(C), parry(0), minst(), notes([3]), skillused(Brawling, Punching, Striking, DX)
+
+Broadsword, techlvl(2), break(0), lc(4), basecost(600), baseweight(1.5), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+	newmode(swing, damage(sw+1), damtype(cut), reach(1), parry(0), minst(10), skillused(Sword!, Broadsword, DX-5, Force Sword-4, Rapier-4, Saber-4, Shortsword-2, Two-Handed Sword-4)),
+	newmode(thrust, damage(thr+2), damtype(imp), reach(1), parry(0), minst(10), skillused(Sword!, Broadsword, DX-5, Force Sword-4, Rapier-4, Saber-4, Shortsword-2, Two-Handed Sword-4))
+
+Dagger, techlvl(1), break(0), lc(4), basecost(20), baseweight(0.12), page(EQ?), cat(Weapons - Muscle-Powered Ranged Weapons), mods(Equipment, Quality Melee, Quality Cutting Class), calcrange(yes),
+	newmode(thrust, damage(thr-1), damtype(imp), reach(C), parry(-1), minst(5), notes(), skillused(Sword!, Knife, DX-4, Main-Gauche-3, Shortsword-3)),
+	newmode(thrown, damage(thr-1), damtype(imp), acc(0), rangehalfdam(ST*0.5), rangemax(ST*1), rof(1), shots(T(1)), minst(5), bulk(-1), skillused(Thrown Weapon (Knife), DX-4))
+
+Large Knife, techlvl(0), break(0), lc(4), basecost(40), baseweight(0.5), page(EQ?), cat(Weapons - Muscle-Powered Ranged Weapons), mods(Equipment, Quality Melee, Quality Cutting Class), calcrange(yes),
+	newmode(swing, damage(sw-2), damtype(cut), reach(C,1), parry(-1), minst(6), skillused(Sword!, Knife, DX-4, Main-Gauche-3, Shortsword-3)),
+	newmode(thrust, damage(thr), damtype(imp), reach(C), parry(-1), minst(6), notes([1]), skillused(Sword!, Knife, DX-4, Main-Gauche-3, Shortsword-3)),
+	newmode(thrown, damage(thr), damtype(imp), acc(0), rangehalfdam(ST*0.8), rangemax(ST*1.5), rof(1), shots(T(1)), minst(6), bulk(-2), skillused(Thrown Weapon (Knife), DX-4))
+
+Longsword, techlvl(3), break(0), lc(4), basecost(700), baseweight(2), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+	newmode(one-handed swing, damage(sw+1), damtype(cut), minst(10), reach(1), parry(0), skillused(Sword!, Broadsword, DX-5, Force Sword-4, Rapier-4, Saber-4, Shortsword-2, Two-Handed Sword-4)),
+	newmode(one-handed thrust, damage(thr+2), damtype(imp), minst(10), reach(1, 2), parry(0), skillused(Sword!, Broadsword, DX-5, Force Sword-4, Rapier-4, Saber-4, Shortsword-2, Two-Handed Sword-4)),
+	newmode(two-handed swing, damage(sw+1), damtype(cut), minst(9†), reach(1), parry(0), skillused(Sword!, Two-Handed Sword, DX-5, Broadsword-4)),
+	newmode(two-handed thrust, damage(thr+3), damtype(imp), minst(9†), reach(1, 2), parry(0), skillused(Sword!, Two-Handed Sword, DX-5, Broadsword-4))
+
+Short Baton, techlvl(0), break(0), lc(4), basecost(10), baseweight(0.25), page(CR?), mods(Equipment, Quality Melee Quality, Quality Crushing/Imp Class),
+	newmode(swing, damage(sw-1), damtype(cr), reach(C,1), parry(-1), minst(5), skillused(Sword!, Knife, DX-4, Jitte/Sai-3, Main-Gauche-3, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Shortsword-3, Saber-4, Smallsword-4, Tonfa-3)),
+	newmode(thrust, damage(thr), damtype(cr), reach(1), parry(-1), minst(6), skillused(Sword!, Knife, DX-4, Jitte/Sai-3, Main-Gauche-3, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Shortsword-3, Saber-4, Smallsword-4, Tonfa-3)),
+	description(TL:0 LC:4, [Mode:swing Dam:sw-1 cr Reach:C,1 Parry:-1 ST:5 Skill:Knife], [Mode:thrust Dam:thr cr Reach:1 Parry:-1 ST:5 Skill:Knife])
+
+Shyarn, techlvl(2), break(0), lc(4), basecost(900), baseweight(1), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+	newmode(swing cut, damage(sw), damtype(cut), reach(1), parry(0), minst(8), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Saber-4, Smallsword-4)),
+	newmode(thrust imp, damage(thr), damtype(imp), reach(1), parry(0), minst(8), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Saber-4, Smallsword-4))
+
+Small Knife, techlvl(0), break(0), lc(4), basecost(30), baseweight(0.25), page(EQ?), cat(Weapons - Muscle-Powered Ranged Weapons), mods(Equipment, Quality Melee, Quality Cutting Class), calcrange(yes),
+	newmode(swing, damage(sw-3), damtype(cut), reach(C,1), parry(-1), minst(5), skillused(Sword!, Knife, DX-4, Main-Gauche-3, Shortsword-3)),
+	newmode(thrust, damage(thr-1), damtype(imp), reach(C), parry(-1), minst(5), notes([1]), skillused(Sword!, Knife, DX-4, Main-Gauche-3, Shortsword-3)),
+	newmode(thrown, damage(thr-1), damtype(imp), acc(0), rangehalfdam(ST*0.5), rangemax(ST*1), rof(1), shots(T(1)), minst(5), bulk(-1), skillused(Thrown Weapon (Knife), DX-4))
+
+Thogk, techlvl(0), break(0), lc(4), basecost(0), baseweight(12), page(EQ?), mods(Equipment, Quality Melee, Quality Crushing/Imp Class),
+	newmode(two-handed, damage(sw+4), damtype(cr), reach(1,2*), parry(0U), minst(13‡), skillused(Two-Handed Axe/Mace, DX-5, Axe/Mace-3, Polearm-4, Two-Handed Flail-4))
+
+Wristband Blades, page(EQ?), basecost(100), baseweight(1), techlvl(11), mods(Equipment, Quality Melee, Quality Cutting Class), lc(4),
+	description(TL:11 LC:4 [Mode:swing Damage:sw-2 cut Reach:C Parry:0 ST:6 Skill:Brawling, Striking, DX Notes:This attack receives Brawling or Karate damage bonuses. ),
+	newmode(swing, damage(sw-2 + @max(@if("SK:Brawling::level" > ST:DX+1 then @baseswdice(ST:Punch) else 0), @if("SK:Striking::level" = ST:DX then @baseswdice(ST:Punch) else @if("SK:Striking::level" > ST:DX then 2 * @baseswdice(ST:Punch) else 0)))), dmg(sw), damtype(cut), minst(6), reach(C), parry(0), notes([4]), skillused(Brawling, Striking, DX), damagebasedon(ST:Punch))
+
+Zhaboka, techlvl(11), break(0), lc(4), basecost(1000), baseweight(5.2), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+	newmode(two-handed swing imp, damage(sw+1), damtype(cut), reach(1), parry(+1), minst(9†), skillused(Double-Headed, DX-5, Staff-4, Polearm-4, Spear-4, Two-Handed Axe/Mace-4, Two-handed Sword-4)),
+	newmode(two-handed thrust imp, damage(thr+1), damtype(imp), reach(1), parry(+1), minst(9†), skillused(Double-Headed, DX-5, Staff-4, Polearm-4, Spear-4, Two-Handed Axe/Mace-4, Two-handed Sword-4))
+
+<Weapons - Powered Melee Weapons>
+Force Pike, techlvl(11), break(0), lc(3), basecost(50), baseweight(6.5), page(EQ?), mods(Equipment, Quality Melee, Quality Cutting Class),
+	newmode(thrust, damage(thr+3), damtype(imp), reach(1,2*), parry(0U)), minst(11†), skillused(Spear, DX-5, Polearm-4, Staff-2),
+initmods({"Composition: Vibroblade (TL11)", *10,page(EQ?),group(Quality Cutting Class),shortname(Vibroblade),gives(=nobase to owner::armordivisor, =+3 to owner::armordivisor, =+0.5 to owner::baseweight, =+$/textindexedvalue( $modetag(damtype), ("cut", 1d+1) ) to owner::damage$ listAs "+1d+1 to cutting damage from Vibroblade"),level(1),valuenum(10)}),
+	newmode(stun, damage(HT-4), damtype(stun), reach(1,2*), parry(0U), , minst(11†), skillused(Spear, DX-5, Polearm-4, Staff-2))
+
+Shockprod Staff, techlvl(10), break(0), lc(4), basecost(500), baseweight(4), page(EQ?), mods(Equipment, Melee Quality),
+	newmode(thrust, damage(1d), damtype(burn), reach(1-3*), parry(0U), minst(11†), skillused(Polearm, DX-5, Spear-4, Staff-4, Two-Handed Axe/Mace-4)),
+	newmode(and stun, damage(HT-5), damtype(aff), reach(1-3*), parry(0U), minst(11†), skillused(Polearm, DX-5, Spear-4, Staff-4, Two-Handed Axe/Mace-4))
+
+Stun Baton, techlvl(0), break(0), lc(4), basecost(60), baseweight(0.75), page(CR?), mods(Equipment, Quality Melee Quality, Quality Crushing/Imp Class),
+	newmode(swing, damage(sw), damtype(cr), reach(C,1), parry(0), minst(6), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Saber-4, Smallsword-4, Tonfa-3)),
+	newmode(thrust, damage(thr), damtype(cr), reach(C,1), parry(0), minst(6), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Saber-4, Smallsword-4, Tonfa-3)),
+	newmode(linked, damage(HT-3), damtype(aff), reach(C,1), parry(0), minst(6), skillused(Sword!, Shortsword, DX-5, Broadsword-2, Jitte/Sai-3, Knife-4, Lightsaber-6, "Lightsaber (Fencing)-6", "Lightsaber (Short) -4", Saber-4, Smallsword-4, Tonfa-3)),
+	description(TL:8)
+
+<Weapons - Muscle-Powered Ranged Weapons>
+Darkstick (Bladed), page(EQ?), basecost(50), baseweight(2), techlvl(10), mods(Equipment, Quality Cutting Class), lc(4),
+	newmode(thrown, damage(sw+1), dmg(sw), damtype(cut), minst(7), rangehalfdam(ST*1.5), rangemax(ST*3), calcrange(yes), acc(2), rof(1), shots(T(1)), bulk(-3), skillused(Thrown Weapon (Stick), DX-4), cat(Weapons - Muscle-Powered Ranged Weapons))
+
+Darkstick , page(EQ?), basecost(20), baseweight(1), techlvl(0), mods(Equipment, Quality Crushing/Imp Class), lc(4),
+	newmode(thrown, damage(sw), dmg(sw), damtype(cr), minst(6), rangehalfdam(ST*2), rangemax(ST*4), calcrange(yes), acc(2), rof(1), shots(T(1)), bulk(-3), skillused(Thrown Weapon (Stick), DX-4), cat(Weapons - Muscle-Powered Ranged Weapons))
+
+Discblade, page(EQ?), basecost(50), baseweight(1.5), techlvl(2), mods(Equipment, Quality Cutting Class), lc(4),
+	newmode(trown, damage(thr+1), dmg(thr), damtype(cut), minst(6), rangehalfdam(ST*4), rangemax(ST*6), calcrange(yes), acc(1), rof(1), shots(T(1)), bulk(-2), skillused(Thrown Weapon (Disc), DX-4, Throwing-2), cat(Weapons - Muscle-Powered Ranged Weapons))
+
+Discblade (Cortosis), page(EQ?), basecost(2000), baseweight(1.25), techlvl(10), mods(Equipment, Quality Cutting Class), lc(2),
+	newmode(thrown, damage(thr+2), dmg(thr), damtype(cut), minst(6), rangehalfdam(ST*4), rangemax(ST*6), calcrange(yes), acc(1), rof(1), shots(T(1)), bulk(-2), skillused(Thrown Weapon (Disc), DX-4, Throwing-2), cat(Weapons - Muscle-Powered Ranged Weapons))
+
+<Weapons - Hand Grenades & Incendaries>
+Czerka Agent T-238 Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(7), malf(17), lc(2), units(kg), baseweight(0.5), basecost(650), damage(HT-5), damtype(aff (4m.)), minst(4), rof(1), shots(T(1)), bulk(-1), fuse(4), notes(), page(EQ?), description(TL:7 LC:2 Dam:HT-5 Fuse:4 A Contact-Based affliction that affects a 4-meter radius. The Sealed advantages each give +5 to the HT roll. If you fail to resist, you are nauseated for a number of hours equal to the margin of failure. Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 4 seconds later.), mods(Equipment)
+
+Czerka Fex-M3 Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(7), malf(17), lc(2), units(kg), baseweight(0.5), basecost(1050), damage(2d), damtype(tox (4m.)), minst(4), rof(1), shots(T(1)), bulk(-1), fuse(4), notes(), page(EQ?), description(TL:7 LC:2 Dam:2d tox, follow-up one-minute interval for 6 cycles Fuse:4 A Respiratory-Based affliction that affects a 4-meter radius. The Sealed advantages negates the effects. Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 4 seconds later.), mods(Equipment)
+
+Czerka Smoke Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(6), malf(17), lc(2), units(kg), baseweight(0.5), basecost(150), damage(HT), damtype(), minst(4), rof(1), shots(T(1)), bulk(-1), fuse(5), notes(), page(EQ?), description(TL:6 LC:3 Dam:HT, Fuse:5, causes Coughing and 1d levels of reduced vision A Respiratory-Based affliction that affects a 4-meter radius. The Sealed advantages negates the Coughing effects. Other Vision types negates the reduced vision. Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 4 seconds later.), mods(Equipment)
+
+Czerka Plank Gas Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(7), malf(17), lc(2), units(kg), baseweight(0.5), basecost(850), damage(1d), damtype(cor (2m.)), minst(4), rof(1), shots(T(1)), bulk(-1), fuse(4), notes(), page(EQ?), description(TL:7 LC:2 Dam:1d cor, follow-up one-second interval for 3 cycles Fuse:4 A corrosive chemical that affects a 4-meter radius, negating Hardness and Semi-Ablative of armor. Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 4 seconds later.), mods(Equipment)
+
+Merr-Sonn C-10 Stun Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(10), malf(17), lc(2), units(kg), baseweight(0.5), basecost(600), damage(HT-5/HT-2), damtype(aff (4m.)), minst(4), rof(1), shots(T(1)), bulk(-1), fuse(2), notes([2,5]), page(EQ?), description(TL:10 LC:2 Dam:HT-5/HT-2 Fuse:2 Notes: [2,5] A vision and Hearing-Based affliction that affects a 4-meter radius. The Protected Hearing and Protected vision advantages each give +5 to the HT roll. If you resist you are stunned for 6 seconds. If you fail to resist, you are stunned for 4d+6 seconds; roll against HT-5/HT-2 to recover each turn. Also creates smoke in the area of affect. Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 2 seconds later.), mods(Equipment)
+
+Merr-Sonn C-16 Frag Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(6), malf(17), lc(2), baseweight(0.5), basecost(500), damage(4d), damtype(cr ex [2d]), minst(6), fuse(5), notes(), page(EQ?), description(TL:6 LC:2 Dam:4d Fuse:5 Notes: Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 4 seconds later.), mods(Equipment)
+
+Merr-Sonn C-22 Frag Grenade, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(7), malf(17), lc(2), baseweight(0.5), basecost(700), damage(4d), damtype(cr ex [2d]), minst(6), fuse(4), notes(), page(EQ?), description(TL:7 LC:2 Dam:4d Fuse:4 Notes: Takes one Ready maneuver to draw the grenade and a second Ready maneuver to pull the pin. Detonates 4 seconds later. Timer can be set to up to 20 seconds. Can be magnetically secured against vehicles.), mods(Equipment)
+
+Merr-Sonn Class-A Thermal Detonator, skillused(Throwing, DX-3, Dropping-4), rangemax(@int(@indexedvalue(ST:Lifting ST,0.12,0.4,0.7,1,1.5,2,2,2.5,2.5,3.5) * ST:Striking ST)), techlvl(11), malf(16), lc(1), baseweight(0.5), basecost(2000), damage(8d+6), damtype(bu rad [2d]), minst(6), fuse(6-18), notes(), page(EQ?), description(TL:11 LC:1 Dam:8d+6 Fuse:6-18 Notes: Takes one Ready maneuver to draw the grenade and a second Ready maneuver to slide the lever. Detonates 6-18 seconds later. Malfunctions on 16or higher.), mods(Equipment)
+
+<Weapons - Slugthrowers>
+*Slugthrower Pistols
+Prax Arms Velocity-7, ammo(Dart), page(EQ?), basecost(300), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality SLugthrowers), lc(3), description(TL:11 LC:3 Ammo:Dart Damage 1d Pi- Range10/100 RoF:1 Shots 1(5) ST:8 Bulk:-2 Rcl:2 Skill:Guns (Pistol)), damage(1d), damtype(pi-), minst(8), rangehalfdam(10), rangemax(100), acc(1), rof(10), shots(1(5)), rcl(2), bulk(-2), skillused(Guns (Pistol), DX-4, SK:Guns (Grenade Launcher) - 4, SK:Guns (Gyroc) - 4, SK:Guns (Light Anti-Armor Weapon) - 4, SK:Guns (Light Machine Gun) - 2, SK:Guns (Musket) - 2, SK:Guns (Pistol) - 2, SK:Guns (Rifle) - 2, SK:Guns (Shotgun) - 2, SK:Guns (Submachine Gun) - 2, SK:Gun!)
+
+*Hold-out Slugthrower Pistols
+
+*Slugthrower Rifles
+Czerka 6-2Aug2 Hunting Rifle, ammo(6mm Slug), page(EQ?), basecost(350), baseweight(8), techlvl(7), malf(13), mods(Equipment, Quality Slugthrowers), lc(3), description(TL:7 LC:3 Ammo:6mm Slug Damage:3d pi Acc:6 Range:80/900 RoF:1 Shots1(3) ST:9† Bulk:-6 Rcl:3 Skill:Guns (Rifle) Notes: Unreliable. Malfunctions on 13+), damage(3d), damtype(pi), minst(9†), rangehalfdam(80), rangemax(900), acc(6), rof(1), shots(1(3)), rcl(3), bulk(-6), skillused(Guns (Rifle), DX-4, Guns (Grenade Launcher)-4) Guns (Gyroc)-4, Guns (Light Anti-Armor Weapon)-4, Guns (Light Machine Gun)-2, Guns (musket-2, Guns (pistol)-2, Guns (Shotgun)-2, Guns (Submachine Gun)-2, Gun!)
+
+Dressellian Projectile Rifle, ammo(4mm Slug), page(EQ?), basecost(300), baseweight(4), techlvl(6), malf(12), mods(Equipment, Quality Slugthrowers), lc(3), description(TL:6 LC:3 Ammo:6mm Slug Damage:2d pi Acc:5 Range:150/300 RoF:3 Shots12(3) ST:10v Bulk:-5 Rcl:3 Skill:Guns (Rifle) Notes: Unreliable. Malfunctions on 12+), damage(2d), damtype(pi), minst(10†), rangehalfdam(150), rangemax(300), acc(5), rof(3), shots(12(3)), rcl(3), bulk(-5), skillused(Guns (Rifle), DX-4, Guns (Grenade Launcher)-4) Guns (Gyroc)-4, Guns (Light Anti-Armor Weapon)-4, Guns (Light Machine Gun)-2, Guns (musket-2, Guns (pistol)-2, Guns (Shotgun)-2, Guns (Submachine Gun)-2, Gun!)
+
+Tusken Cycler Rifle, ammo(6mm Slug), page(EQ?), basecost(300), baseweight(9), techlvl(6), malf(12), mods(Equipment, Quality Slugthrowers), lc(3), description(TL:6 LC:3 Ammo:6mm Slug Damage:3d pi Acc:6 Range:80/900 RoF:1 Shots1(5) ST:9† Bulk:-6 Rcl:3 Skill:Guns (Rifle) Notes: Unreliable. Malfunctions on 12+), damage(3d), damtype(pi), minst(9†), rangehalfdam(80), rangemax(900), acc(6), rof(1), shots(1(5)), rcl(3), bulk(-6), skillused(Guns (Rifle), DX-4, Guns (Grenade Launcher)-4) Guns (Gyroc)-4, Guns (Light Anti-Armor Weapon)-4, Guns (Light Machine Gun)-2, Guns (musket-2, Guns (pistol)-2, Guns (Shotgun)-2, Guns (Submachine Gun)-2, Gun!)
+
+
+<Weapons - Beam Weapons>
+*Blaster Pistols
+BlasTech DH-17 Blaster Pistol, ammo(Power pack), page(EQ?), basecost(550), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power pack Damage:3d-1 (5) burn Acc:3 Range:30/120 RoF:3 Shots:100(5) ST:8 Bulk:-2 Rcl:2 Skill:Beam Weapons (Pistol)), damage(3d-1), armordivisor(5), damtype(burn), minst(8), rangehalfdam(30), rangemax(120), acc(3), rof(3), shots(100(5)), rcl(2), bulk(-2), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+BlasTech DH-23 Outback Blaster Pistol, ammo(Power pack), page(EQ?), basecost(500), baseweight(1), techlvl(11), malf(18), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power pack Damage:3d-2 (5) burn Acc:2 Range:30/80 RoF:3 Shots:100(5) ST:8 Bulk:-2 Rcl:2 Skill:Beam Weapons (Pistol)), damage(3d-2), armordivisor(5), damtype(burn), minst(8), rangehalfdam(30), rangemax(80), acc(3), rof(3), shots(100(5)), rcl(2), bulk(-2), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+BlasTech DL-18 Blaster Pistol, ammo(Powerpack), page(EQ?), basecost(500), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power pack Damage:3d (5) burn Acc:2 Range:30/90 RoF:3 Shots:100(5) ST:8 Bulk:-2 Rcl:2 Skill:Beam Weapons (Pistol)), damage(3d), armordivisor(5), damtype(burn), minst(8), rangehalfdam(30), rangemax(90), acc(2), rof(3), shots(100(5)), rcl(2), bulk(-2), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+BlasTech DL-18 Blaster Pistol, ammo(Powerpack), page(EQ?), basecost(500), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power pack Damage:3d (5) burn Acc:2 Range:30/90 RoF:3 Shots:100(5) ST:8 Bulk:-2 Rcl:2 Skill:Beam Weapons (Pistol)), damage(3d), armordivisor(5), damtype(burn), minst(8), rangehalfdam(30), rangemax(90), acc(2), rof(3), shots(100(5)), rcl(2), bulk(-2), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+BlasTech DL-21 Blaster Pistol, ammo(Powerpack), page(EQ?), basecost(600), baseweight(1.1), techlvl(11), malf(18), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power pack Damage:3d-2 (5) burn Acc:3 Range:25/50 RoF:3 Shots:100(5) ST:8 Bulk:-3 Rcl:2 Skill:Beam Weapons (Pistol)), damage(3d-2), armordivisor(5), damtype(burn), minst(8), rangehalfdam(25), rangemax(75), acc(3), rof(3), shots(100(5)), rcl(2), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+BlasTech DL-22 Blaster Pistol, ammo(Power pack), page(EQ?), basecost(550), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power Pack [Mode:blaster Damage:3d+1 (5) burn Acc:2 Range:30/120 RoF:3 Shots:100(5) ST:8 Bulk:-2 Rcl:2 Skill:Beam Weapons (Pistol)], [Mode:stun Damage:HT+2 (3) aff Acc:4 Range:3/12 RoF:1 Shots:100(5) ST:8 Bulk:-2 Rcl:1 Skill:Beam Weapons (Projector)]), 
+	newmode(blaster, damage(3d+1), armordivisor(5), damtype(burn), minst(8), rangehalfdam(30), rangemax(120), acc(2), rof(3), shots(100(5)), rcl(2), bulk(-2), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Rifle)-4)), 
+	newmode(stun, damage(HT-1), armordivisor(3), damtype(aff), minst(8), rangehalfdam(3), rangemax(12), acc(4), rof(1), shots(100(5)), rcl(1), bulk(-2), skillused(Guns!, Beam Weapons (Projector), DX-4, Beam Weapons-4, Guns (Pistol)-4)), cat(Weapons - Beam Weapons)
+
+SoroSuub ELG-3A Blaster Pistol, ammo(Power pack), page(EQ?), basecost(500), baseweight(0.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:2 Ammo:Power pack Damage:2d (5) burn Acc:2 Range:5/20 RoF:3 Shots:6(5) ST:7 Bulk:-1 Rcl:2 Skill:Beam Weapons (Pistol)), damage(2d), armordivisor(5), damtype(burn), minst(7), rangehalfdam(5), rangemax(20), acc(2), rof(3), shots(6(5)), rcl(2), bulk(-1), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+Westar-34 Blaster Pistol, ammo(Power Pack), page(EQ?), basecost(1900), baseweight(0.8), techlvl(11), malf(18), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power Pack Damage:3d+2 burn Acc:3 Range:15/40 RoF:6 Shots:50(5) ST:8 Bulk:-2 Skill:Beam Weapons (Pistol)), damage(3d+2), armordivisir(5), damtype(burn), minst(8), rangehalfdam(15), rangemax(40), acc(3), rof(6(5)), rcl(2), bulk(-2), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+*Disruptor Pistols
+Mandalorian Disruptor Pistol, ammo(Power Pack/Tibanna gas), page(EQ?), basecost(26950), baseweight(1.25), techlvl(12), mods(Equipment, Quality Beam), lc(0), description(TL:12 LC:0 Ammo:Power pack & Tibanna gas Damage:6dx6 (∞) cor Acc:3 Range:23/35 RoF:1 Shots:10(8) ST:9 Bulk:-3 Rcl:4 Skill:Beam Weapons (Pistol)), damage(6dx6), armordivisor(∞), damtype(cor), minst(9), rangehalfdam(23), rangemax(35), acc(3), rof(1), shots(10(8)), rcl(4), bulk(-3), skillused(Guns!,Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+*Heavy Blaster Pistols
+BlasTech DL-44 Heavy Blaster Pistol, ammo(Power pack), page(EQ?), basecost(750), baseweight(1.3), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:4d (5) burn Acc:2 Range:25/50 RoF:1 Shots:50(5) ST:9 Bulk:-3 Rcl:3 Skill:Beam Weapons (Pistol)), damage(4d), armordivisor(5), damtype(burn), minst(9), rangehalfdam(25), rangemax(50), acc(2), rof(1), shots(50(5)), rcl(3), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+Corellian Arms CR-2 Heavy Blaster Pistol, ammo(Power pack), page(EQ?), basecost(1650), baseweight(1.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power Pack [Mode:blaster Damage:4d-2 (5) burn sur Acc:2 Range:25/50 RoF:1 Shots:50(5) ST:9 Bulk:-3 Rcl:3 Skill:Beam Weapons (Pistol)], [Mode:stun Damage:HT+1 (3) aff Acc:4 Range:2/10 RoF:1 Shots:50(5) ST:9 Bulk:-3 Rcl:1 Skill:Beam Weapons (Projector)]), 
+	newmode(blaster, damage(4d-2), armordivisor(5), damtype(burn sur), minst(9), rangehalfdam(25), rangemax(50), acc(2), rof(1), shots(50(5)), rcl(3), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Rifle)-4)), 
+	newmode(stun, damage(HT-2), armordivisor(3), damtype(aff), minst(9), rangehalfdam(2), rangemax(10), acc(4), rof(1), shots(50(5)), rcl(1), bulk(-3), skillused(Guns!, Beam Weapons (Projector), DX-4, Beam Weapons-4, Guns (Pistol)-4)), cat(Weapons - Beam Weapons)
+
+Merr-Sonn Flash 4 Heavy Blaster Pistol, ammo(Power pack), page(EQ?), basecost(750), baseweight(1.3), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:4d (5) burn Acc:2 Range:25/80 RoF:1 Shots:50(5) ST:9 Bulk:-3 Rcl:3 Skill:Beam Weapons (Pistol)), damage(4d), armordivisor(5), damtype(burn), minst(9), rangehalfdam(25), rangemax(80), acc(2), rof(1), shots(50(5)), rcl(3), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+Merr-Sonn Power 5 Heavy Blaster Pistol, ammo(Power pack), page(EQ?), basecost(825), baseweight(1.1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:4d-2 (5) burn Acc:2 Range:25/50 RoF:1 Shots:75(5) ST:8 Bulk:-3 Rcl:3 Skill:Beam Weapons (Pistol)), damage(4d-2), armordivisor(5), damtype(burn), minst(8), rangehalfdam(25), rangemax(50), acc(2), rof(1), shots(75(5)), rcl(3), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+S-5 Heavy Blaster Pistol, ammo(Power pack), page(EQ?), basecost(900), baseweight(1.3), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power Pack, Dart, Grappling Hook [Mode:blaster Damage:4d-2 (5) burn sur Acc:2 Range:25/50 RoF:3 Shots:40(5) ST:9 Bulk:-4 Rcl:3 Skill:Beam Weapons (Pistol)], [Mode:dart Damage:1d-2 pi- Acc:1 Range:5/25 RoF:1 Shots:1(5) ST:9 Bulk:-3 Rcl:3 Skill:Guns (Pistol)], [Mode:stun Damage:HT+1 (3) aff Acc:1 Range:1/5 RoF:1 Shots:1(5) ST:9 Bulk:-4 Rcl:1 Skill:Beam Weapons (Pistol)]), 
+	newmode(blaster, damage(4d-2), armordivisor(5), damtype(burn sur), minst(9), rangehalfdam(25), rangemax(50), acc(2), rof(3), shots(40(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Rifle)-4)),
+	newmode(dart, damage(1d-2), armordivisor(), damtype(pi-), minst(9), rangehalfdam(5), rangemax(25), acc(1), rof(1), shots(1(5)) , rcl(3), bulk(-4), skillused(Guns!, Guns (Pistol), DX-4, Guns (Grenade Launcher)-4, Guns (Gyroc)-4, Guns (Light Anti-Armor Weapon)-4, Guns (Light Machine Gun)- 2, Guns (Musket)-2, Guns (Pistol)-2, Guns (Rifle)-2, Guns (Shotgun)-2, Guns (Submachine Gun)-2)), cat(Weapons - Beam Weapons),
+	newmode(stun, damage(HT-2), armordivisor(3), damtype(aff), minst(9), rangehalfdam(1), rangemax(5), acc(1), rof(1), shots(1(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Rifle)-4)), cat(Weapons - Beam Weapons)
+
+*Hold-Out Blaster Pistols
+Czerka 411 Hold-Out Blaster Pistol, ammo(Power pack), page(EQ?), basecost(300), baseweight(0.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:2d-1 (5) burn Acc:1 Range:10/40 RoF:1 Shots:6(5) ST:7 Bulk:-1 Rcl:2 Skill:Beam Weapons (Pistol)), damage(2d-1), armordivisor(5), damtype(burn), minst(7), rangehalfdam(10), rangemax(40), acc(1), rof(1), shots(6(5)), rcl(2), bulk(-1), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+Gee-Tech 12 Defender, ammo(Power pack), page(EQ?), basecost(400), baseweight(0.25), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:2d (5) burn Acc:1 Range:2/8 RoF:2 Shots:2 ST:5 Bulk:0 Rcl:2 Skill:Beam Weapons (Pistol)), damage(2d), armordivisor(5), damtype(burn), minst(5), rangehalfdam(2), rangemax(10), acc(1), rof(2), shots(2), rcl(2), bulk(0), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+Merr-Sonn Model Q2 Hold-Out Blaster Pistol, ammo(Power pack), page(EQ?), basecost(300), baseweight(0.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:2d (5) burn Acc:1 Range:3/12 RoF:3 Shots:6(5) ST:7 Bulk:-1 Rcl:2 Skill:Beam Weapons (Pistol)), damage(2d), armordivisor(5), damtype(burn), minst(7), rangehalfdam(3), rangemax(12), acc(1), rof(3), shots(6(5)), rcl(2), bulk(-1), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+*Sporting Blaster Pistols
+DDC Defender Sporting Blaster Pistol, ammo(Powerpack), page(EQ?), basecost(350), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(4), description(TL:11 LC:4 Ammo:Power pack Damage:1d (5) burn Acc:5 Range:20/60 RoF:1 Shots:100(5) ST:7 Bulk:-3 Rcl:2 Skill:Beam Weapons (Pistol)), damage(1d), armordivisor(5), damtype(burn), minst(7), rangehalfdam(20), rangemax(60), acc(5), rof(1), shots(100(5)), rcl(2), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+*Ion Pistols
+Merr-Sonn DEMP Ion Pistol, ammo(power pack), page(EQ?), basecost(250), baseweight(1), techlvl(11), malf(17), mods(Equipment, Quality beam), lc(3), description(TL:11 LC:3 Ammo:Power Pack Damage: 3d(5) Ion Acc:2 Range: 25/50 RoF:1 Shots:30(5) ST:7 Bulk:-3 Rcl:2 skill: beam Weapons (Pistol)), damage(3d), armordivisor(5), damtype(ion), minst(7), rangehalfdam(25), rangemax(50), acc(2), rof(1), shots(30(5)), rcl(2), bulk(-3), skillused(Guns!, Beam Weapons (Pistol), DX-4, Beam Weapons-4, Guns (Pistol)-4), cat(Weapons - Beam Weapons)
+
+*Ion carbines
+Merr-Sonn DEMP Ion Carbine, ammo(Power pack), page(EQ?), basecost(800), baseweight(3.1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), description(TL:11 LC:3 Ammo:Power pack Damage:4d (5) ion Acc:4 Range:50/150 RoF:1 Shots:25(5) ST:10† Bulk:-4 Rcl:3 Skill:Beam Weapons (Rifle)), damage(4d), armordivisor(5), damtype(ion), minst(10†), rangehalfdam(50), rangemax(150), acc(4), rof(1), shots(25(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+Merr-Sonn DEMP 2 Ion Carbine, ammo(Power pack), page(EQ?), basecost(800), baseweight(3.1), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), bulk(-4), description(TL:11 LC:3 Ammo:Power Pack [Mode: regular fire Damage:5d (5) ion Acc:4 Range:3/125 RoF:1 Shots:20(5) ST:10† Bulk:-4 Rcl:3 Skill:Beam Weapons (Projector)], [Mode: area fire Damage:5d (5) cr ion Acc:3 Range:125 RoF:1 Shots:5(5) ST:10† Bulk:-4 Rcl:3 Skill:Guns (Grenade Launcher)]), cat(Weapons - Beam Weapons),
+	newmode(regular fire, damage(5d), armordivisor(5), damtype(ion), minst(10†), rangehalfdam(3), rangemax(125), acc(4), rof(1), shots(20(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Projector), DX-4, Beam Weapons-4, Guns (Rifle)-4)),
+	newmode(area fire, damage(5d), armordivisor(5), damtype(cr ion), minst(10†), rangehalfdam(), rangemax(125), acc(3), rof(1), shots(5(5)), rcl(3), bulk(-4), skillused(Guns!, Guns (Grenade Launcher), DX-4, Beam Weapons-4, Guns (Rifle)-4))
+
+*Blaster Carbines
+BAW E-5 Droid Blaster Carbine, ammo(Power pack), page(EQ?), basecost(900), baseweight(2.2), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:5d (5) burn Acc:4 Range:50/150 RoF:3 Shots:100(5) ST:9† Bulk:-3 Rcl:2 Skill:Beam Weapons (Rifle)), damage(5d), armordivisor(5), damtype(burn), minst(9†), rangehalfdam(50), rangemax(150), acc(4), rof(3), shots(100(5)), rcl(2), bulk(-3), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+BlasTech DC-15S Blaster Carbine, ammo(Power pack), page(EQ?), basecost(950), baseweight(3.8), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power Pack [Mode:blaster Damage:5d (5) burn sur Acc:4 Range:60/180 RoF:3 Shots:100(5) ST:9† Bulk:-3 Rcl:2 Skill:Beam Weapons (Rifle)], [Mode:cable Damage:spec Acc:2 Range:30 RoF:1 Shots:1(20) ST:9† Bulk:-3 Rcl:4 Skill:Guns (Grenade Launcher)]), cat(Weapons - Beam Weapons), 
+	newmode(blaster, damage(5d), armordivisor(5), damtype(burn sur), minst(9†), rangehalfdam(60), rangemax(180), acc(4), rof(3), shots(100(5)), rcl(2), bulk(-3), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4)), 
+	newmode(cable, damage(), armordivisor(), damtype(), minst(9†), rangehalfdam(), rangemax(30), acc(2), rof(1), shots(1(20)), rcl(4), bulk(-3), skillused(Guns!, Guns (Grenade Launcher), DX-4, Beam Weapons-4, Guns (Rifle)-4))
+
+SoroSuub Duo Blaster Carbine, ammo(Power pack), page(EQ?), basecost(1200), baseweight(2.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(3), bulk(-4), description(TL:11 LC:3 Ammo:Power Pack [Mode: single shot Damage:3d (5) burn Acc:4 Range:20/60 RoF:1 Shots:50(5) ST:10† Bulk:-4 Rcl:2 Skill:Beam Weapons (Rifle)], [Mode: dual shot Damage:6d (5) burn Acc:3 Range:20/60 RoF:1 Shots:25(5) ST:10† Bulk:-4 Rcl:3 Skill:Beam Weapons (Rifle)]), cat(Weapons - Beam Weapons),
+	newmode(single shot, damage(3d), armordivisor(5), damtype(burn), minst(10†), rangehalfdam(20), rangemax(60), acc(4), rof(1), shots(50(5)), rcl(2), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4)),
+	newmode(dual shot, damage(6d), armordivisor(5), damtype(burn), minst(10†), rangehalfdam(20), rangemax(60), acc(3), rof(1), shots(25(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4))
+
+*Blaster Rifles
+BlasTech E-11 Blaster Rifle, ammo(Power pack), page(EQ?), basecost(1000), baseweight(4.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:6d (5) burn Acc:5 Range:100/300 RoF:3 Shots:100(5) ST:10† Bulk:-4 Rcl:2 Skill:Beam Weapons (Rifle)), damage(6d), armordivisor(5), damtype(burn), minst(10†), rangehalfdam(100), rangemax(300), acc(5), rof(3), shots(100(5)), rcl(2), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+BlasTech E-11 Omni-Blaster Rifle, ammo(Power pack), page(EQ?), basecost(2000), baseweight(5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power Pack [Mode:blaster Damage:6d (5) burn Acc:5 Range:100/300 RoF:3 Shots:100(5) ST:10† Bulk:-4 Rcl:2 Skill:Beam Weapons (Rifle)], [Mode:stun Damage:HT-6 (3) aff Acc:10 Range:10/30 RoF:1 Shots:100(5) ST:10† Bulk:-4 Rcl:1 Skill:Beam Weapons (Rifle)]), 
+	newmode(blaster, damage(6d), armordivisor(5), damtype(burn), minst(10†), rangehalfdam(100), rangemax(300), acc(5), rof(3), shots(100(5)), rcl(2), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4)), 
+	newmode(stun, damage(HT-6), armordivisor(3), damtype(aff), minst(10†), rangehalfdam(10), rangemax(30), acc(10), rof(1), shots(100(5)), rcl(1), bulk(-4), skillused(Guns!, Beam Weapons (Projector), DX-4, Beam Weapons-4, Guns (Rifle)-4)), cat(Weapons - Beam Weapons)
+
+Charric, ammo(Power pack), page(EQ?), basecost(500), baseweight(4.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:5d (5) burn Acc:5 Range:100/250 RoF:1 Shots:40(5) ST:10† Bulk:-4 Rcl:3 Skill:Beam Weapons (Rifle)), damage(5d), armordivisor(5), damtype(burn), minst(10†), rangehalfdam(100), rangemax(250), acc(5), rof(1), shots(40(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+Charric (Omni), ammo(Power pack), page(EQ?), basecost(1000), baseweight(5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power Pack [Mode:blaster Damage:5d (5) burn Acc:5 Range:100/250 RoF:1 Shots:40(5) ST:10† Bulk:-4 Rcl:3 Skill:Beam Weapons (Rifle)], [Mode:stun Damage:HT-3 (3) aff Acc:5 Range:100/250 RoF:1 Shots:40(5) ST:10† Bulk:-4 Rcl:3 Skill:Beam Weapons (Rifle)]), 
+	newmode(blaster, damage(5d), armordivisor(5), damtype(burn), minst(10†), rangehalfdam(100), rangemax(250), acc(5), rof(1), shots(40(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4)), 
+	newmode(stun, damage(HT-3), armordivisor(3), damtype(aff), minst(10†), rangehalfdam(100), rangemax(250), acc(5), rof(1), shots(40(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4)), cat(Weapons - Beam Weapons)
+
+Dur-24 Wrist Laser, ammo(Power pack), page(EQ?), basecost(1200), baseweight(1.5), techlvl(11), malf(17), mods(Equipment, Quality Beam), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:6d (3) burn Acc:4 Range:25/50 RoF:1 Shots:4(10) ST:8 Bulk:-3 Rcl:2 Skill:Beam Weapons (Rifle) or Innate Attack (Beam)), damage(6d), armordivisor(3), damtype(burn), minst(8), rangehalfdam(25), rangemax(50), acc(3), rof(1), shots(4(10)), rcl(2), bulk(-3), skillused(Innate Attack (Beam), Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+*Heavy Blaster Rifles
+BlasTech RT-97C Heavy Blaster Rifle, ammo(Power pack), page(EQ?), basecost(2000), baseweight(7), techlvl(11), malf(17), mods(Equipment, Quality Beam, Weapons - Weapon & Combat Accessories), lc(2), description(TL:11 LC:2 Ammo:Power pack Damage:7d (5) burn Acc:6 Range:500/1500 RoF:3 Shots:100(5) ST:11v Bulk:-5 Rcl:3 Skill:Beam Weapons (Rifle)), damage(7d), armordivisor(5), damtype(burn), minst(11†), rangehalfdam(500), rangemax(1500), acc(6), rof(1), shots(100(5)), rcl(3), bulk(-5), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+*Sporting Blaster Rifles
+DDC Light Sport Sporting Blaster Rifle, ammo(Power pack), page(EQ?), basecost(800), baseweight(4), techlvl(11), malf(17), mods(Equipment, Quality Beam, Weapons - Weapon & Combat Accessories), lc(4), description(TL:11 LC:4 Ammo:Power pack Damage:1d (5) burn Acc:6 Range:125/400 RoF:1 Shots:50(5) ST:11† Bulk:-5 Rcl:2 Skill:Beam Weapons (Rifle)), damage(1d), armordivisor(5), damtype(burn), minst(11†), rangehalfdam(125), rangemax(400), acc(6), rof(1), shots(50(5)), rcl(2), bulk(-5), skillused(Guns!, Beam Weapons (Rifle), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+*Personal Repeating Blasters
+BlasTech T-21 Repeating Blaster, ammo(Power pack), page(EQ?), basecost(1000), baseweight(4.5), techlvl(11), malf(17), mods(Equipment, Quality Beam, Weapons - Weapon & Combat Accessories), lc(2), description(TL:11 LC:2 Ammo:Power pack or Portable CTGT Damage:5d (5) burn Acc:4 Range:150/300 RoF:20 Shots30(5)/4320(20) ST:11†/12† Bulk:-5/-7 Rcl:3 Skill: Beam Weapons (Repeater)), damage(5d), armordivisor(5), damtype(burn), minst(11†), rangehalfdam(150), rangemax(300), acc(4), rof(20), shots(30(5)), rcl(3), bulk(-5), skillused(Guns!, Beam Weapons (Repeater), DX-4, Beam Weapons-4, Guns(Repeater)-4), cat(Weapons - Beam Weapons)
+
+*Sonic Blaster Pistols
+
+*Sonic Blaster Carbines
+
+*Sonic Blaster Rifles
+Gordarl Geonisian Sonic Blaster, ammo(Power Pack), page(EQ?), basecost(1100), baseweight(3), techlvl(11), malf(17), mods(Equipment, Quality Beam, Weapons - Weapon & Combat Accessories), lc(2), description(TL:11 LC:3 Ammo: Power Pack Damage:4d cr (1m) + Knockback Acc:6 Range:15/40 RoF:1 Shots6(5) ST:10† Bulk:-4 Rcl:3 Skill: Beam Weapons (Rifle)), damage(4d), armordivisor(5), damtype(cr), minst(10†), rangehalfdam(15), rangemax(40), acc(6), rof(1), shots(6(5)), rcl(3), bulk(-4), skillused(Guns!, Beam Weapons (Projector), DX-4, Beam Weapons-4, Guns (Rifle)-4), cat(Weapons - Beam Weapons)
+
+<Weapons - Liquid Projectors>
+*Flamethrowers
+Czerka ZX Miniature Flame Thrower, page(EQ?), basecost(1800), baseweight(15), techlvl(11), mods(Guns, Equipment), lc(3), description(TL:11 LC:2 Damage:3d burn Acc:0 Range:1/5 RoF:Jet Shots:180x1s ST:11 Bulk:-7 Rcl:0 Skill:Liquid Projector (Flamethrower)), damage(3d), damtype(burn), minst(11), rangehalfdam(1), rangemax(5), acc(0), rof(Jet), shots(180x1s), rcl(0), bulk(-7),  skillused(Liquid Projector (Flamethrower), DX-4, Liquid Projector-4, Gun!)
+
+<Weapons - Heavy Weapons>
+*Missile Launchers
+MM9 Mini Concussion Rocket Launcher, page(EQ?), basecost(2000), baseweight(4), techlvl(9), mods(Equipment, Guns), lc(1),
+	description(TL:9 LC:1 Damage: Acc:3 Range:50/500 RoF:1 Shots:1(5) ST:7† Bulk:-4 Rcl:1 Skill:Artillery (Guided Missile)),
+	damage(), damtype(pi++), minst(7†), rangehalfdam(50), rangemax(500), acc(3), rof(1), shots(1(5)), rcl(1), bulk(-4), skillused(Gun!, Artillery (Guided Missile), IQ-5, Artillery-4)
+
+<Weapons - Ammunition>
+*Ammo Darts
+Kamino Saberdart, page(EQ?), basecost(15), baseweight(0.3), techlvl(11), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:11)
+Velocity-7 Dart, page(EQ?), basecost(1.5), baseweight(0.5), techlvl(11), mods(Equipement), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:11)
+
+*Ammo Electromagnetic
+"3x6mm EM Projectiles, 100pcs", page(EQ?), basecost(4), baseweight(0.4), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:10)
+"4x8mm EM Projectiles, 100pcs", page(EQ?), basecost(6), baseweight(0.6), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:10)
+"7x14mm EM Projectiles, 100pcs", page(EQ?), basecost(24), baseweight(2.4), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:10)
+
+*Ammo Missiles & Rockets
+Merr-Sonn 1126 Rocket, page(EQ?), basecost(600), baseweight(1), techlvl(10), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:10)
+MM9 Concussion Rocket, page(EQ?), basecost(400), baseweight(1), techlvl(9), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:9)
+Type-12 A Anti-Personnel Rocket, page(EQ?), basecost(400), baseweight(1), techlvl(9), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:9)
+Z-6 Anti-Vehicle Rocket, page(EQ?), basecost(400), baseweight(1), techlvl(9), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:9)
+
+*Ammo Slugs
+"4x20mm Slugs, 50pcs", page(EQ?), basecost(7), baseweight(1.0), techlvl(6), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:6)
+"6x25mm Slugs, 50pcs", page(EQ?), basecost(8), baseweight(1.8), techlvl(6), mods(Equipment), cat(Weapons - Weapons & Combat Accessories, Weapons - Ammunition), description(TL:6)
+
+*Power Generators
+BlasTech T-21 Portable CTGT, page(EQ?), basecost(10000), baseweight(20), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+
+*Powerpacks
+BAW E-5 Power Pack, page(EQ?), basecost(30), baseweight(0.15), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+BlasTech DC-15A/S Power pack, page(EQ?), basecost(25), baseweight(0.2), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+BlasTech DH-17 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with BlasTech DH-23)
+BlasTech DH-23 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with BlasTech DH-17)
+BlasTech DL-18 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+BlasTech DL-21 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+BlasTech DL-22 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+BlasTech DL-44 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with Merr-Sonn Flash 4, Merr-Sonn Power 5)
+BlasTech E-11 Power pack, page(EQ?), basecost(35), baseweight(0.2), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with SoroSuub Stormtrooper One, SoroSuub Freedom One)
+Corellian Arms CR-2 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 )
+BlasTech RT-97C Power pack, page(EQ?), basecost(40), baseweight(0.3), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+BlasTech T-21 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+Charric Power Pack, Page(EQ?), basecost(35), baseweight(0.2), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+Corellian Arms CR-2 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 )
+Czerka 411 Power pack, page(EQ?), basecost(25), baseweight(0.05), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+DCC Defender Power Pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+DCC Light Sport Power Pack, page(EQ?), basecost(35), baseweight(0.2), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+Gordarl Sonic Blaster Power Pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+Merr-Sonn DEMP Power Pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+Merr-Sonn Flash 4 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with BlasTech DL-44, Merr-Sonn Power 5)
+Merr-Sonn Model Q2 Power pack, page(EQ?), basecost(20), baseweight(0.05), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with SoroSuub ELG-3A)
+Merr-Sonn Power 5 Power pack, page(EQ?), basecost(25), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with BlasTech DL-44, Merr-Sonn Flash 4)
+SoroSuub Duo Blaster Carbine Power Pack, page(EQ?), basecost(100), baseweight(0.15), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+S-5 Power Pack, page(EQ?)
+SoroSuub ELG-3A Power pack, page(EQ?), basecost(20), baseweight(0.05), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11 Compatible with Merr-Sonn Model Q2)
+Westar-34 Power Pack, Page(EQ?), basecost(20), baseweight(0.1), techlvl(11), mods(Equipment, Power Cells), cat(Weapons - Combat Accessories, Weapons - Ammunition), power(), description(TL:11)
+
+<Weapons - Combat Accessories>
+"Holster, Belt", techlvl(5), basecost(25), baseweight(0.25), description(TL:5 Notes: Fits most pistols.), page(EQ?), mods(Equipment)
+"Holster, Shoulder", techlvl(5), basecost(50), baseweight(0.5), description(TL:5 Notes: Allows use of Holdout, but gives -1 to Fast-Draw.), page(EQ?), mods(Equipment)
+
+HUD TargetFinder, basecost(200), baseweight(0.4), familiarities(), lc(4), mods(Equipment), noresync(yes), precountcost(4000), precountweight(0,4), techlvl(11), tl(), usernotes(), skillused(Electronics Operation (Sensors)), cat(New Equipment), initmods({"Equipment Quality: Fine (Beam Weapons (Rifle))", *20, conditional(+2 to SK:Beam Weapons (Rifle)), group(Equipment), level(1), page(EQ?), shortname(Quality Equipment), valuenum(20),x()})
+
+Optical Scope 2x, basecost(100), baseweight(0.5), mods(Scopes, Equipment), cat(Weapons - Combat Accessories)
+Optical Scope 4x, basecost(150), baseweight(0.75), mods(Scopes, Equipment), cat(Weapons - Combat Accessories)
+Optical Scope 6x, basecost(250), baseweight(1), mods(Scopes, Equipment), cat(Weapons - Combat Accessories)
+Optical Scope 8x, basecost(400), baseweight(1.25), mods(Scopes, Equipment), cat(Weapons - Combat Accessories)
+
+<Tools>
+*Hand Tools
+Gem Cutting Tools, techlvl(10), basecost(1200), baseweight(3), description(TL:10), page(EQ?), mods(Equipment),
+	Gives(_
+		=+1 to SK:Armoury (Lightsabers)_
+		)
+
+Portable Tool Kit (Electronics Repair), techlvl(11), basecost(250), baseweight(5), description(TL11), page(EQ?), mods(Equipment),
+	gives(+2 to SK:Electronics Repair)
+Portable Tool Kit (Explosives), techlvl(11), basecost(250), baseweight(5), description(TL11), page(EQ?), mods(Equipment),
+	gives(+2 to SK:Explosives)
+Portable Tool Kit (Mechanic), techlvl(11), basecost(250), baseweight(5), description(TL11), page(EQ?), mods(Equipment),
+	gives(+2 to SK:Mechanic)
+
+Precision Tool Kit, techlvl(10), basecost(1200), baseweight(0.5), description(TL10), page(EQ?), mods(Equipment),
+	Gives(_
+		=+2 to SK:Electronics Repair (Force),
+		=+1 to SK:Armoury (Lightsabers)_
+		)
+
+
+*Power Tools
+Blaster Repair Kit ([Manufacturer]), techlvl(10), basecost(125), baseweight(2), description(TL10), page(EQ?), mods(Equipment),
+	x(#InputReplace("Please enter the manufacturer:", [Manufacturer], " ", "Blaster Repair Kit"))
+
+Precicion Welding Tools, techlvl(10), basecost(50), baseweight(30), description(TL:11 Notes: 1d+3(5) burn per second. Each gas bottle gives 30 seconds of cutting.), page(EQ?), mods(Equipment)
+Welding Gas Bottle, techlvl(10), basecost(5), baseweight(15), description(TL:11 Notes: Each gas bottle gives 30 seconds of cutting.), page(EQ?), mods(Equipment)
+
+*Construction Tools
+Crystal Crucible, techlvl(^), basecost(5000), baseweight(20), description(TL:^ Notes: requires and Electronics Operation (Force) roll to operate. Crucible has Artist (Gem Cutting) 3 skill level), page(EQ?), mods(Equipment)
+Skull Crucible, techlvl(^), basecost(5000), baseweight(20), description(TL:^ Notes: requires and Electronics Operation (Force) roll to operate. Crucible has Artist (Gem Cutting) 3 skill level), page(EQ?), mods(Equipment)
+
+Workbench, techlvl(11), basecost(10000), baseweight(1000), description(TL11), page(EQ?), mods(Equipment),
+	Conditional(_
+			=+1 to SK:Armoury,
+			=+1 to SK:Electronics Repair,
+			=+1 to SK:Mechanic_
+			)
+
+<Scientific Gear>
+Suitcase Lab, techlvl(9), basecost(3000), baseweight(5), description(TL:9 Notes: Basic equipment for a specific scientific skill (e.g., Chemistry or Forensics).), page(EQ?), mods(Equipment)
+
+Pocket Analyzer, techlvl(9), basecost(500), baseweight(0.3), description(TL:9 Notes: Basic equipment for for analyzing small samples.), page(EQ?), mods(Equipment)
+
+<Medical Gear>
+*Field Equipment
+Antitoxin Kit, techlvl(9), basecost(25), baseweight(0.25), description(TL:9 Notes: an antidote for one specific non-nanotech toxin; 10 uses), page(EQ?), mods(Equipment)
+
+BioTech RFX/K Medisensor, techlvl(11), basecost(1100), baseweight(0.5), description(TL:11 Notes: A small but powerful short-range sensor designed to assist medics, +2 to Diagnosis skill), page(EQ?), mods(Equipment), conditional(+2 to SK:Diagnosis)
+
+First Aid Kit, techlvl(10), basecost(50), baseweight(1), description(TL:10 Notes: A complete kit for treating wounds, with bandages, kolto ointment, etc. +1 to First Aid skill. Restores 1 HP. Depleted when used), page(EQ?), mods(Equipment), conditional(+1 to "SK:First Aid")
+
+Kolto (Emergency Support Unit (10)), techlvl(10), basecost(300), baseweight(0.5), page(EQ?), mods(Equipment), usernotes(1 injection gun with 10 ampoules. 1 ampoule restores 1 HP and cost $25.)
+
+Medpac, techlvl(11), basecost(100), baseweight(1), description(TL:11 Notes: A complete kit for treating wounds, with bandages, bacta ointment, etc. +2 to First Aid skill. Restores 2 HP. Depleted when used), page(EQ?), mods(Equipment), conditional(+2 to "SK:First Aid")
+
+Surgical Equipment, techlvl(11), basecost(3000), baseweigt(12), description(TL:11 Notes:Description: Instruments for Surgery skill. Includes scalpels, forceps, precision medial power tools etc. Surgical equipment gives +2 to surgery skill), page(EQ?), mods(Equipment), conditional(+2 to SK:Surgery)
+
+Surgical Kit, techlvl(11), basecost(1000), baseweigt(8), description(TL:11 Notes:Description: Basic instruments for Surgery skill. Includes scalpels, forceps, etc. A surgical kit gives +1 to surgery skill), page(EQ?), mods(Equipment), conditional(+1 to SK:Surgery)
+
+SynthTech Medtech Corporation MDS-50, techlvl(10), basecost(75), baseweight(0.1), description(TL:11 Notes: a small, weak handheld sensor programmed to read the medical statistics of an individual over which it is passed, +1 to Diagnosis skill), page(EQ?), mods(Equipment), conditional(+1 to SK:Diagnosis)
+
+*Medication & Drugs
+Analgine, techlvl(9), basecost(50), baseweight(0), description(TL:9 Notes: This drug masks pain for a period equal to half the user's HT in hours. Unfortunately, the user is also Numb for the same period), page(EQ?), mods(Equipment)
+
+Bacta-Tank, techlvl(11), basecost(100,000), baseweight(500), description(TL:11 Notes: A specialized tank is filled with the powerful healing agent, bacta, which promotes rapid healing.), page(EQ?), mods(Equipment)
+
+Bacta Refil (1 liter), techlvl(11), basecost(100), baseweight(0.75), description(TL:11 Notes: A 1 liter refil of bacta for use in a bacta-tank), page(EQ?)
+
+Spice ([Type]), basecost([cost]), baseweight(0.001), mods(Equipment),
+	x(#InputReplace("Please enter the type of spice:", [Type], " ", "Spice")),
+	x(#InputReplace("Please enter the cost of 1 dose. DO NOT use a credit sign or comma:", [cost], " ", "Spice")), page(EQ?), description(Illegal)
+
+Spice (Gannarian Narco-Spice), basecost(600), baseweight(0.001), mods(Equipment), page(EQ?), description(Illegal. Gives: Perception+2, Fearlessness 2, and Careful. Resisted at HT-6, -1 per extra dose. Modified HT <3 = OD: 1d toxic damage per dose taken. Medium term ([25-HT]/4 hours). )
+Spice (Unrefined), basecost(100), baseweight(0.001), mods(Equipment), page(EQ?), description(Illegal.)
+
+<Cybernetics>
+Implant: Bio-Stabilizer, techlvl(11), basecost(15000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Resistant Poison(Common)),
+	Adds(_
+		{AD:Implant: Bio-Stabilizer}_
+		)
+
+Implant: Cardio (Fit), techlvl(11), basecost(5000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives: Fit.),
+	Adds(_
+		{AD:Implant: Cardio (Fit)}_
+		)
+Implant: Cardio (Very Fit), techlvl(11), basecost(15000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives: Very Fit.),
+	Adds(_
+		{AD:Implant: Cardio ( Very Fit)}_
+		)
+Implant: Cardio (HT), techlvl(11), basecost(10000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives: HT+1.),
+	Adds(_
+		{AD:Implant: Cardio (HT)}_
+		)
+
+Implant: Combat, techlvl(11), basecost(15000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Martial Prowess 1),
+	Adds(_
+		{AD:Implant: Combat}_
+		)
+
+Implant: Memory (Eidetic), techlvl(11), basecost(5000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Eidetic Memory),
+	Adds(_
+		{AD:Implant: Memory (Eidetic)}_
+		)
+
+Implant: Memory (Photographic), techlvl(11), basecost(10000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Photographic Memory),
+	Adds(_
+		{AD:Implant: Memory (Photographic)}_
+		)
+
+Implant: Nerve Reinforcement, techlvl(11), basecost(6000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Hard to Subdue 3),
+	Adds(_
+		{AD:Implant: Nerve Reinforcement}_
+		)
+
+Implant: Sensory, techlvl(11), basecost(8000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Acute Vision 2 and Night Vision 4),
+	Adds(_
+		{AD:Implant: Sensory}_
+		)
+Implant: Regenerative, techlvl(11), basecost(15000), baseweight(0), mods(Equipment), page(EQ?), description(TL11. Gives Regeneration (Regular: 1HP/6hrs)),
+	Adds(_
+		{AD:Implant: Regenerative}_
+		)
+
+<Personal Items>
+Celegian Life-Support Chamber, techlvl(10), basecost(6000), baseweight(50), description(TL:11 Notes: has DR10 and 12 Hit Points. When destroyed, it releases a 10-meter radius cyanogen gas cloud that deals, when inhaled, 1d temporary damage to non-cyanogen breathers in the area. Fortunately, the cyanogen cloud dissipates after 6 seconds unless it is confined.), page(EQ?), mods(Equipment)
+
+Cash (Huttese: peggat), noresync(yes), techlvl(10), basecost(0), baseweight(0), usernotes(1 peggat=4 trugut=64 wupiupi=40 dataries), precountweight(0), page(EQ?), description(), cat(Personal Items)
+Cash (Huttese: trugut), noresync(yes), techlvl(10), basecost(0), baseweight(0), usernotes(1 peggat=4 trugut=64 wupiupi=40 dataries), precountweight(0), page(EQ?), description(), cat(Personal Items)
+Cash (Huttese: wupiupi), noresync(yes), techlvl(10), basecost(0), baseweight(0), usernotes(1 peggat=4 trugut=64 wupiupi=40 dataries), precountweight(0), page(EQ?), description(), cat(Personal Items)
+
+Cash (Republic: datarie), noresync(yes), techlvl(10), basecost(0), baseweight(0), usernotes(1 peggat=4 trugut=64 wupiupi=40 dataries), precountweight(0), page(EQ?), description(), cat(Personal Items)
+
+Credit Chip (Alliance Credits:), noresync(yes), techlvl(11), basecost(0), baseweight(0.1), lc(4), mods(Equipment), tl(), usernotes(Add the number of credits stored in the Name Extension.), precountcost(0), precountweight(0.1), page(EQ?), description(An electronic device to store and pay credits. Secured by thumb print.), cat(Personal Items)
+Credit Chip (Imperial Credits:), noresync(yes), techlvl(11), basecost(0), baseweight(0.1), lc(4), mods(Equipment), tl(), usernotes(Add the number of credits stored in the Name Extension.), precountcost(0), precountweight(0.1), page(EQ?), description(An electronic device to store and pay credits. Secured by thumb print.), cat(Personal Items)
+Credit Chip (Republic Credits:), noresync(yes), techlvl(11), basecost(0), baseweight(0.1), lc(4), mods(Equipment), tl(), usernotes(Add the number of credits stored in the Name Extension.), precountcost(0), precountweight(0.1), page(EQ?), description(An electronic device to store and pay credits. Secured by thumb print.), cat(Personal Items)
+
+Credit Stick (Alliance Credits:),noresync(yes),techlvl(11),basecost(10), baseweight(0.09),lc(), mods(Equipment), tl(), usernotes(Change the base cost in the Full Edit Window to reflect the number of Credits stored in your account.), familiarities(), precountcost(0), precountweight(0.09), page(EQ?), description(An electronic device to store and pay credits. Secured by thumb print.), cat(Personal Items)
+Credit Stick (Imperial Credits:), noresync(yes), techlvl(11), basecost(10), baseweight(0.09), lc(), mods(Equipment), tl(), usernotes(Add the number of credits stored in the Name Extension.), familiarities(), precountcost(0), precountweight(0.09), page(EQ?), description(An electronic device to store and pay credits. Secured by thumb print.), cat(Personal Items)
+Credit Stick (Republic Credits:), noresync(yes), techlvl(11), basecost(10), baseweight(0.09), lc(), mods(Equipment), tl(), usernotes(Change the base cost in the Full Edit Window to reflect the number of Credits stored in your account.), familiarities(), precountcost(0), precountweight(0.09), page(EQ?), description(An electronic device to store and pay credits. Secured by thumb print.), cat(Personal Items)
+
+ID-card, techlvl(11), basecost(), baseweight(0.01), lc(), mods(Equipment), tl(), usernotes(Replacement ID-cards will cost 25 credits), familiarities(), precountcost(0), precountweight(0.1), page(EQ?), description(Name, current residence, date of birth, place of birth, species (and race), and your social security number alongside with a holographic image of the owner.), cat(Personal Items),
+	x(_
+	#InputToTagReplace("Please enter the owner of this ID-card:", nameext, , "Name"))
+
+Fake ID-card, techlvl(11), basecost(), baseweight(0.01), lc(), mods(Equipment), tl(), usernotes(), familiarities(), precountcost(0), precountweight(0.1), page(EQ?), description(Name, current residence, date of birth, place of birth, species (and race), and your social security number alongside with a holographic image of the owner.), cat(Personal Items),
+	x(_
+	#InputToTagReplace("Please enter the owner of this fake ID-card:", nameext, , "Name"))
+
+Inter Chip, noresync(yes), techlvl(11), basecost(2000), baseweight(3.5), lc(4), mods(equipment), tl(), usernotes(Annual cost 10 credits/year), familiarities(), page(EQ?), description(An electronic device to process credit transfers between credit chips and bank accounts.), cat(Personal Items)
+
+JT-12 Jetpack, techlvl(10), basecost(300), baseweight(30), lc(), mods(Equipment), tl(), usernotes(), page(EQ?),description(One minute (20 3-second blasts of 100m climb or 70m Move) one MM9 missile or Z-6 anti-vehicle homing missile)
+Z-6 Jetpack, techlvl(11), basecost(300), baseweight(30), lc(), mods(Equipment), tl(), usernotes(), page(EQ?),description(One minute (20 3-second blasts of 100m climb or 70m Move) turbo-projected magnetic grappling hook with 20-meter lanyard (replaceable with 100 meters) or Z-6 anti-vehicle homing missile)
+
+License, noresync(yes), baseweight(0.001), basecost([cost]), usernotes(LC3 items need a license within Republic or Imperial borders. LC2 items may be granted a civilian license for use on your own property), cat(Personal Items), 
+	x(_
+	#InputToTagReplace("Please specify this license:", nameext, , "Type"),	
+	#InputReplace("Please enter the Cost of this license. DO NOT include a credit sign or comma:", "[cost]", , "New License")_
+	#edit)
+License (Heavy Wheeled), noresync(yes0), baseweight(0.001), basecost(10), usernotes(Trucks, cranes), cat(Personal Items)
+License (Wheeled), noresync(yes0), baseweight(0.001), basecost(10), usernotes(Cars), cat(Personal Items)
+License (Speeder), noresync(yes0), baseweight(0.001), basecost(20), usernotes(), cat(Personal Items)
+License (Speeder Bike), noresync(yes0), baseweight(0.001), basecost(20), usernotes(Speeder Bikes, Swoops), cat(Personal Items)
+License (Airspeeder), noresync(yes0), baseweight(0.001), basecost(25), usernotes(), cat(Personal Items)
+License (Fighter/Bomber), noresync(yes0), baseweight(0.001), basecost(100), usernotes(Starfighters/Bombers), cat(Personal Items)
+License (Freighter/Transport), noresync(yes0), baseweight(0.001), basecost(100), usernotes(Freighter/Transport, Shuttles), cat(Personal Items)
+License (Utility Crafts), noresync(yes0), baseweight(0.001), basecost(100), usernotes(Utility Crafts), cat(Personal Items)
+License (Armed Capital Ships), noresync(yes0), baseweight(0.001), basecost(100), usernotes(Armed capital Ships), cat(Personal Items)
+
+Republic Medal of Bravery, baseweight(0.1), basecost(1000), usernotes(), cat(Personal Items),
+	conditional(+1 to ST:Reaction when "worn from those who respect bravery.")
+
+Wrist Chrono, techlvl(11), basecost([cost]), baseweight(0.01), mods(Equipment), x(#InputReplace("Please enter the cost of this item here. Do not use a credit sign or comma:", [cost], " ", "Wrist Chrono")), page(EQ?)
+
+<Law-Enforcement Thief Security Surveillance & Spy Gear>
+*Security
+Code Cylinder, basecost(10), baseweight(0.1), familiarities(), mods(Equipment), page(EQ?), power(), precountcost(10), precountweight(0,1), techlvl(11), tl(), usernotes(Code cylinders can be programmed at properly equipped computers by rolling a Computer Programming/TL11 with a, or without such systems by making a Computer Operation/TL11 roll with a -3 penalty. Failure to properly reprogram a code cylinder ruins the cylinder.), description(Compact encoded security devices are issued to many military, political, or corporate officials. A code cylinder accesses computer data via a droid's scomp link or provides entry into restricted facilities. Each cylinder features the user's personal clearance data. High-ranking personnel may carry more than one cylinder, each with different access codes encrypted within them. Republic citizens, Imperial officers, and New Republic personnel use them to facilitate security measures.), cat(Law-Enforcement Thief Security Surveillance & Spy Gear)
+
+*Binders
+Binders (iron), techlvl(5), basecost(40), break(+5), baseweight(0.25), description(TL:5 Notes: Gives -5 to Escape), page(EQ?), mods(Equipment)
+Binders (tempered iron), techlvl(6), basecost(50), break(+10), baseweight(0.25), description(TL:6 Notes: Gives -6 to Escape), page(EQ?), mods(Equipment)
+Binders (steel), techlvl(7), basecost(60), break(+15), baseweight(0.25), description(TL:7 Notes: Gives -7 to Escape), page(EQ?), mods(Equipment)
+Binders (titanium), techlvl(8), basecost(70), break(+20), baseweight(0.25), description(TL:8 Notes: Gives -8 to Escape), page(EQ?), mods(Equipment)
+Binders (titanium alloy), techlvl(9), basecost(80), break(+25), baseweight(0.25), description(TL:9 Notes: Gives -9 to Escape), page(EQ?), mods(Equipment)
+Binders (durasteel), techlvl(10), basecost(90), break(+30), baseweight(0.25), description(TL:10 Notes: Gives -10 to Escape), page(EQ?), mods(Equipment)
+Binders (duralloy), techlvl(11), basecost(100), break(+35), baseweight(0.25), description(TL:11 Notes: Gives -11 to Escape), page(EQ?), mods(Equipment)
+
+Restraining Bolt, noresync(yes), basecost(50), baseweight(0,2), lc(4), mods(Equipment), tl(), usernotes(), familiarities(), description(A restraining bolt, also known as a restraining separator bolt, was a small device that could be attached to most droids used to ensure their obedience. More specifically, when fitted with a restraining bolt, droids could not leave the area designated by their owner, and were forced to obey commands given from a small remote device (such as "COME" and "STOP"). When activated, the restraining bolt turned off a droid's motor impulse without actually shutting down the droid. Restraining bolts had to be secured to specific locations on the droid. Restraining bolts could also be used to shut down a droid, and power it back up again. This could be used to force a restart when there was an error in the droid's memory. The shut down could be accomplished with a switch on the bolt, or through the use of a caller.), cat(Law-Enforcement Thief Security Surveillance & Spy Gear)
+
+TaggeCo MagnaCuffs, basecost(600), baseweight(0.5), break(+35), conditional(-10 To SK:Computer Hacking when "removing the MagnaCuffs".), familiarities(), hp(+20), mods(Equipment), page(EQ?), precountcost(600), precountweight(0.5), techlvl(11), tl(), usernotes(Magnacuffs are binder cuffs equipped with magnolocks. The cuffs have breakage number +35, 20 HP, and require a Computer Hacking skill with an imposing penalty of 10 to remove without the circuit key.), description(TL:11 Notes: Gives -6 to Escape.), , cat(Law-Enforcement Thief Security Surveillance & Spy Gear)
+
+<Communications & Information Gear>
+Anomid Vocalizer Mask,noresync(yes),techlvl(12),basecost(100),baseweight(0.25),lc(4),mods(Equipment), page(EQ?),tl(),usernotes(Ignores the taboo Language (Spoken) and adds the Mitigator modifier for Cannot Speak for Anomid.),familiarties(),precountcost(),precountweight(),page(EQ?),description(The Anomid Vocalizer mask enables the Anomid to speak. It is worn over the mouth and against the throat. ), cat(Communications & Information Gear)
+
+Comlink (Short-range, Hand), techlvl(11), basecost(200), baseweight(0.1), description(TL:11 Notes: B cell 10km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Short-range, Hand, Secure/Encrypted), basecost(2000), baseweight(0.1), lc(3), description(TL:11LC:3 Notes: B cell 10km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Short-range, Headset), techlvl(11), basecost(200), baseweight(0.1), description(TL:11 Notes: B cell With throat mike. 10km range. 12hrs.), page(EQ), mods(Equipment)
+Comlink (Short-range, Headset, Secure/Encrypted), techlvl(11), basecost(2000), baseweight(0.1), lc(3), description(TL:11 LC:3 Notes: B cell With throat mike. 10km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Short-range, Wrist), techlvl(11), basecost(200), baseweight(0.1), description(TL:11 Notes: B cell 10km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Short-range, Wrist, Secure/Encrypted), basecost(2000), baseweight(0.1), lc(3), description(TL:11LC:3 Notes: B cell 10km range. 12hrs.), page(EQ?), mods(Equipment)
+
+Comlink (Hand), techlvl(11), basecost(600), baseweight(1), description(TL:11 Notes: C cell 50km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Hand, Secure/Encrypted), basecost(6000), baseweight(1), lc(3), description(TL:11LC:3 Notes: C cell 50km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Headset), techlvl(11), basecost(600), baseweight(1), description(TL:11 Notes: C cell With throat mike. 50km range. 12hrs.), page(EQ), mods(Equipment)
+Comlink (Headset, Secure/Encrypted), techlvl(11), basecost(6000), baseweight(1), lc(3), description(TL:11 LC:3 Notes: C cell With throat mike. 50km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Wrist), techlvl(11), basecost(600), baseweight(1), description(TL:11 Notes: C cell 50km range. 12hrs.), page(EQ?), mods(Equipment)
+Comlink (Wrist, Secure/Encrypted), Secure/Encrypted, basecost(6000), baseweight(1), lc(3), description(TL:11LC:3 Notes: C cell 50km range. 12hrs.), page(EQ?), mods(Equipment)
+
+Droid Caller, noresync(yes), techlvl(11), basecost(10), baseweight(0.02),lc(4), mods(Equipment), page(EQ?), tl(), usernotes(), familiarities(), description (The droid caller is a handheld transmitter. It transmits a signal to any droid equipped with a restraining bolt. The droid caller overrides a droid's motor function and impels it toward the caller for as long as the device is activated. Callers were designed with three basic commands: "COME" called a droid forward, "STOP" forced it to halt, and "ORDERS" caused it to enact any commands, within the droid's operating parameters, given verbally. An independent droid fitted with a restraining bolt can resist the droid caller with a successful Will-10 roll.), cat(Communications & Information Gear)
+
+<Entertainment>
+*Musical Instruments
+Chidinkalu, basecost(2500), baseweight(2.5), familiarities(), page(EQ?), description(A handheld instrument), cat(Entertainment)
+Flute, basecost(15), baseweight(0.2), familiarities(), page(EQ?), description(A type of woodwind instrument), cat(Entertainment)
+Kloo Horn, basecost(2000), baseweight(1.2), familiarities(), page(EQ?), description(A handheld instrument.), cat(Entertainment)
+
+<Expedition Gear>
+Aquata Breather, basecost(350), baseweight(.2), dr(), familiarities(), lc(), location(), mods(Equipment), page(EQ?), precountcost(350), precountweight(0.2), techlvl(11), tl(), usernotes(), description(TL:11 Notes:[1] Gives Doesn't Breathe for 2 hours.), cat(Expedition Gear)
+
+Backpack (Frame), techlvl(1-12), basecost(100), baseweight(5), description(TL:1-12 Notes: Holds 50 kg. of gear.), page(EQ?), mods(Equipment)
+Backpack (Small), techlvl(1-12), basecost(60), baseweight(1.5), description(TL:1-12 Notes: Holds 20 kg. of gear.), page(EQ?), mods(Equipment)
+
+Breath Mask, aa(1), basecost(200), baseweight(4.5), dr(1), familiarities(), lc(), location(eyes, face), dr(1), mods(Equipment), page(EQ?), precountcost(200), precountweight(4.5), techlvl(11), tl(), usernotes(Includes: Canister & Filter (2.5kg., 25 credits)), description(TL:11 DR:1 Location: eyes, face Notes:[1] Gives Filter Lungs, [2] Immunity Nose Irritants, [3] and No Sense of Smell/Taste.), cat(Expedition Gear)
+
+Electromagnetic Autograpnel, techlvl(10), basecost(500), baseweight(2.5), description(TL:10 Notes: uses an electromagnetic coil gun to "silently" fire a grappling hook up to 30 meters. Make a Climbing roll to hit, at -2 if unfamiliar with this gadget. An electromagnetic winch lifts up to 400 kilograms at up to 5 meters per second during the Old Republic era. The reel contains 30 meters of 30mm rope. Ascent and descent speed improves at later eras: six meters/second (Fall of The Republic era), seven meters/second (Rise of the Empire era), eight meters/second (Rebellion era), and so on. LC4 and uses a C cell for 10 uses), page(EQ?), mods(Equipment)
+
+Group Basics, techlvl(0), basecost(50), baseweight(10), description(TL:0 Notes: Basic equipment for Cooking and Survival skill for a group. Cook pot, rope, hatchet, etc., for 3-8 campers.), page(EQ?), mods(Equipment)
+
+Kel Dor Antiox Breath Mask, basecost(2000), baseweight(2.5), dr(), familiarities(), lc(), location(), mods(Equipment), page(EQ?), precountcost(), precountweight(), techlvl(11), tl(), usernotes(Includes: one year supply of filters (500gr. 200 credits), on Dorin cost: 25%), description(TL:11), cat(Expedition Gear)
+
+Personal Basics, techlvl(0), basecost(5), baseweight(0.5), description(TL:0 Notes: Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.), page(EQ?), mods(Equipment)
+
+Survival Wrist Chrono, techlvl(10), basecost(300), baseweight(0.25), page(EQ?), mods(Equipment), description(TL-10)
+
+Tape (Mesh), techlvl(11), basecost(5), baseweight(0.5), description(TL:11 Notes: Hold up to 120kg indefinitely, up to 200kg for 30 sec. ST20 Quick Contest to break), page(EQ?), mods(Equipment)
+Tape (Plastoid), techlvl(10), basecost(4), baseweight(0.2), description(TL:10 Notes: Hold up to 78kg indefinitely, up to 130kg for 30 sec. ST15 Quick Contest to break. Vulnerable to fire and heat), page(EQ?), mods(Equipment)
+Tape (Space), techlvl(11), basecost(15), baseweight(0.8), description(TL:11 Notes: Hold up to 216kg indefinitely, up to 360kg for 30 sec. ST25 Quick Contest to break. Heat resistant, support high-pressure and vacuum. Requires Mechanic roll to use), page(EQ?), mods(Equipment)
+
+Utility Belt, techlvl(11), basecost(600), baseweight(4kg), description(three-day supply of food capsules, a medpacs, a toolkit, a spare power pack, a spare energy cell (n AA, A, B, or C cell), a glow rod, a comlinkn (short-range, hand), a couple of empty pouches for whatever else the wearer wants to add (up to an additional 2kg).), page(EQ?), mods(equipment)
+
+Energie Cell: AA, page(EQ?), basecost(1), baseweight(0.00025), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9)
+Energie Cell: A, page(EQ?), basecost(2), baseweight(0.0025), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9)
+Energie Cell: B, page(EQ?), basecost(3), baseweight(0.025), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9)
+Energie Cell: C, page(EQ?), basecost(10), baseweight(0.25), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9)
+Energie Cell: D, page(EQ?), basecost(100), baseweight(2.5), lc(4), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9 LC:4)
+Energie Cell: E, page(EQ?), basecost(2000), baseweight(10), lc(4), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9 LC:4)
+Energie Cell: F, page(EQ?), basecost(20000), baseweight(100), lc(4), techlvl(9), mods(Equipment, Power Cells), cat(Expedition Gear), power(),
+      description(TL:9 LC:4)
+
+<Optics & Sensors>
+Electrobinoculars, techlvl(11), basecost(1000), baseweight(2), mods(Equipment), page(EQ?), description(TL:11 Notes: Gives 7 levels of Telescopic Vision and 5 levels of Night Vision. Detects radiation), cat(Optics & Sensors)
+
+Low-Profile Electrobinoculars, techlvl(11), basecost(2500), baseweight(0.4), mods(Equipment), page(EQ?), description(TL:11 Notes:Gives 6 levels of Telescopic Vision and 4 levels of Night Vision. Detects radiation)
+
+Nutrition Analyzer, techlvl(11), basecost(250), baseweight(0.5), lc(), mods(Equipment), page(EQ?), description(TL:11: Gives Detects (Nutrition)), cat(Optics & Sensors)
+
+<Recreation>
+*Playing Cards
+Pazaak Cards: Main Deck, tech(10), basecost(2), baseweight(0.05),lc(), mods(Pazaak), page(EQ?), description(TL:10 40 pazaak cards, values 1-10), cat(Recreation)
+Pazaak Cards: Side Deck, tech(10), basecost(varies), baseweight(0.0125s), lc(), page(EQ?), mods(Pazaak), usernotes(change the conditional value for the 10 cards used), description(TL:10, 10 custom pazaak cards), cat(Recreation), conditional(+10 to SK:Gambling when "playing pazaak")
+Pazaak Cards: +1, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +2, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +3, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +4, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +5, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +6, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: -1, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: -2, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: -3, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: -4, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: -5, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: -6, tech(10), basecost(50), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +1 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +1/-1, tech(10), basecost(100), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation),
+Pazaak Cards: +2/-2, tech(10), basecost(100), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +3/-3, tech(10), basecost(100), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +4/-4, tech(10), basecost(100), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +5/-5, tech(10), basecost(100), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +1 to +2, tech(10), basecost(200), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +1 to +3, tech(10), basecost(400), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +3 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +1 to +4, tech(10), basecost(800), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +4 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: +1 to +5, tech(10), basecost(1600), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +5 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: x2, tech(10), basecost(200), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds 1d6 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: + to -, tech(10), basecost(200), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak), cat(Recreation)
+Pazaak Cards: 2&4, tech(10), basecost(400), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak and having at least a 2 and 4 4 in your side deck.), cat(Recreation)
+Pazaak Cards: 3&6, tech(10), basecost(400), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds +2 to your Gambling skill when playing pazaak and having at least a 3 and a 6 in your side deck.), cat(Recreation)
+Pazaak Cards: +/-1, tech(10), basecost(1000), baseweight(0.00125),lc(), mods(), page(EQ?), description(TL:10, adds Luck to your Gambling skill when playing pazaak), cat(Recreation)
+
+*Sports Equipment
+Boxing Gloves, techlvl(), basecost(40), baseweight(1), lc(), mods(Equipment), description(TL: Notes: Gives DR 2 vs. crushing damage, Bad Grip 3, and -2 to Punching damage), cat(Sports Equipment)
+Open-Palmed Gloves, techlvl(), basecost(40), baseweight(1), lc(), mods(Equipment), description(TL: Notes: Gives DR 2 vs. crushing damage, Bad Grip 2, and -2 to Punching damage), cat(Sports Equipment)
+Mixed Martial Arts Gloves, techlvl(), basecost(65), baseweight(0.5), lc(), mods(Equipment), description(TL: Notes: Gives DR 1 vs. self-inflicted injury), cat(Sports Equipment)
+Hand Wraps, techlvl(), basecost(5), baseweight(0.001), lc(), mods(Equipment), description(TL: Notes: Gives DR 1 vs. self-inflicted injury, Bad Grip 1), cat(Sports Equipment)
+Cup, techlvl(), basecost(20), baseweight(0.01), lc(), mods(Equipment), description(TL: Notes: Gives DR 2 vs. crushing damage, +2 to knockdown rolls fro groin hits), cat(Sports Equipment)
+Foot Guards, techlvl(), basecost(30), baseweight(0.5), lc(), mods(Equipment), description(TL: Notes: Gives DR 2 vs. crushing on 1-2, -2 to foot kicking damage), cat(Sports Equipment)
+Shin Pads, techlvl(), basecost(40), baseweight(1), lc(), mods(Equipment), description(TL: Notes: Gives DR 2 vs. crushing on 1-3, -2 to foot and shin kicking damage), cat(Sports Equipment)
+Mouthguard, techlvl(), basecost(20), baseweight(0.005), lc(), mods(Equipment), description(TL: Notes: Gives +2 to knockdown rolls fro groin hits and Disturbing Voice), cat(Sports Equipment)
+
+******************************************************************************************************************
+*Equipment Modifiers
+[MODIFIERS]
+******************************************************************************************************************
+<Equipment>
+Adjusting for SM, *0.05/*0.1/*0.2/*0.5, levelnames(SM-4, SM-3, SM-2, SM-1, SM), page(EQ?), group(Equipment),
+	formula(@indexedvalue(1 + me::level - (3*@int(me::level/3)),2,5,1) * (10^@int((me::level-5)/3))), forceformula(yes),
+	gives(=*@indexedvalue(me::level,0.05,0.1,0.2,0.5,me::formula) to owner::baseweight), upto(35), init(5)
+
+Adjusting for SM -4, *0.05, gives(*0.05 to owner::baseweight), shortname(SM -3), page(EQ?), group(Equipment)
+Adjusting for SM -3, *0.1, gives(*0.1 to owner::baseweight), shortname(SM -2), page(EQ?), group(Equipment)
+Adjusting for SM -2, *0.2, gives(*0.2 to owner::baseweight), shortname(SM -2), page(EQ?), group(Equipment)
+Adjusting for SM -1, *0.5, gives(*0.5 to owner::baseweight), shortname(SM -1), page(EQ?), group(Equipment)
+Adjusting for SM +1, *2, gives(*2 to owner::baseweight), shortname(SM +1), page(EQ?), group(Equipment)
+Adjusting for SM +2, *5, gives(*5 to owner::baseweight), shortname(SM +2), page(EQ?), group(Equipment)
+Adjusting for SM +3, *10, gives(*10 to owner::baseweight), shortname(SM +3), page(EQ?), group(Equipment)
+Adjusting for SM +4, *20, gives(*20 to owner::baseweight), shortname(SM +4), page(EQ?), group(Equipment)
+Adjusting for SM +5, *50, gives(*50 to owner::baseweight), shortname(SM +5), page(EQ?), group(Equipment)
+Adjusting for SM +6, *100, gives(*100 to owner::baseweight), shortname(SM +6), page(EQ?), group(Equipment)
+Adjusting for SM +7, *200, gives(*200 to owner::baseweight), shortname(SM +7), page(EQ?), group(Equipment)
+Adjusting for SM +8, *500, gives(*500 to owner::baseweight), shortname(SM +8), page(EQ?), group(Equipment)
+Adjusting for SM +9, *1000, gives(*1000 to owner::baseweight), shortname(SM +9), page(EQ?), group(Equipment)
+Adjusting for SM +10, *2000, gives(*2000 to owner::baseweight), shortname(SM +10), page(EQ?), group(Equipment)
+
+Equipment: Disguised, *2/*5, upto(2), levelnames(mass-produced, custom-built), page(EQ?), shortname(Disguised)
+Equipment: Styling, *2/*3, upto(9), page(EQ?), shortname(Styling)
+Equipment: Rugged, *2, gives(=*1.2 to owner::baseweight), page(EQ?), shortname(Rugged)
+Equipment: Cheap, *0.5, gives(=*@if(owner::emptyweight=0 THEN 1.5 ELSE 1) to owner::baseweight, =+(owner::emptyweight/2) to owner::baseweight), page(EQ?), shortname(Cheap)
+Equipment: Expensive, *1.5, gives(=*@if(owner::emptyweight=0 THEN 2/3 ELSE 1) to owner::baseweight, =-(owner::emptyweight/3) to owner::baseweight), page(EQ?), shortname(Expensive)
+
+Equipment Quality: Best ([Skill]), *50, shortname(Quality Equipment), page(EQ?), conditional(+3 to SK:[Skill]),
+	x(#InputReplace("Some equipment gives a Quality Bonus to certain skills. Please enter the name of the skill that receives a bonus from this item:", "[Skill]", , "Equipment: Quality"))
+Equipment Quality: Good ([Skill]), *5, shortname(Quality Equipment), page(EQ?), conditional(+1 to SK:[Skill]),
+	x(#InputReplace("Some equipment gives a Quality Bonus to certain skills. Please enter the name of the skill that receives a bonus from this item:", "[Skill]", , "Equipment: Quality"))
+Equipment Quality: Fine ([Skill]), *20, shortname(Quality Equipment), page(EQ?), conditional(+2 to SK:[Skill]),
+	x(#InputReplace("Some equipment gives a Quality Bonus to certain skills. Please enter the name of the skill that receives a bonus from this item:", "[Skill]", , "Equipment: Quality"))
+Equipment Quality: Inferior ([Skill]), *0.4, shortname(QualityEquipment), page(EQ?), conditional(-1 to SK:[Skill]),
+	x(#InputReplace("Some inferior equipment gives a Quality Penalty to certain skills. Please enter the name of the skill that receives a penalty from this item:", "[Skill]", , "Equipment: Quality"))
+
+<Ammo>
+*Darts
+Kamino Saberdart, page(EQ?), group(Ammo), shortname(),
+	addmode(Kamino Saberdart,
+			damage(1d+3),
+			damtype(tox),
+			armordivisor(%copyfirst),
+			lc(%copyfirst),
+			acc(+1),
+			calcrange(%copyfirst),
+			rangehalfdam(),
+			rangemax(2* %copyfirst),
+			rof(%copyfirst),
+			shots(%copyfirst),
+			minst(%copyfirst),
+			bulk(%copyfirst),
+			skillused(%copyfirst),
+			rcl(%copyfirst),
+			notes(%copyfirst)_
+			)
+
+*Missiles & Rockets
+Merr-Sonn 1126 Rocket, page(EQ?), group(Ammo), shortname(),
+	addmode(Merr-Sonn 1126 Rocket,
+			damage(3dx2),
+			damtype(cr ex),
+			armordivisor(),
+			lc(2),
+			acc(),
+			calcrange(%copyfirst),
+			rangehalfdam(50),
+			rangemax(500),
+			rof(1),
+			shots(1(10)),
+			minst(7†),
+			bulk(-4),
+			skillused(Artillery (Guided Missile), IQ-5, Artillery-4),
+			rcl(1),
+			notes(%copyfirst)_
+			)
+
+MM9 Concussion Rocket, page(EQ?), group(Ammo), shortname(),
+	addmode(Merr-Sonn 1126 Rocket,
+			damage(2dx2),
+			damtype(cr ex),
+			armordivisor(2),
+			lc(2),
+			acc(),
+			calcrange(%copyfirst),
+			rangehalfdam(50),
+			rangemax(500),
+			rof(1),
+			shots(1(10)),
+			minst(7†),
+			bulk(-4),
+			skillused(Artillery (Guided Missile), IQ-5, Artillery-4),
+			rcl(1),
+			notes(%copyfirst)_
+			)
+
+Type-12 A Anti-Personnel Rocket, page(EQ?), group(Ammo), shortname(),
+	addmode(Merr-Sonn 1126 Rocket,
+			damage(4dx2),
+			damtype(cr ex),
+			armordivisor(),
+			lc(2),
+			acc(),
+			calcrange(%copyfirst),
+			rangehalfdam(50),
+			rangemax(500),
+			rof(1),
+			shots(1(10)),
+			minst(7†),
+			bulk(-4),
+			skillused(Artillery (Guided Missile), IQ-5, Artillery-4),
+			rcl(1),
+			notes(%copyfirst)_
+			)
+
+Z-6 Anti-Vehicle Rocket, page(EQ?), group(Ammo), shortname(),
+	addmode(Merr-Sonn 1126 Rocket,
+			damage(3dx2),
+			damtype(cr ex),
+			armordivisor(5),
+			lc(2),
+			acc(),
+			calcrange(%copyfirst),
+			rangehalfdam(50),
+			rangemax(500),
+			rof(1),
+			shots(1(10)),
+			minst(7†),
+			bulk(-4),
+			skillused(Artillery (Guided Missile), IQ-5, Artillery-4),
+			rcl(1),
+			notes(%copyfirst)_
+			)
+
+*Power Generator
+BlasTech T-21 Portable CTGT, page(EQ?), group(Ammo), shortname(),
+	gives(_
+	=+20 to owner::weight_
+	),
+	addmode(Portable CTGT,
+			damage(%copyfirst),
+			damtype(%copyfirst),
+			armordivisor(%copyfirst),
+			lc(%copyfirst),
+			acc(%copyfirst),
+			calcrange(%copyfirst),
+			rangehalfdam(%copyfirst),
+			rangemax(%copyfirst),
+			rof(%copyfirst),
+			shots(4320(20)),
+			minst(12†),
+			bulk(-7),
+			skillused(%copyfirst),
+			rcl(%copyfirst),
+			notes(%copyfirst)_
+			)
+
+
+<Pazaak>
+Pazaak Cards: +1, +50, page(EQ?),
+	gives(_
+		=+1 to owner::conditional (SK::Gambling when "playing pazaak.")_
+		)
+Pazaak Cards: +2, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +3, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +4, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +5, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +6, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: -1, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: -2, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: -3, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: -4, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: -5, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: -6, +50, page(EQ?),
+	Conditional(_
+		=+1 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +1/-1, +100, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +2/-2, +100, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +3/-3, +100, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +4/-4, +100, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +5/-5, +100, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +1 to +2, +200, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +1 to +3, +400, page(EQ?),
+	gives(_
+		=+3 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +1 to +4, +800, page(EQ?),
+	Conditional(_
+		=+4 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +1 to +5, +1600, page(EQ?),
+	Conditional(_
+		=+5 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: x2, +200, page(EQ?),
+	Conditional(_
+		=+1d6 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: + to -, +200, page(EQ?),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: 2&4, +400, page(EQ?), description(adds +2 to your Gambling skill when playing pazaak and having at least a 2 and 4 4 in your side deck.),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: 3&6, +400, page(EQ?), description(adds +2 to your Gambling skill when playing pazaak and having at least a 3 and a 6 in your side deck.),
+	Conditional(_
+		=+2 to SK::Gambling when "playing pazaak."__
+		)
+Pazaak Cards: +/-1, +1000, page(EQ?), description(TL:10, adds Luck to your Gambling skill when playing pazaak)
+			
+<Power Cells>
+Energie Cell: Flexible, *4, page(EQ?), group(Power Cells), shortname(Flexible)
+Energie Cell: Non-Rechargeable, *1, page(EQ?), group(Power Cells), shortname(Non-Rechargeable)
+Energie Cell: Cosmic, *100, page(EQ?),
+      description(LC2, LC1 for E & F cells), group(Power Cells), shortname(Cosmic)
+
+Power Packs: Non-Rechargeable, -5, page(EQ?), gives(=*2 to owner::shots), group(Power Cells)
+
+<Quality Beam>
+Custom: Beam Splitter Mk I, page(EQ?), shortname(Beam Splt),
+	gives(_
+		=+1 to owner::RoF,
+		=-2 to owner::damage,
+		=*1.05 to owner::baseweight,
+		=*1.1 to owner::basevalue_
+		)
+Custom: Beam Splitter Mk II, page(EQ?), shortname(Beam Splt),
+	gives(_
+		=+2 to owner::RoF,
+		=-3 to owner::damage,
+		=*1.1 to owner::baseweight,
+		=*1.15 to owner::basecost_
+		)
+Custom: Beam Splitter Mk III, page(EQ?), shortname(Beam Splt),
+	gives(_
+		=+2 to owner::RoF,
+		=-2 to owner::damage,
+		=*1.15 to owner::baseweight,
+		=*1.2 to owner::basecost_
+		)
+Custom: Beam Splitter Mk IV, page(EQ?), shortname(Beam Splt),
+	gives(_
+		=+3 to owner::RoF,
+		=-3 to owner::damage,
+		=*1.2 to owner::baseweight,
+		=*1.3 to owner::basecost_
+		)
+Custom: Beam Splitter Mk V, page(EQ?), shortname(Beam Splt),
+	gives(_
+		=+3 to owner::RoF,
+		=-2 to owner::damage,
+		=*1.3 to owner::baseweight,
+		=*1.5 to owner::basecost_
+		)
+
+Custom: Broadening Chamber Mk I, Page(EQ?), Shortname(Broad Chmbr),
+	gives(_
+		=+2 to owner::damage,
+		=-1 to owner::armordivisor,
+		=*1.1 to owner::basecost_
+		)
+Custom: Broadening Chamber Mk II, Page(EQ?), Shortname(Broad Chmbr),
+	gives(_
+		=+1d-3 to owner::damage,
+		=-1 to owner::armordivisor,
+		=*1.15 to owner::basecost_
+		)
+Custom: Broadening Chamber Mk III, Page(EQ?), Shortname(Broad Chmbr),
+	gives(_
+		=+1d-2 to owner::damage,
+		=-2 to owner::armordivisor,
+		=*1.2 to owner::basecost_
+		)
+Custom: Broadening Chamber Mk IV, Page(EQ?), Shortname(Broad Chmbr),
+	gives(_
+		=+1d-1 to owner::damage,
+		=-2 to owner::armordivisor,
+		=*1.3 to owner::basecost_
+		)
+Custom: Broadening Chamber Mk V, Page(EQ?), Shortname(Broad Chmbr),
+	gives(_
+		=+1d to owner::damage,
+		=-3 to owner::armordivisor,
+		=*1.5 to owner::basecost_
+		)
+
+Custom: Hair Trigger, +50, page(EQ?), shortname(Hair Trg),
+	gives(_
+		=+1 to owner::acc_
+		)
+
+Custom: Pulse Charger, page(EQ?), shortname(Plulse Chrg.),
+	gives(_
+		=+2 to owner::damage,
+		=*0.5 to owner::shots,
+		=*1.5 to owner::baseweight,
+		=*1.05 to owner::basecost_
+		)
+
+Custom: Sniper Enhancement Mk I, page(EQ?), shortname(Sniper Enh),
+	x(#message(Lower Bulk with 1. GCA cannot do this automatically.)),
+	gives(_
+		=*1.5 to owner::rangehalfdam,
+		=*1.5 to owner::rangemax,
+		=-1 to owner::bulk,
+		=*1.05 to owner::baseweight,
+		=*1.1 to owner::basevalue_
+		)
+Custom: Sniper Enhancement Mk II, page(EQ?), shortname(Sniper Enh),
+	x(#message(Lower Bulk with 2. GCA cannot do this automatically.)),
+	gives(_
+		=*2 to owner::rangehalfdam,
+		=*2 to owner::rangemax,
+		=-2 to owner::bulk,
+		=*1.1 to owner::baseweight,
+		=*1.15 to owner::basecost_
+		)
+Custom: Sniper Enhancement Mk III, page(EQ?), shortname(Sniper Enh),
+	x(#message(Lower Bulk with 3. GCA cannot do this automatically.)),
+	gives(_
+		=*3 to owner::rangehalfdam,
+		=*3 to owner::rangemax,
+		=-3 to owner::bulk,
+		=*1.15 to owner::baseweight,
+		=*1.2 to owner::basecost_
+		)
+Custom: Sniper Enhancement Mk IV, page(EQ?), shortname(Sniper Enh),
+	x(#message(Lower Bulk with 4. GCA cannot do this automatically.)),
+	gives(_
+		=*4 to owner::rangehalfdam,
+		=*4 to owner::rangemax,
+		=-4 to owner::bulk,
+		=*1.2 to owner::baseweight,
+		=*1.3 to owner::basecost_
+		)
+Custom: Sniper Enhancement Mk V, page(EQ?), shortname(Sniper Enh),
+	x(#message(Lower Bulk with 5. GCA cannot do this automatically.)),
+	gives(_
+		=*5 to owner::rangehalfdam,
+		=*5 to owner::rangemax,
+		=-5 to owner::bulk,
+		=*1.3 to owner::baseweight,
+		=*1.5 to owner::basecost_
+		)
+	
+Variant: Increased Damage, +0/+0, tier(1), group(Quality Beam), gives(+1 to owner::damage, +0 to owner::baseweight), shortname(Increased Damage)
+Variant: Decreased Damage, -0/-0, tier(1), group(Quality Beam), gives(-1 to owner::damage, +0 to owner::baseweight), shortname(Decreased Damage)
+Variant: Increased Damage Dice, +0/+0, tier(1), group(Quality Beam), gives(=+$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Increased Damage Dice)
+Variant: Decreased Damage Dice, -0/-0, tier(1), group(Quality Beam), gives(=-$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Decreased Damage Dice)
+Variant: Receives Acc Bonus, +0/+0, group(Quality Beam), gives(+1 to owner::acc), shortname(Receives Skill Bonus)
+Variant: Receives Acc Penalty, +0/+0, group(Quality Beam), gives(-1 to owner::acc), shortname(Receives Skill Bonus)
+Variant: Damage Bonus (per die), +0/+0, group(Quality Beam),
+	gives(_
+		=+@textindexedvalue( $modetag(dmg), ("thr", $solver(me::level)*owner::basethdice), ("sw", $solver(me::level)*owner::baseswdice), ELSE $solver(me::level*owner::dmg) ) to owner::damage$ listAs "+/die from Damage Bonus" _
+		),
+	levelnames(+1/die, +2/die, +3/die, +4/die, +5/die, +6/die, +7/die, +8/die, +9/die, +10/die)	
+	
+Weapon Quality: Cheap, *0.4, page(EQ?), group(Quality Beam), shortname(Cheap Quality),
+	gives(_
+		=-1 to owner::Acc,
+		=-1 to owner::malf_
+		)
+Weapon Quality: Normal, *1, page(EQ?), group(Quality Beam), shortname(Normal Quality)
+Weapon Quality: Good, *1.4, page(EQ?), group(Quality Beam), shortname(Good Quality),
+	gives(_
+		=+1 to owner::Acc_
+		)
+Weapon Quality: Fine, *2, page(EQ?), group(Quality Beam), shortname(Fine Quality),
+	gives(_
+		=+1 to owner::Acc,
+		=+1 to owner::malf_
+		)
+Weapon Quality: Very Fine, *5, page(EQ?), group(Quality Beam), shortname(Very Fine Quality),
+	gives(_
+		=+2 to owner::Acc,
+		=+1 to owner::malf_
+		)
+
+<Quality Custom>
+		
+		
+<Quality Melee>
+Variant: Increased Damage, +0/+0, tier(1), group(Quality Melee), gives(+1 to owner::damage, +0 to owner::baseweight), shortname(Increased Damage)
+Variant: Decreased Damage, -0/-0, tier(1), group(Quality Melee), gives(-1 to owner::damage, -0 to owner::baseweight), shortname(Decreased Damage)
+Variant: Increased Damage Dice, +0/+0, tier(1), group(Quality Melee), gives(=+$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Increased Damage Dice)
+Variant: Decreased Damage Dice, -0/-0, tier(1), group(Quality Melee), gives(=-$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Decreased Damage Dice)
+Variant: Damage Bonus (per die), +0/+0, group(Quality Meleey),
+	gives(_
+		=+@textindexedvalue( $modetag(dmg), ("thr", $solver(me::level)*owner::basethdice), ("sw", $solver(me::level)*owner::baseswdice), ELSE $solver(me::level*owner::dmg) ) to owner::damage$ listAs "+/die from Damage Bonus" _
+		),
+	levelnames(+1/die, +2/die, +3/die, +4/die, +5/die, +6/die, +7/die, +8/die, +9/die, +10/die)
+
+Weapon Master Damage Bonus, +0, shortname(Weapon Master Damage Bonus), group(Quality Melee),
+	gives(_
+		=+@if(_
+			$modetag(charskillscore) = ST:DX+1 _
+			THEN @textindexedvalue($modetag(dmg), ("thr", owner::basethdice), ("sw", owner::baseswdice), ELSE $solver(owner::dmg)) _
+			ELSE @if(_
+				$modetag(charskillscore) > ST:DX+1 _
+				THEN @textindexedvalue($modetag(dmg), ("thr", 2 * owner::basethdice), ("sw", 2 * owner::baseswdice), ELSE 2*$solver(owner::dmg)) _
+				ELSE 0 _
+				)_
+			) to owner::damage$ ListAs "+1/die or +2/die from Weapon Master" _
+		)
+
+Composition: Hyperdense Blade (TL11), varies, formula(@max(9*owner::basecost, 500*owner::baseweight)), forceformula(yes), shortname(Hyperdense Blade), page(EQ?), group(Quality Melee),
+	gives(_
+		=*1.5 to owner::baseweight,
+		=*1.5 to owner::minst,
+		=nobase to owner::armordivisor,
+		=5 to owner::armordivisor,
+		=+@textindexedvalue( $modetag(damtype), ("cut", 2), ("imp", 2) ) to owner::damage$ listAs "+2 to cut/imp damage Hyperdense Blade"_
+		)
+
+Weapon Quality: Cheap, *0.4, page(EQ?), group(Quality Melee), shortname(Cheap Quality),
+	gives(_
+		=-1 to owner::Acc,
+		=+2 to owner::break_
+		)
+Weapon Quality: Normal, *1, page(EQ?), group(Quality Melee), shortname(Normal Quality),
+	gives(_
+		=+1 to owner::break_
+		)
+Weapon Quality: Good, *1,4, page(EQ), group(Quality Melee), shortname(Good Quality)
+Weapon Quality: Fine, *2, page(EQ?), group(Melee Quality), shortname(Fine Quality), 
+	gives(_
+		=+@textindexedvalue( $modetag(damtype), ("cut", 1), ("imp", 1) ) to owner::damage$ listAs "+1 to cut/imp damage from Quality: Fine",
+		=-1 to owner::break_
+		)
+Weapon Quality: Very Fine, *4, page(EQ?), group(Melee Quality), shortname(Fine Quality), 
+	gives(_
+		=+@textindexedvalue( $modetag(damtype), ("cut", 2), ("imp", 2) ) to owner::damage$ listAs "+2 to cut/imp damage from Quality: Fine",
+		=-2 to owner::break_
+		)
+Weapon Quality: Super Fine, *6, page(EQ?), group(Melee Quality), shortname(Fine Quality), 
+	gives(_
+		=+@textindexedvalue( $modetag(damtype), ("cut", 2), ("imp", 2) ) to owner::damage$ listAs "+2 to cut/imp damage from Quality: Fine",
+		=nobase to owner::armordivisor,
+		=2 to owner::armordivisor,
+		=-1 to owner::break_
+		)
+
+<Quality Muscle-Powered>
+Variant: Increased Damage, +0/+0, tier(1), group(Quality Muscle-Powered), gives(+1 to owner::damage, +0 to owner::baseweight), shortname(Increased Damage)
+Variant: Decreased Damage, -0/-0, tier(1), group(Quality Muscle-Powered), gives(-1 to owner::damage, -0 to owner::baseweight), shortname(Decreased Damage)
+Variant: Increased Damage Dice, +0/+0, tier(1), group(Quality Muscle-Powered), gives(=+$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Increased Damage Dice)
+Variant: Decreased Damage Dice, -0/-0, tier(1), group(Quality Muscle-Powered), gives(=-$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Decreased Damage Dice)
+Variant: Damage Bonus (per die), +0/+0, group(Quality Muscle-Powered),
+	gives(_
+		=+@textindexedvalue( $modetag(dmg), ("thr", $solver(me::level)*owner::basethdice), ("sw", $solver(me::level)*owner::baseswdice), ELSE $solver(me::level*owner::dmg) ) to owner::damage$ listAs "+/die from Damage Bonus" _
+		),
+	levelnames(+1/die, +2/die, +3/die, +4/die, +5/die, +6/die, +7/die, +8/die, +9/die, +10/die)
+Variant: Receives Acc Bonus, +0/+0, group(Bow Quality), gives(+1 to owner::acc), shortname(Receives Skill Bonus)
+Variant: Receives Acc Penalty, +0/+0, group(Bow Quality), gives(-1 to owner::acc), shortname(Receives Skill Bonus)
+
+Weapon Master Damage Bonus, +0, shortname(Weapon Master Damage Bonus), group(Quality Muscle-Powered),
+	gives(_
+		=+@if(_
+			$modetag(charskillscore) = ST:DX+1 _
+			THEN @textindexedvalue($modetag(dmg), ("thr", owner::basethdice), ("sw", owner::baseswdice), ELSE $solver(owner::dmg)) _
+			ELSE @if(_
+				$modetag(charskillscore) > ST:DX+1 _
+				THEN @textindexedvalue($modetag(dmg), ("thr", 2 * owner::basethdice), ("sw", 2 * owner::baseswdice), ELSE 2*$solver(owner::dmg)) _
+				ELSE 0 _
+				)_
+			) to owner::damage$ ListAs "+1/die or +2/die from Weapon Master" _
+		)
+
+Weapon Quality: Cheap, *0.4, page(EQ?), group(Quality Muscle-Powered), Shortname(Cheap Quality),
+gives(_
+	=*0.8 to owner::rangehalfdam,
+	=*0.8 to owner::rangemax_
+	)
+Weapon Quality: Normal, *1, page(EQ?), group(Quality Muscle-Powered), shortname(Normal Quality)
+Weapon Quality: Good, *1,4, page(EQ?), group(Quality Muscle-Powered), shortname(Good Quality),
+	gives(_
+		=*1.1 to owner::rangehalfdam,
+		=*1.1 to owner::rangemax_
+		)
+Weapon Quality: Fine, *2, page(EQ?), group(Quality Muscle-Powered), shortname(Fine Quality),
+	gives(_
+		=*1.2 to owner::rangehalfdam,
+		=*1.2 to owner::rangemax_
+		)
+
+Weapon Quality: Very Fine, *4, page(EQ?), group(Quality Muscle-Powered), shortname(Very Fine Quality),
+	gives(_
+		=*1.3 to owner::rangehalfdam,
+		=*1.3 to owner::rangemax_
+		)
+
+<Quality Slugthrowers>
+Variant: Increased Damage, +0/+0, tier(1), group(Quality Slugthrowers), gives(+1 to owner::damage, +0 to owner::baseweight), shortname(Increased Damage)
+Variant: Decreased Damage, -0/-0, tier(1), group(Quality Slugthrowers), gives(-1 to owner::damage, +0 to owner::baseweight), shortname(Decreased Damage)
+Variant: Increased Damage Dice, +0/+0, tier(1), group(Quality Slugthrowers), gives(=+$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Increased Damage Dice)
+Variant: Decreased Damage Dice, -0/-0, tier(1), group(Quality Slugthrowers), gives(=-$solver(me::level)d to owner::damage$, +0 to owner::baseweight), shortname(Decreased Damage Dice)
+Variant: Damage Bonus (per die), +0/+0, group(Quality Slugthrowers),
+	gives(_
+		=+@textindexedvalue( $modetag(dmg), ("thr", $solver(me::level)*owner::basethdice), ("sw", $solver(me::level)*owner::baseswdice), ELSE $solver(me::level*owner::dmg) ) to owner::damage$ listAs "+/die from Damage Bonus" _
+		),
+	levelnames(+1/die, +2/die, +3/die, +4/die, +5/die, +6/die, +7/die, +8/die, +9/die, +10/die)
+Variant: Receives Acc Bonus, +0/+0, group(Quality Slugthrowers), gives(+1 to owner::acc), shortname(Receives Skill Bonus)
+Variant: Receives Acc Penalty, +0/+0, group(Quality Slugthrowers), gives(-1 to owner::acc), shortname(Receives Skill Bonus)		
+
+Weapon Quality: Cheap, *0.4, page(EQ?), group(Quality Slugthrower), shortname(Cheap Quality),
+	gives(_
+		=-1 to owner::Acc,
+		=-1 to owner::malf_
+		)
+Weapon Quality: Normal, *1, page(EQ?), group(Quality Slugthrower), shortname(Normal Quality)
+Weapon Quality: Good, *1, page(EQ?), group(Quality Slugthrowers), shortname(Good Quality),
+	gives(_
+		=+1 to owner::Acc_
+		)
+Weapon Quality: Fine, *2, page(EQ?), group(Quality Slugthrowers), shortname(Fine Quality),
+	gives(_
+		+1 to owner::Acc,
+		+1 to owner::malf_
+		)
+Weapon Quality: Very Fine, *5, page(EQ?), group(Quality Slugthrowers), shortname(Very Fine Quality),
+	gives(_
+		+2 to owner::Acc,
+		+1 to owner::malf_
+		)
+
+
+<Quality Cutting Class>
+Weapon Quality: Fine (TL6-), *10, page(EQ?), group(Cutting Class Quality), shortname(Fine Quality),
+	gives(_
+		=+@textindexedvalue( $modetag(damtype), ("cut", 1), ("imp", 1) ) to owner::damage$ listAs "+1 to cut/imp damage from Quality: Fine", -1 to owner::break_
+		)
+
+Weapon Quality: Superfine (TL9+), *6, page(EQ?), group(Quality Cutting Class), shortname(Superfine),
+	gives(_
+		=nobase to owner::armordivisor,
+		=+2 to owner::armordivisor,
+		=+@textindexedvalue( $modetag(damtype), ("cut", 2), ("imp", 2) ) to owner::damage$ listAs "+2 to cut/imp damage from Quality: Superfine",
+		-1 to owner::break _
+		)
+
+Composition: Vibroblade (TL10), *10, page(EQ?), group(Quality Cutting Class), shortname(Vibroblade),
+	gives(_
+		=nobase to owner::armordivisor,
+		=+3 to owner::armordivisor,
+		=+0.5 to owner::baseweight,
+		=+$/textindexedvalue( $modetag(damtype), ("cut", 1d) ) to owner::damage$ listAs "+1d to cutting damage from Vibroblade" _
+		)
+
+Composition: Vibroblade (TL11), *10, page(EQ?), group(Quality Cutting Class), shortname(Vibroblade),
+	gives(_
+		=nobase to owner::armordivisor,
+		=+3 to owner::armordivisor,
+		=+0.5 to owner::baseweight,
+		=+$/textindexedvalue( $modetag(damtype), ("cut", 1d+1) ) to owner::damage$ listAs "+1d+1 to cutting damage from Vibroblade" _
+		)
+
+<Quality Crushing/Imp Class>
+Weapon Quality: Fine (TL6-), *3, page(EQ?), group(Quality Crushing/Imp Class), shortname(Fine Quality),
+	gives(_
+		=+@textindexedvalue( $modetag(damtype), ("cut", 1), ("imp", 1) ) to owner::damage$ listAs "+1 to cut/imp damage from Quality: Fine", -1 to owner::break_
+		)
+
+<Quality Shield>
+Weapon Master Damage Bonus, +0, shortname(Weapon Master Damage Bonus), group(Quality Shield),
+	gives(_
+		=+@if(_
+			$modetag(charskillscore) = ST:DX+1 _
+			THEN @textindexedvalue($modetag(dmg), ("thr", owner::basethdice), ("sw", owner::baseswdice), ELSE $solver(owner::dmg)) _
+			ELSE @if(_
+				$modetag(charskillscore) > ST:DX+1 _
+				THEN @textindexedvalue($modetag(dmg), ("thr", 2 * owner::basethdice), ("sw", 2 * owner::baseswdice), ELSE 2*$solver(owner::dmg)) _
+				ELSE 0 _
+				)_
+			) to owner::damage$ ListAs "+1/die or +2/die from Weapon Master" _
+		)
+
+<Scopes>
+*For non-compact scopes only
+Compact, *1.1, gives(*0.5 to owner::baseweight), group(Scopes), page(EQ?)
+Tactical, *2, gives(1.1 to owner::baseweight), group(Scopes), page(EQ?)
+
+<Weapons - Weapon & Combat Accessories>
+*For scoped weapons only
+Scope: 2x (TL  6; 1), 100, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+0.5 to owner::baseweight,
+		=-2 to owner::bulk,
+		=+1 to owner::acc_
+		)
+Scope: 4x (TL  6; 2), 150, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+0.75 to owner::baseweight,
+		=-2 to owner::bulk,
+		=+2 to owner::acc_
+		)
+Scope: 6x (TL  6; 3), 250, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+1 to owner::baseweight,
+		=-2 to owner::bulk,
+		=+3 to owner::acc_
+		)
+Scope: 8x (TL  6; 4), 400, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+1.25 to owner::baseweight,
+		=-2 to owner::bulk,
+		=+4 to owner::acc_
+		)
+
+Scope: 2x (TL 6; 1 Compact), 110, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+0.25 to owner::baseweight,
+		=-1 to owner::bulk,
+		=+1 to owner::acc_
+		)
+
+Scope: 4x (TL 6; 1 Compact), 165, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+0.37.5 to owner::baseweight,
+		=-1 to owner::bulk,
+		=+2 to owner::acc_
+		)
+
+Scope: 4x (TL 6; 1 Compact mounted on Pistol), 165, page(EQ?), group(Weapons - Weapon & Combat Accessories),
+	gives(_
+		=+0.37.5 to owner::baseweight,
+		=-1 to owner::bulk,
+		=+1 to owner::acc_
+		)
+
+<Pazaak>
+Side Deck Cards Bonus, 0/0, page(EQ?), group(Pazaak),
+levelnames(_
+		0,+1, +2, +3, +4, +5, +6, +7, +8, +9, +10, +11, +12, +13, +14, +15, +16, +17, +18, +19, +20_
+		),
+conditional(_
+		=+@indexedvalue(me::level,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20) to SK:Gambling when playing pazaak, upto(60)_
+		)
