@@ -225,6 +225,14 @@
       </section>
       <section id="StylesSubsection">
 		<style>
+			/* Hidden links with highlight */
+			a.hidden {
+	  			text-decoration: none;
+				color: black;
+			}
+			a.hidden:hover, a.hidden:active {
+	  			color: red;
+			}
 			body { 
 	  			counter-reset: bibliography;
 	  			counter-reset: chapter;
@@ -240,13 +248,9 @@
 	  			counter-increment:bibliography none;
 				list-style-type: none;
 			}
-			/* Hidden links with highlight */
-			a.hidden {
-	  			text-decoration: none;
-				color: black;
-			}
-			a.hidden:hover, a.hidden:active {
-	  			color: red;
+			p {
+				text-align: justify;
+				text-justify: inter-cluster;
 			}
 	    </style>
       </section>
