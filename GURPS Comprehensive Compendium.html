@@ -576,15 +576,14 @@
 		<h2>Glindex</h2>
 		  <h3>D</h3>
 			<p>Dimethyl sulfoxide&Tab;BT&colon;157</p>
-			  <!-- <script>
-			    var DMSO = new ChemDoodle.TransformCanvas3D('transformBallAndStick', 300, 300);
-				tranformBallAndStick.styles.set3DRepresentation('Ball and Stick');
-				transformBallAndStick.styles.backgroundColor = 'black';
-				var molFile = '\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\data\molecules\DimethylSulfoxideChEBI_28262.mol';
-				var molecule = ChemDoodle.readMOL(molFile, 1);
-				transformBallAndStick.loadMolecule(molecule);
+			  <script>
+			    var transformBallAndStick = new ChemDoodle.TransformCanvas3D('transformBallAndStick', 300, 300);
+				  transformBallAndStick.styles.set3DRepresentation('Ball and Stick');
+				  transformBallAndStick.styles.backgroundColor = 'black';
+			     var molFile = ".\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\data\molecules\DimethylSulfoxide_67-68-5.mol"
+			     var molecule = ChemDoodle.readMOL(molFile, 1);
+				transformBallAndStick.loadMolecule(molecule);  
 			  </script>
-			  <script>ChemDoodle.io.file.content('\lib\ChemDoodleWeb-10.0.0\ChemDoodleWeb-10.0.0\data\molecules\DimethylSulfoxideChEBI_28262.mol', function(fileContent) {let mol= ChemDoodle.readMOL(filecontent); alertMolecule(mol);});</script> -->
 	  </section>
 	</section>
   </body>
